@@ -8,6 +8,7 @@ import { routes } from "./Routes";
 import Header from "./header/Header";
 import Admin from "./admin/Admin";
 import { PrivateRoutes } from "./_helpers/PrivateRoutes";
+import Notfound from "./Notfound";
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
                   return <Route exact {...url} />;
                 })}
                 <PrivateRoutes exact path="/admin" component={Admin} />
+                <Route component={Notfound} />
               </Switch>
             </Col>
           </Row>

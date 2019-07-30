@@ -16,8 +16,7 @@ class Admin extends Component {
           <Row>
             <Col xs={12}>
               <h3>welcome to Admin page</h3>
-
-              <Button variant="outline-warning" onClick={this.logout}>
+              <Button variant="outline-dark" onClick={this.logout}>
                 Logout
               </Button>
             </Col>
