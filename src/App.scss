@@ -1,0 +1,11 @@
+@import './mixins';
+
+.Whole-container {
+  h3 {
+    color: greenyellow;
+
+    @include device-lg {
+      color: orange;
+    }
+  }
+}
