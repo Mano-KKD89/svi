@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import { routes } from "./Routes";
 import Header from "./header/Header";
+import Admin from "./admin/Admin";
+import { PrivateRoutes } from "./_helpers/PrivateRoutes";
 function App() {
   return (
     <>
@@ -17,6 +19,7 @@ function App() {
                 {routes.map(url => {
                   return <Route exact {...url} />;
                 })}
+                <PrivateRoutes exact path="/admin" component={Admin} />
               </Switch>
             </Col>
           </Row>

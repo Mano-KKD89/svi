@@ -3,11 +3,15 @@ import About from "./about/About";
 import Service from "./service/Service";
 import Blog from "./blog/Blog";
 import Contact from "./contact/Contact";
-
+import Login from "./login/Login";
 export const routes = [
   {
     path: "/",
     component: Home
+  },
+  {
+    path: "/login",
+    component: Login
   },
   {
     path: "/home",
