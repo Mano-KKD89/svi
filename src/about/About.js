@@ -10,7 +10,7 @@ class About extends Component {
       <>
         <Row>
           <Col xs={12}>
-            <h3>About</h3>
+            <h3>About krishna</h3>
           </Col>
         </Row>
       </>
