@@ -10,7 +10,7 @@ class Home extends Component {
       <>
         <Row>
           <Col xs={12}>
-            <h3>Home</h3>
+            <h3>Landing Page</h3>
           </Col>
         </Row>
       </>
