@@ -9,7 +9,8 @@ import {
   NavDropdown,
   Form,
   FormControl,
-  Button
+  Button,
+  ul
 } from "react-bootstrap";
 import { NavLink, Link } from "react-router-dom";
 import "./header.scss";
@@ -20,9 +21,10 @@ class Header extends Component {
   render() {
     return (
       <>
-        <Row>
-          <Col xs={12} className="header new">
-            <Navbar bg="primary" variant="dark">
+      <Col className="primary">
+       <Row>
+          <Container className="header new">
+            <Navbar  variant="dark">
               <Navbar.Brand>
                 <Link to="/home">
                   <img src={logo} style={{ height: "70px" }} />
@@ -44,13 +46,20 @@ class Header extends Component {
                 <NavLink to="/contact" activeClassName="active">
                   Contact
                 </NavLink>
+                
               </Nav>
+              <ul>
+                <li><a>asas</a></li>
+              </ul>
             </Navbar>
-          </Col>
+          </Container>
         </Row>
+        </Col>
       </>
     );
   }
 }
 
 export default Header;
+// 101475098823
+// eEIEVH@@*165
