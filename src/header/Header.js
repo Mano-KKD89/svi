@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import logo from "../logo.svg";
+import instagram from "../images/instagram.svg";
+import twitter from "../images/twitter.svg";
+import facebook from "../images/facebook.svg";
+import earth from "../images/earth.svg";
 import {
   Container,
   Row,
@@ -9,10 +13,13 @@ import {
   NavDropdown,
   Form,
   FormControl,
-  Button
+  Button,
+  ul
 } from "react-bootstrap";
 import { NavLink, Link } from "react-router-dom";
 import "./header.scss";
+
+
 class Header extends Component {
   constructor() {
     super();
@@ -20,15 +27,16 @@ class Header extends Component {
   render() {
     return (
       <>
-        <Row>
-          <Col xs={12} className="header new">
-            <Navbar bg="primary" variant="dark">
+      <Col className="header">
+       <Row>
+          <Container className=" new">
+            <Navbar  variant="dark">
               <Navbar.Brand>
                 <Link to="/home">
-                  <img src={logo} style={{ height: "70px" }} />
+                  <img src={logo} style={{ height: "40px" }} />
                 </Link>
               </Navbar.Brand>
-              <Nav className="ml-auto header-link">
+              <Nav className="mx-auto header-link">
                 <NavLink to="/home" activeClassName="active">
                   Home
                 </NavLink>
@@ -44,13 +52,23 @@ class Header extends Component {
                 <NavLink to="/contact" activeClassName="active">
                   Contact
                 </NavLink>
+                
               </Nav>
+              <ul>
+                <li><NavLink to="#"> <img src={instagram} alt="instagram"/></NavLink></li>
+                <li><NavLink to="#"> <img src={twitter} alt="twitter"/></NavLink></li>
+                <li><NavLink to="#"> <img src={facebook} alt="facebook"/></NavLink></li>
+                <li><NavLink to="#"> <img src={earth} alt="earth"/></NavLink></li>
+              </ul>
             </Navbar>
-          </Col>
+          </Container>
         </Row>
+        </Col>
       </>
     );
   }
 }
 
 export default Header;
+// 101475098823
+// eEIEVH@@*165
