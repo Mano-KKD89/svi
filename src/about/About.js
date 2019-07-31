@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import "./about.scss";
+import banner from "../images/about-us.svg";
+import imgfirst from "../images/About-us-1.svg";
+import imgsec from "../images/About-us-2.svg";
+import imgthird from "../images/About-us-3.svg";
 class About extends Component {
   constructor() {
     super();
@@ -11,7 +15,7 @@ class About extends Component {
       <>
         <Row>
           <Col xs={12}>
-            <div className="hero-banner-about container-fluid">
+            <div className="about-banner-about Container-fluid">
               <div className="container">
                 <div className="row">
                   <Col xs={8}>
@@ -25,11 +29,11 @@ class About extends Component {
                       <small className="text-white">Make something new.</small>
                     </nav>
                   </Col>
-                  <Col xs={4}>hi</Col>
+                  <Col xs={4}><img src={banner}></img></Col>
                   </div>
                 </div>
               </div>
-              <Col className="about-us container mt-5 pt-2">
+            <Container className="about-us mt-5 pt-2">
                 <h2>About Us</h2>
               <Col className="row">
                 <Col xs={6}>
@@ -37,10 +41,10 @@ class About extends Component {
                   <h4>We are promising service provider in the field of Graphics and animations. We deal with all graphics, VFX, 2D, 3D animation services and are acknowledged/recognized accuracy and timely execution of work.</h4>
                 </Col>
                 <Col xs={6}>
-                  {/* <img src=""> */}
+                  <img src={imgfirst}></img>
                 </Col>
                 <Col xs={6}>
-                  {/* <img src=""> */}
+                  <img src={imgsec}></img>
                 </Col>
                 <Col xs={6}>
                     <h3>Our Vision</h3>
@@ -51,10 +55,10 @@ class About extends Component {
                   <h4>We are promising service provider in the field of Graphics and animations. We deal with all graphics, VFX, 2D, 3D animation services and are acknowledged/recognized accuracy and timely execution of work.</h4>
                 </Col>
                 <Col xs={6}>
-                  {/* <img src="#"> */}
+                 <img src={imgthird}></img>
                 </Col>
               </Col>
-            </Col>
+            </Container>
           </Col>
         </Row>
       </>
