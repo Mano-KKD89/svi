@@ -15,7 +15,7 @@ class About extends Component {
       <>
         <Row>
           <Col xs={12}>
-            <div className="about-banner-about Container-fluid">
+            <div className="about-banner-about Container-fluid row">
               <div className="container">
                 <div className="row">
                   <Col xs={8}>
