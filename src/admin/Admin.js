@@ -57,7 +57,7 @@ class Admin extends Component {
                         <Servicedata />
                       </Tab.Pane>
                       <Tab.Pane eventKey="Blog">
-                        <Blogdata />.
+                        <Blogdata />
                       </Tab.Pane>
                       <Tab.Pane eventKey="Contact">
                         <Contactdata />
