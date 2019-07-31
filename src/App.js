@@ -14,9 +14,9 @@ function App() {
     <>
       <Router>
         <Header />
-        <Container>
-          <Row>
-            <Col xs={12} className="Whole-container mt-5">
+      
+        
+            <Col xs={12} className="Whole-container ">
               <Switch>
                 {routes.map(url => {
                   return <Route exact {...url} />;
@@ -25,8 +25,8 @@ function App() {
                 <Route component={Notfound} />
               </Switch>
             </Col>
-          </Row>
-        </Container>
+         
+     
       </Router>
     </>
   );
