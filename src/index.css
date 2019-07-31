@@ -42,8 +42,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: "Barlow-Regular"!important;
 }
-
+.text-blue {
+  color:#2AB7F6;
+}
+.text-white {
+  color: #fff;
+}
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 } */
+
+.breadcrumb {
+  background-color: transparent!important;
+  padding: 0!important;
+}
+.breadcrumb li, 
+.breadcrumb li a,
+.breadcrumb-item.active {
+  color: #ffffff!important;
+  text-transform: uppercase;
+  font-family: "Barlow-Medium";
+}
+.breadcrumb-item+.breadcrumb-item::before {
+  color: #fff!important;
+  content: "|"!important;
+}

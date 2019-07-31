@@ -20,7 +20,7 @@ class About extends Component {
                 <div className="row">
                   <Col xs={8}>
                     <nav>
-                    <Breadcrumb>
+                    <Breadcrumb className="bread-c">
                       <Breadcrumb.Item to="/home" activeClassName="active">home</Breadcrumb.Item>
                       <Breadcrumb.Item active>about us</Breadcrumb.Item>
                     </Breadcrumb>
@@ -34,8 +34,8 @@ class About extends Component {
                 </div>
               </div>
             <Container className="about-us mt-5 pt-2">
-                <h2>About Us</h2>
-              <Col className="row">
+                {/* <h2>About Us</h2> */}
+              <div className="row">
                 <Col xs={6}>
                   <h3>Get to know us</h3>
                   <h4>We are promising service provider in the field of Graphics and animations. We deal with all graphics, VFX, 2D, 3D animation services and are acknowledged/recognized accuracy and timely execution of work.</h4>
@@ -43,21 +43,21 @@ class About extends Component {
                 <Col xs={6}>
                   <img src={imgfirst}></img>
                 </Col>
-                <Col xs={6}>
+                <Col xs={6} className="mt-5">
                   <img src={imgsec}></img>
                 </Col>
-                <Col xs={6}>
+                <Col xs={6} className="mt-5">
                     <h3>Our Vision</h3>
                     <h4>We are promising service provider in the field of Graphics and animations. We deal with all graphics, VFX, 2D, 3D animation services and are acknowledged/recognized accuracy and timely execution of work.</h4>
                 </Col>
-                <Col xs={6}>
+                <Col xs={6} className="mt-5">
                   <h3>Our Mision</h3>
                   <h4>We are promising service provider in the field of Graphics and animations. We deal with all graphics, VFX, 2D, 3D animation services and are acknowledged/recognized accuracy and timely execution of work.</h4>
                 </Col>
-                <Col xs={6}>
+                <Col xs={6} className="mt-5">
                  <img src={imgthird}></img>
                 </Col>
-              </Col>
+              </div>
             </Container>
           </Col>
         </Row>

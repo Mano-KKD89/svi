@@ -8,27 +8,49 @@
     background: linear-gradient(to right, rgba(1,149,248,1) 0%, rgba(21,82,187,1) 23%, rgba(42,7,119,1) 37%, rgba(45,2,115,1) 63%, rgba(35,39,165,1) 83%, rgba(25,81,222,1) 100%);
     padding: 3% 0 2%;
     h1 {
-        font-size: 30px;
+        font-size: 34px;
     }
     h4 {
-        width: 600px;
-        font-size: 34px;
+        width: 500px;
+        font-size: 38px;
         font-weight: bolder;
-        padding-top: 8%;
+        padding-top: 14%;
+    }
+    img {
+        width: 450px;
     }
     small {
         font-size: 14px;
     }
-    .about-us {
-        h2 {
-            &:after {
-                border-bottom: 2px solid #2AB7F6;
-                display: block;
-                width: 100px;
-                content: "";
-                margin-top: 10px;
-                border-radius: 5px;
-            }
+}
+.about-us {
+    h3 {
+        font-size: 34px;
+        font-family: "Barlow-SemiBold";
+        color: #484258;
+        &:after {
+            border-bottom: 2px solid #2AB7F6;
+            display: block;
+            width: 100px;
+            content: "";
+            margin-top: 10px;
+            border-radius: 5px;
         }
+    }
+    h4 {
+        font-size: 26px;
+        font-family: "Barlow-Light";
+        padding-top: 14px;
+        width: 400px;
+    }
+    img {
+        width: 400px;
+        border-radius: 10px;
+        padding: 10px;
+        border: 15px solid #fff;
+        box-shadow: 1px 1px 0 2px #cccccc80;
+        background: #0195f8;
+        background: -webkit-gradient(left top, right top, color-stop(0%, #0195f8), color-stop(23%, #1552bb), color-stop(37%, #2a0777), color-stop(63%, #2d0273), color-stop(83%, #2327a5), color-stop(100%, #1951de));
+        background: linear-gradient(to right, #0195f8 0%, #1552bb 23%, #2a0777 37%, #2d0273 63%, #2327a5 83%, #1951de 100%);
     }
 }
