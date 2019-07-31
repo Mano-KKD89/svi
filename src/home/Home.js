@@ -14,7 +14,13 @@ class Home extends Component {
           <Col className="landing" style={{ backgroundImage: `url(${LandingBg})` }}>
             <Container>
               <Col xs={12}>
-                <h3>Landing Page</h3>
+                <Row>
+                  <Col xs={6}>
+                    <h1>We Provide<span>Top Quality</span>&ensp;Services</h1>
+                    <p>Perfect place for your perfect business.</p>
+                    <a href="">Watch video</a>
+                  </Col>
+                </Row>
               </Col>
             </Container>
           </Col>
