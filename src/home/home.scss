@@ -3,6 +3,113 @@
 .landing{
     height: 90vh;
     background-size: cover;
-
+    background-repeat: no-repeat;
+    background-position: center;
+    h1{
+        color: #fff;
+        font-family: "Barlow-SemiBold";
+        font-size: 44px;
+        span{
+            color: $theme1;
+        }
+    }
+    p{
+        color: #fff;
+        font-size: 20px;
+        margin: 25px 0;
+        font-family: "Barlow-Medium";
+    }
+    a{
+        background-image: linear-gradient(to right,$theme1,$theme3);
+        display: inline-block;
+        padding: 15px 20px;
+        border-radius: 25px;
+        font-size: 14px;
+        font-family: "Barlow-SemiBold";
+        color: #ffffff;
+        img{
+            width: 18px;
+            margin-right: 10px
+        }
+    }
+    .landing-ill{
+        position: absolute;
+        max-width: auto;
+        left: auto;right: 8%;
+        img{
+            width: 300px;
+        }
+    }
+}
+.middle-section{
+    .title-sec{
+        margin-top: 150px;
+        position: relative;
+        margin-bottom: 100px;
+        p{
+            font-size: 16px;
+            color: $theme1;
+            font-family: "Barlow-Medium";
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+        h2{
+            font-size: 48px;
+            color: $theme2;
+        }
+        &:after{
+            content: '';
+            background:  $theme1;  
+            width: 120px;
+            height: 4px;
+            position: absolute;
+            bottom: -40px;left: 0;right: 0;
+            margin: auto;
+        }
+    }
+    .inner-sec{
+        .grap-sec{
+            text-align: center;
+            border: 1px solid #eeeeee;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 25px;
+            h3{
+                font-size: 20px;
+                color: $theme2;
+                font-family: "Barlow-SemiBold";
+                margin-bottom: 25px;
+                margin-top: 25px;
+            }
+            p{
+                font-size: 18px;
+                color: $theme2;
+                font-family: "Barlow-Light";
+                line-height: 22px;
+                margin-bottom: 0;
+            }
+            a{
+                display: inline-block;
+                font-size: 20px;
+                color: $theme2;
+                font-family: "Barlow-Medium";
+                text-transform: uppercase;
+                margin: 30px 0;
+            }
+            .img-grap{
+                background:radial-gradient(50% 50%, #ffffff, #012c99);
+                height: 250px;
+                position: relative;
+                border-radius: 5px;
+                margin-bottom: 0;
+                
+                img{
+                    position: absolute;
+                    margin: auto;
+                    top: 0;bottom: 0;left: 0;right: 0;
+                }
+            }
+        }
+    }
 }
 
