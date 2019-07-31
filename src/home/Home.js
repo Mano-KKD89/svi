@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import LandingBg from "../images/Landing-page-Backround.svg";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "./home.scss";
+import banner from "../images/about-us.svg";
 class Home extends Component {
   constructor() {
     super();
