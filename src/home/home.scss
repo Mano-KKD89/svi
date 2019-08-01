@@ -124,7 +124,7 @@
 
 .sevice-sec{
     background: #0c1047;
-    h1{
+    h2{
         color: #fff;
         font-family: "Barlow-SemiBold";
         font-size: 44px;
@@ -152,4 +152,65 @@
         }
     }
    
+}
+
+.latest-work-sec{
+    .title-sec{
+        margin-top: 150px;
+        margin-bottom: 50px;
+        h2{
+            color: $theme1;
+            font-family: "Barlow-SemiBold";
+            font-size: 38px;
+            span{
+                color: $theme2;                
+            }
+        }
+        p{
+            font-size: 24px;
+            color: $theme2;
+            font-family: "Barlow-Light";
+            line-height: 28px;
+            margin-top: 50px;
+        }
+    }
+    .span-tap{
+        width: 100%;
+        float: left;
+        text-align: center;
+        span{
+            display: inline-block;
+            padding: 2px 15px;
+            color: $theme2;
+            font-family: "Barlow-Medium";
+        }
+    }
+    .works-div{
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.12);
+        .works-img{
+            height: 265px;
+            overflow: hidden;
+            margin-bottom: 0; 
+            img{
+                width: 100%;
+            }
+        }
+        .works-info{
+            padding: 12px;
+            p{
+                font-size: 12px;
+                color: $theme2;
+                font-family: "Barlow-Light";
+                margin-bottom: 5px;
+            }
+            h4{
+                font-size: 16px;
+                color: $theme2;
+                font-family: "Barlow-SemiBold";
+                margin-bottom: 0px;
+            }
+        }
+      
+    }
 }

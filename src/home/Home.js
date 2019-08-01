@@ -4,6 +4,7 @@ import PlayIcon from "../images/play-icon.svg";
 import LandingIllustration from "../images/Landing-page- illustration.svg";
 import Landing2DGraphics from "../images/Landing-2D-Graphics.svg";
 import LandingIllustration2 from "../images/Landing-illustration-2.svg";
+import LatestWork from "../images/Latest-work.svg";
 import { Container, Row, Col, Button, Link } from "react-bootstrap";
 import "./home.scss";
 import banner from "../images/about-us.svg";
@@ -13,10 +14,199 @@ class Home extends Component {
 
   constructor() {
     super();
+    this.state = {
+      profile: [
+        {
+          name: "Set Medeling",
+          title: "3D Graphics",
+          url: LatestWork,
+          type: "2D",
+          year:"2019"
+        },
+        {
+          name: "blockchain one",
+          title: "3D Graphics",
+          url: LatestWork,
+          type: "2D",
+          year:"2019"
+        },
+        {
+          name: "blockchain 2",
+          title: "3D Graphics",
+          url: LatestWork,
+          type: "2D",
+          year:"2019"
+        },
+        {
+          name: "ICO",
+          title: "3D Graphics",
+          url: LatestWork,
+          type: "3D",
+          year:"2019"
+        },
+        {
+          name: "ICO 1",
+          title: "3D Graphics",
+          url: LatestWork,
+          type: "3D",
+          year:"2019"
+        },
+        {
+          name: "act",
+          title: "3D Graphics",
+          url: LatestWork,
+          type: "VFX",
+          year:"2019"
+        },
+        {
+          name: "act",
+          title: "3D Graphics",
+          url: LatestWork,
+          type: "VFX",
+          year:"2019",
+        },
+        {
+          name: "act",
+          title: "3D Graphics",
+          url: LatestWork,
+          type: "App",
+          year:"2019"
+        },
+        {
+          name: "act",
+          title: "3D Graphics",
+          url: LatestWork,
+          type: "App",
+          year:"2019"
+        },
+        {
+          name: "act",
+          title: "3D Graphics",
+          url: LatestWork,
+          type: "Website",
+          year:"2019"
+        },
+        {
+          name: "act",
+          title: "3D Graphics",
+          url: LatestWork,
+          type: "Website",
+          year:"2019"
+        },
+        {
+          name: "act",
+          title: "3D Graphics",
+          url: LatestWork,
+          type: "Interaction",
+          year:"2019"
+        }
+      ],
+      newData: [
+        {
+          name: "Set Medeling",
+          title: "3D Graphics",
+          url: LatestWork,
+          type: "2D",
+          year:"2019"
+        },
+        {
+          name: "blockchain one",
+          title: "3D Graphics",
+          url: LatestWork,
+          type: "2D",
+          year:"2019"
+        },
+        {
+          name: "blockchain 2",
+          title: "3D Graphics",
+          url: LatestWork,
+          type: "2D",
+          year:"2019"
+        },
+        {
+          name: "ICO",
+          title: "3D Graphics",
+          url: LatestWork,
+          type: "3D",
+          year:"2019"
+        },
+        {
+          name: "ICO 1",
+          title: "3D Graphics",
+          url: LatestWork,
+          type: "3D",
+          year:"2019"
+        },
+        {
+          name: "act",
+          title: "3D Graphics",
+          url: LatestWork,
+          type: "VFX",
+          year:"2019"
+        },
+        {
+          name: "act",
+          title: "3D Graphics",
+          url: LatestWork,
+          type: "VFX",
+          year:"2019"
+        },
+        {
+          name: "act",
+          title: "3D Graphics",
+          url: LatestWork,
+          type: "App",
+          year:"2019"
+        },
+        {
+          name: "act",
+          title: "3D Graphics",
+          url: LatestWork,
+          type: "App",
+          year:"2019"
+        },
+        {
+          name: "act",
+          title: "3D Graphics",
+          url: LatestWork,
+          type: "Website",
+          year:"2019"
+        },
+        {
+          name: "act",
+          title: "3D Graphics",
+          url: LatestWork,
+          type: "Website",
+          year:"2019"
+        },
+        {
+          name: "act",
+          title: "3D Graphics",
+          url: LatestWork,
+          type: "Interaction",
+          year:"2019"
+        }
+      ]
+    };
+    this.onChoose = this.onChoose.bind(this);
   }
-
+  onChoose = type => {
+    console.log(type, "type");
+    if (type === "ALL") {
+      this.setState({
+        newData: this.state.profile
+      });
+    } else {
+      const kk = this.state.profile.filter(d => {
+        return d.type == type;
+      });
+      this.setState({
+        newData: kk
+      });
+    }
+  };
   render() {
-    
+
     return (
       <>
         <Row>
@@ -109,7 +299,7 @@ class Home extends Component {
                 <Row>
                   <Col xs={6} className="d-flex align-items-center pl-0">
                     <div className="">
-                      <h1>Get ready for real time services</h1>
+                      <h2>Get ready for real time services</h2>
                       <p>Perfect place for your perfect business.</p>
                       <a href="">Quote Now</a>
                     </div>
@@ -129,12 +319,85 @@ class Home extends Component {
             <Container>
               <Col xs={12}>
                 <Row>
-                  <Col xs={12} className="text-center title-sec">
-                    <h2>Latest<span>Work</span></h2>
-                    <p>We "XYZ" are specialized in understanding your needs and get the desired output/result 
-                      with great elegance. We developed creative designs for different business requirement within the 
-                      stipulated time per
+                  <Col xs={12} className=" title-sec p-0">
+                    <h2>Latest <span>Work</span></h2>
+                    <p>We "XYZ" are specialized in understanding your needs and get the desired output/result
+                      with great elegance. We developed creative designs for different business requirement within the
+                      stipulated time period. We reply on quality work and excellent customer service.
                     </p>
+                  </Col>
+                  <Col xs={12} className="span-tap ">
+                    <span
+                      onClick={() => {
+                        return this.onChoose("ALL");
+                      }}
+                    >
+                      All
+              </span>
+                    <span
+                      variant="outline-success"
+                      onClick={() => {
+                        return this.onChoose("2D");
+                      }}
+                    >
+                      2D
+              </span>
+                    <span
+                      variant="outline-success"
+                      onClick={() => {
+                        return this.onChoose("3D");
+                      }}
+                    >
+                      3D
+              </span>
+                    <span
+                      variant="outline-success"
+                      onClick={() => {
+                        return this.onChoose("VFX");
+                      }}
+                    >
+                      VFX
+              </span>
+                    <span
+                      variant="outline-success"
+                      onClick={() => {
+                        return this.onChoose("App");
+                      }}
+                    >
+                      App
+              </span>
+                    <span
+                      variant="outline-success"
+                      onClick={() => {
+                        return this.onChoose("Website");
+                      }}
+                    >
+                      Website
+              </span>
+                    <span
+                      variant="outline-success"
+                      onClick={() => {
+                        return this.onChoose("Interaction");
+
+                      }}
+                    >
+                      Interaction
+              </span>
+                  </Col>
+                  <Col xs={12} className="p-0 mt-3">
+                    <Row>
+                      {this.state.newData.map(d => {
+                        return <Col xs={4} >
+                          <div className="works-div mt-3 mb-3">
+                            <figure className="works-img"><img src={d.url} /></figure>
+                            <div className="works-info">
+                              <p>{d.title}</p>
+                              <h4>{d.name}<span className="float-right">{d.year}</span></h4>
+                            </div>
+                          </div>
+                        </Col>;
+                      })}
+                    </Row>
                   </Col>
                 </Row>
               </Col>
