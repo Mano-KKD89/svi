@@ -111,5 +111,45 @@
             }
         }
     }
+    .p-sec{
+        p{
+          font-size: 24px;
+          color: $theme2;
+          font-family: "Barlow-Light";
+          line-height: 28px;
+          margin: 50px 0;
+        }
+    }
 }
 
+.sevice-sec{
+    background: #0c1047;
+    h1{
+        color: #fff;
+        font-family: "Barlow-SemiBold";
+        font-size: 44px;
+        span{
+            color: $theme1;
+        }
+    }
+    p{
+        color: #fff;
+        font-size: 20px;
+        margin: 25px 0;
+        font-family: "Barlow-Medium";
+    }
+    a{
+        background-image: linear-gradient(to right,$theme1,$theme3);
+        display: inline-block;
+        padding: 15px 20px;
+        border-radius: 25px;
+        font-size: 14px;
+        font-family: "Barlow-SemiBold";
+        color: #ffffff;
+        img{
+            width: 18px;
+            margin-right: 10px
+        }
+    }
+   
+}
