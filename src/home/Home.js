@@ -16,7 +16,7 @@ class Home extends Component {
   }
 
   render() {
-    const { hits } = this.state;
+    
     return (
       <>
         <Row>
