@@ -3,7 +3,7 @@ import LandingBg from "../images/Landing-page-Backround.svg";
 import PlayIcon from "../images/play-icon.svg";
 import LandingIllustration from "../images/Landing-page- illustration.svg";
 import Landing2DGraphics from "../images/Landing-2D-Graphics.svg";
-import { Container, Row, Col, Button, Link } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import "./home.scss";
 import banner from "../images/about-us.svg";
 class Home extends Component {
