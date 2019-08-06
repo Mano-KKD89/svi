@@ -7,6 +7,7 @@ class Blogdata extends Component {
         <Container>
           <Row>
             <Col>Blogdata form</Col>
+            <Button variant="outline-success">click</Button>
           </Row>
         </Container>
       </>
