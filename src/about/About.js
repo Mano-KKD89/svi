@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import Slider from "react-slick";
 import "./about.scss";
 import banner from "../images/about-us.svg";
 import imgfirst from "../images/About-us-1.svg";
@@ -11,6 +12,9 @@ class About extends Component {
     super();
   }
   render() {
+    var settings = {
+      dots: true
+    };
     return (
       <>
         <Row>
@@ -61,6 +65,22 @@ class About extends Component {
             </Container>
           </Col>
         </Row>
+        {/* <div className="container-li">
+          <Slider {...settings}>
+            <div>
+            <img src={banner}></img>
+            </div>
+            <div>
+            <img src={banner}></img><p>hi</p>
+            </div>
+            <div>
+            <img src={banner}></img><p>hello</p>
+            </div>
+            <div>
+            <img src={banner}></img><p>muthu</p>
+            </div>
+          </Slider>
+        </div> */}
       </>
         );
       }

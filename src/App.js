@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import { routes } from "./Routes";
 import Header from "./header/Header";
+import Footer from "./footer/Footer";
 import Admin from "./admin/Admin";
 import { PrivateRoutes } from "./_helpers/PrivateRoutes";
 import Notfound from "./Notfound";
@@ -25,7 +26,6 @@ function App() {
     <>
       <Router>
         <Header />
-
         <Col xs={12} className="Whole-container">
           <Switch>
             {routes.map(url => {
@@ -35,6 +35,7 @@ function App() {
             <Route component={Notfound} />
           </Switch>
         </Col>
+        <Footer />
       </Router>
     </>
   );
