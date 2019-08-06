@@ -14,8 +14,7 @@ function App() {
     <>
       <Router>
         <Header />
-         
-            <Col xs={12} className="Whole-container">
+         <Col xs={12} className="Whole-container">
               <Switch>
                 {routes.map(url => {
                   return <Route exact {...url} />;
@@ -24,7 +23,6 @@ function App() {
                 <Route component={Notfound} />
               </Switch>
             </Col>
-         
       </Router>
     </>
   );
