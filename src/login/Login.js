@@ -15,6 +15,7 @@ class Login extends Component {
   login() {
     console.log(this.state.userName, this.state.password);
     localStorage.setItem("authToken", "true");
+    this.props.history.push("/admin");
     // axios
     //   .post("http://38354b1c.ngrok.io/api/v1/auth/login", {
     //     email: this.state.userName,
