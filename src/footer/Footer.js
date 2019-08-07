@@ -15,10 +15,9 @@ class About extends Component {
       dots: true
     };
     return (
-      <>
-        <Row>
-          <Col xs={12}>
-            <div className="footer mt-5 pt-5">
+      <>       
+          <Col xs={12} className="footer mt-5 pt-5">
+            <div>
               <Container>
                 <Row>
                   <Col xs={3}>
@@ -86,8 +85,7 @@ class About extends Component {
               </div>
             </div>
           </Col>
-        </Row>
-      </>
+       </>
     );
   }
 }

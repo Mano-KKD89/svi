@@ -213,21 +213,30 @@
         }
       
     }
+    
 }
 .create-sec{
-  
-    .create-inner{
+    .img-create{
        
-        overflow: auto;
-        white-space: nowrap;
-        .img-create{
-            display: inline-block;
-            margin-bottom: 0;
-            img{
-                width: 100%;
-            }
+        margin: 0;
+        img{
+            width: 100%;
+            
         }
     }
+  
+    // .create-inner{
+       
+    //     overflow: auto;
+    //     white-space: nowrap;
+    //     .img-create{
+    //         display: inline-block;
+    //         margin-bottom: 0;
+    //         img{
+    //             width: 100%;
+    //         }
+    //     }
+    // }
    
 }
 .subscribe-sec{
@@ -339,6 +348,82 @@
                     top: 0;bottom: 0;left: 0;right: 0;
                 }
             }
+        }
+    }
+}
+.customer-review-section{
+    .title-sec{
+        margin-top: 150px;
+        position: relative;
+        margin-bottom: 20px;
+       
+        h2{
+            color: $theme1;
+            font-family: "Barlow-SemiBold";
+            font-size: 38px;
+            span{
+                color: $theme2;                
+            }
+        }
+        p{
+            font-size: 22px;
+            color: $theme2;
+            font-family: "Barlow-Light";
+            line-height: 28px;
+            margin-top: 10px;
+        }
+        
+    }
+    .review-inner{
+        padding: 50px;
+        border: 1px solid #eeeeee;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.12);
+       
+          .review-info{
+              text-align: center;
+            
+              h3{
+                color: $theme2;
+                font-family: "Barlow-SemiBold";
+                font-size: 28px;
+              }
+              h5{
+                color: $theme1;
+                font-size: 18px;
+                font-family: "Barlow-Medium";
+              }
+              p{
+                font-size: 20px;
+                color: $theme2;
+                font-family: "Barlow-Light";
+                line-height: 28px;
+                padding-top: 25px;
+                width: 90%;
+                margin: auto;
+            }
+          }
+          .img-create{
+            margin: 0;
+            img{
+                width: 100%;
+                padding: 25%;
+                border-radius: 50%;
+                opacity: .25;
+            }
+          }
+        .slick-current{
+            .img-create{
+                img{
+                    padding: 15%;
+                    opacity: 1;
+                }           
+            }
+        }
+    }
+   .img-client{
+        img{
+            height: 100px;
         }
     }
 }

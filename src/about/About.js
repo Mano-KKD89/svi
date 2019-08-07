@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
-import Slider from "react-slick";
+
 import "./about.scss";
 import banner from "../images/about-us.svg";
 import imgfirst from "../images/About-us-1.svg";

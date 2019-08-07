@@ -1,20 +1,29 @@
 import React, { Component } from "react";
 import LandingBg from "../images/Landing-page-Backround.svg";
 import PlayIcon from "../images/play-icon.svg";
-import LandingIllustration from "../images/Landing-page- illustration.svg";
+import LandingIllustration from "../images/subscrib-illustration.svg";
 import Landing2DGraphics from "../images/Landing-2D-Graphics.svg";
 import LandingIllustration2 from "../images/Landing-illustration-2.svg";
 import LatestWork from "../images/Latest-work.svg";
 import SubscribIllustration from "../images/subscrib-illustration.svg";
+import User from "../images/user.jpg";
+import php from "../images/php.png";
+import atp from "../images/atp.png";
+import teamviewer from "../images/teamviewer.png";
 import { Container, Row, Col, Button, Link, InputGroup, FormControl } from "react-bootstrap";
 import "./home.scss";
 import CreativeWork1 from "../images/Creative-work1.svg";
 import { Swiper, Navigation, Pagination } from 'swiper/dist/js/swiper.esm.js';
 import ReactIdSwiperCustom from 'react-id-swiper/lib/ReactIdSwiper.custom';
+import Slider from "react-slick";
+import StarRatings from 'react-star-ratings';
+
 class Home extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
+      nav1: null,
+      nav2: null,
       profile: [
         {
           name: "Set Medeling",
@@ -190,6 +199,12 @@ class Home extends Component {
     };
     this.onChoose = this.onChoose.bind(this);
   }
+  componentDidMount() {
+    this.setState({
+      nav1: this.slider1,
+      nav2: this.slider2
+    });
+  }
   onChoose = type => {
     console.log(type, "type");
     if (type === "ALL") {
@@ -205,7 +220,54 @@ class Home extends Component {
       });
     }
   };
+  // changeRating( newRating, name ) {
+  //   this.setState({
+  //     rating: "5"
+  //   });
+  // }
   render() {
+    const settings1 = {
+      className: "multiple-items",
+      dots: false,
+      infinite: true,
+      centerPadding: "60px",
+      slidesToShow: 4,
+      speed: 500
+    };
+    const settings = {
+      className: "multiple-items",
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    };
     const params = {
       // Provide Swiper class as props
       Swiper,
@@ -245,11 +307,10 @@ class Home extends Component {
                     <h1>We Provide<span>Top Quality</span>&ensp;Services</h1>
                     <p>Perfect place for your perfect business.</p>
                     <a href=""><img src={PlayIcon} />Watch video</a>
-
                   </Col>
                 </Row>
               </Col>
-            </Container>i
+            </Container>
           </Col>
         </Row>
         <Row>
@@ -430,43 +491,221 @@ class Home extends Component {
         </Row>
         <Row>
           <Col className="create-sec " >
-            <Row>
-              <Col xs={12}>
-                <Row>
-                  <div className="create-inner">
-                    <figure className="img-create">
-                      <img src={CreativeWork1} alt="{CreativeWork1}" />
-                    </figure>
-                    <figure className="img-create">
-                      <img src={CreativeWork1} alt="{CreativeWork1}" />
-                    </figure>
-                    <figure className="img-create">
-                      <img src={CreativeWork1} alt="{CreativeWork1}" />
-                    </figure>
-                    <figure className="img-create">
-                      <img src={CreativeWork1} alt="{CreativeWork1}" />
-                    </figure>
-                  </div>
-                </Row>
-              </Col>
-            </Row>
+            <Col xs={12} className="">
+              <Slider {...settings}>
+                <figure className="img-create">
+                  <img src={CreativeWork1} alt="{CreativeWork1}" />
+                </figure>
+                <figure className="img-create">
+                  <img src={CreativeWork1} alt="{CreativeWork1}" />
+                </figure>
+                <figure className="img-create">
+                  <img src={CreativeWork1} alt="{CreativeWork1}" />
+                </figure>
+                <figure className="img-create">
+                  <img src={CreativeWork1} alt="{CreativeWork1}" />
+                </figure>
+                <figure className="img-create">
+                  <img src={CreativeWork1} alt="{CreativeWork1}" />
+                </figure>
+                <figure className="img-create">
+                  <img src={CreativeWork1} alt="{CreativeWork1}" />
+                </figure>
+              </Slider>
+            </Col>
           </Col>
         </Row>
         <Row>
-          <Col className="create-sec " >
-            <Row>
+          <Col className="customer-review-section">
+            <Container>
               <Col xs={12}>
                 <Row>
-                  {<ReactIdSwiperCustom {...params}>
-                    <div><img src={LandingIllustration} alt="LandingIllustration" /></div>
-                    <div><img src={LandingIllustration} alt="LandingIllustration" /></div>
-                    <div><img src={LandingIllustration} alt="LandingIllustration" /></div>
-                    <div><img src={LandingIllustration} alt="LandingIllustration" /></div>
-                    <div><img src={LandingIllustration} alt="LandingIllustration" /></div>
-                  </ReactIdSwiperCustom>}
+                  <Col xs={12} className="text-center title-sec">
+                    <h2>Our <span>customers review</span></h2>
+                    <p>Customer Review Sites for Collecting Business & Product Reviews</p>
+                  </Col>
+                  <Col xs={12} className="inner-sec">
+                    <Row>
+                      <Col xs={12} sm={11} className="review-inner mx-auto">
+                        <Slider
+                          asNavFor={this.state.nav1}
+                          ref={slider => (this.slider2 = slider)}
+                          slidesToShow={5}
+                          swipeToSlide={true}
+                          focusOnSelect={true}
+                          centerMode={true}
+                        >
+                          <div>
+                            <figure className="img-create">
+                              <img src={User} alt="{User}" />
+                            </figure>
+                          </div>
+                          <div>
+                            <figure className="img-create">
+                              <img src={User} alt="{User}" />
+                            </figure>
+                          </div>
+                          <div>
+                            <figure className="img-create">
+                              <img src={User} alt="{User}" />
+                            </figure>
+                          </div>
+                          <div>
+                            <figure className="img-create">
+                              <img src={User} alt="{User}" />
+                            </figure>
+                          </div>
+                          <div>
+                            <figure className="img-create">
+                              <img src={User} alt="{User}" />
+                            </figure>
+                          </div>
+                          <div>
+                            <figure className="img-create">
+                              <img src={User} alt="{User}" />
+                            </figure>
+                          </div>
+                        </Slider>
+                        <Slider
+                          asNavFor={this.state.nav2}
+                          ref={slider => (this.slider1 = slider)}
+                        >
+                          <div className="review-info">
+                            <h3>Ava.Isabella</h3>
+                            <h5>Ui Designer</h5>
+                            <StarRatings
+                              rating={4}
+                              starRatedColor="Blue"
+                              changeRating={this.changeRating}
+                              numberOfStars={5}
+                              name='rating'
+                              starDimension="20px"
+                              starSpacing="5px"
+                            />
+                            <p>We "XYZ" are specialized in understanding your needs and get the desired output/result
+                          with great elegance. We developed creative designs for different business requirement within the
+                      stipulated time period. We reply on quality work and excellent customer service.</p>
+                          </div>
+                          <div className="review-info">
+                            <h3>Ava.Isabella</h3>
+                            <h5>Ui Designer</h5>
+                            <StarRatings
+                              rating={4}
+                              starRatedColor="Blue"
+                              changeRating={this.changeRating}
+                              numberOfStars={5}
+                              name='rating'
+                              starDimension="20px"
+                              starSpacing="5px"
+                            />
+                            <p>We "XYZ" are specialized in understanding your needs and get the desired output/result
+                          with great elegance. We developed creative designs for different business requirement within the
+                      stipulated time period. We reply on quality work and excellent customer service.</p>
+                          </div>
+                          <div className="review-info">
+                            <h3>Ava.Isabella</h3>
+                            <h5>Ui Designer</h5>
+                            <StarRatings
+                              rating={4}
+                              starRatedColor="Blue"
+                              changeRating={this.changeRating}
+                              numberOfStars={5}
+                              name='rating'
+                              starDimension="20px"
+                              starSpacing="5px"
+                            />
+                            <p>We "XYZ" are specialized in understanding your needs and get the desired output/result
+                          with great elegance. We developed creative designs for different business requirement within the
+                      stipulated time period. We reply on quality work and excellent customer service.</p>
+                          </div>
+                          <div className="review-info">
+                            <h3>Ava.Isabella</h3>
+                            <h5>Ui Designer</h5>
+                            <StarRatings
+                              rating={4}
+                              starRatedColor="Blue"
+                              changeRating={this.changeRating}
+                              numberOfStars={5}
+                              name='rating'
+                              starDimension="20px"
+                              starSpacing="5px"
+                            />
+                            <p>We "XYZ" are specialized in understanding your needs and get the desired output/result
+                          with great elegance. We developed creative designs for different business requirement within the
+                      stipulated time period. We reply on quality work and excellent customer service.</p>
+                          </div>
+                          <div className="review-info">
+                            <h3>Ava.Isabella</h3>
+                            <h5>Ui Designer</h5>
+                            <StarRatings
+                              rating={4}
+                              starRatedColor="Blue"
+                              changeRating={this.changeRating}
+                              numberOfStars={5}
+                              name='rating'
+                              starDimension="20px"
+                              starSpacing="5px"
+                            />
+                            <p>We "XYZ" are specialized in understanding your needs and get the desired output/result
+                          with great elegance. We developed creative designs for different business requirement within the
+                      stipulated time period. We reply on quality work and excellent customer service.</p>
+                          </div>
+                          <div className="review-info">
+                            <h3>Ava.Isabella</h3>
+                            <h5>Ui Designer</h5>
+                            <StarRatings
+                              rating={4}
+                              starRatedColor="Blue"
+                              changeRating={this.changeRating}
+                              numberOfStars={5}
+                              name='rating'
+                              starDimension="20px"
+                              starSpacing="5px"
+                            />
+                            <p>We "XYZ" are specialized in understanding your needs and get the desired output/result
+                          with great elegance. We developed creative designs for different business requirement within the
+                      stipulated time period. We reply on quality work and excellent customer service.</p>
+                          </div>
+                        </Slider>
+                      </Col>
+                    </Row>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col xs={12} className="text-center title-sec">
+                    <h2>Our <span>Valuable Clients</span></h2>                   
+                  </Col>
+                  <Col xs={12} className="inner-sec">
+                  <Slider {...settings1}>
+                <figure className="img-client">
+                  <img src={teamviewer} alt="{teamviewer}" />
+                </figure>
+                <figure className="img-client">
+                  <img src={atp} alt="{atp}" />
+                </figure>
+                <figure className="img-client">
+                  <img src={teamviewer} alt="{teamviewer}" />
+                </figure>
+                <figure className="img-client">
+                  <img src={atp} alt="{atp}" />
+                </figure>
+                <figure className="img-client">
+                  <img src={teamviewer} alt="{teamviewer}" />
+                </figure>
+                <figure className="img-client">
+                  <img src={atp} alt="{atp}" />
+                </figure>
+                <figure className="img-client">
+                  <img src={teamviewer} alt="{teamviewer}" />
+                </figure>
+                <figure className="img-client">
+                  <img src={atp} alt="{atp}" />
+                </figure>
+              </Slider>
+                  </Col>
                 </Row>
               </Col>
-            </Row>
+            </Container>
           </Col>
         </Row>
         <Row>
