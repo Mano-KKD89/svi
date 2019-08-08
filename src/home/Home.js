@@ -10,7 +10,7 @@ import User from "../images/user.jpg";
 import php from "../images/php.png";
 import atp from "../images/atp.png";
 import teamviewer from "../images/teamviewer.png";
-import { Container, Row, Col, Button, Link, InputGroup, FormControl } from "react-bootstrap";
+import { Container, Row, Col, Button, Link, InputGroup, FormControl, Form } from "react-bootstrap";
 import "./home.scss";
 import CreativeWork1 from "../images/Creative-work1.svg";
 import { Swiper, Navigation, Pagination } from 'swiper/dist/js/swiper.esm.js';
@@ -483,6 +483,11 @@ class Home extends Component {
                         </Col>;
                       })}
                     </Row>
+                    <Row>
+                    <Col xs={12} className="text-center">
+                      <span className="view-project">View All Projects</span>
+                    </Col>
+                    </Row>
                   </Col>
                 </Row>
               </Col>
@@ -673,35 +678,35 @@ class Home extends Component {
                 </Row>
                 <Row>
                   <Col xs={12} className="text-center title-sec">
-                    <h2>Our <span>Valuable Clients</span></h2>                   
+                    <h2>Our <span>Valuable Clients</span></h2>
                   </Col>
                   <Col xs={12} className="inner-sec">
-                  <Slider {...settings1}>
-                <figure className="img-client">
-                  <img src={teamviewer} alt="{teamviewer}" />
-                </figure>
-                <figure className="img-client">
-                  <img src={atp} alt="{atp}" />
-                </figure>
-                <figure className="img-client">
-                  <img src={teamviewer} alt="{teamviewer}" />
-                </figure>
-                <figure className="img-client">
-                  <img src={atp} alt="{atp}" />
-                </figure>
-                <figure className="img-client">
-                  <img src={teamviewer} alt="{teamviewer}" />
-                </figure>
-                <figure className="img-client">
-                  <img src={atp} alt="{atp}" />
-                </figure>
-                <figure className="img-client">
-                  <img src={teamviewer} alt="{teamviewer}" />
-                </figure>
-                <figure className="img-client">
-                  <img src={atp} alt="{atp}" />
-                </figure>
-              </Slider>
+                    <Slider {...settings1}>
+                      <figure className="img-client">
+                        <img src={teamviewer} alt="{teamviewer}" />
+                      </figure>
+                      <figure className="img-client">
+                        <img src={atp} alt="{atp}" />
+                      </figure>
+                      <figure className="img-client">
+                        <img src={teamviewer} alt="{teamviewer}" />
+                      </figure>
+                      <figure className="img-client">
+                        <img src={atp} alt="{atp}" />
+                      </figure>
+                      <figure className="img-client">
+                        <img src={teamviewer} alt="{teamviewer}" />
+                      </figure>
+                      <figure className="img-client">
+                        <img src={atp} alt="{atp}" />
+                      </figure>
+                      <figure className="img-client">
+                        <img src={teamviewer} alt="{teamviewer}" />
+                      </figure>
+                      <figure className="img-client">
+                        <img src={atp} alt="{atp}" />
+                      </figure>
+                    </Slider>
                   </Col>
                 </Row>
               </Col>
@@ -789,6 +794,54 @@ class Home extends Component {
                     </Row>
                   </Col>
                 </Row>
+              </Col>
+            </Container>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="request-section">
+            <Container>
+              <Col xs={12}>
+
+                <div className="request-inner">
+                  <Col xs={12} className="text-center title-sec">
+                    <h2>Request Custom Design</h2>
+                  </Col>
+                  <Col xs={12} className="inner-sec">
+                    <Form>
+                      <Row className="form-div">
+                        <Col xs={6}>
+                          <Form.Group controlId="exampleForm.ControlInput1">
+                            <Form.Control type="email" placeholder="Your Name" />
+                          </Form.Group>
+                        </Col>
+                        <Col xs={6}>
+                          <Form.Group controlId="exampleForm.ControlInput1">
+                            <Form.Control type="email" placeholder="Your Address" />
+                          </Form.Group>
+                        </Col>
+                        <Col xs={6}>
+                          <Form.Group controlId="exampleForm.ControlInput1">
+                            <Form.Control type="email" placeholder="Your Subject" />
+                          </Form.Group>
+                        </Col>
+                        <Col xs={6}>
+                          <Form.Group controlId="exampleForm.ControlInput1">
+                            <Form.Control type="email" placeholder="Your Phone" />
+                          </Form.Group>
+                        </Col>
+                        <Col xs={12}>
+                          <Form.Group controlId="exampleForm.ControlTextarea1">
+                            <Form.Control as="textarea" rows="4" placeholder="Write Message" />
+                          </Form.Group>
+                        </Col>
+                        <Col xs={12} className="text-center">
+                          <Button className="btn-span" type="submit">SEND</Button>
+                        </Col>
+                      </Row>
+                    </Form>
+                  </Col>
+                </div>
               </Col>
             </Container>
           </Col>
