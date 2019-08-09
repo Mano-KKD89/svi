@@ -16,7 +16,6 @@ class About extends Component {
     };
     return (
       <>
-        <Row>
           <Col xs={12}>
             <div className="footer mt-5 pt-5">
               <Container>
@@ -86,7 +85,6 @@ class About extends Component {
               </div>
             </div>
           </Col>
-        </Row>
       </>
     );
   }
