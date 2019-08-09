@@ -7,6 +7,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { routes } from "./Routes";
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
+import Request from "./request/Request";
 import Admin from "./admin/Admin";
 import { PrivateRoutes } from "./_helpers/PrivateRoutes";
 import Notfound from "./Notfound";
@@ -35,6 +36,7 @@ function App() {
             <Route component={Notfound} />
           </Switch>
         </Col>
+        <Request/>
         <Footer />
       </Router>
     </>

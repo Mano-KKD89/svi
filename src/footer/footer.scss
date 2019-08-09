@@ -53,4 +53,16 @@
             }
         }
     }
+    .subcri {
+        background-image: linear-gradient(to right, #2eccfc, #1951de);
+        color: #fff;
+        border: none;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 0 20px;
+    }
+    .email-sub input.form-control{
+        background: transparent;
+        border: 1px solid #29adf4;
+    }
 }

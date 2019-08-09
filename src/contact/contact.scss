@@ -1,0 +1,47 @@
+@import "../mixins.scss";
+.contact-banner-about {
+    background: rgba(1,149,248,1);
+    background: -moz-linear-gradient(left, rgba(1,149,248,1) 0%, rgba(21,82,187,1) 23%, rgba(42,7,119,1) 37%, rgba(45,2,115,1) 63%, rgba(35,39,165,1) 83%, rgba(25,81,222,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(1,149,248,1)), color-stop(23%, rgba(21,82,187,1)), color-stop(37%, rgba(42,7,119,1)), color-stop(63%, rgba(45,2,115,1)), color-stop(83%, rgba(35,39,165,1)), color-stop(100%, rgba(25,81,222,1)));
+    background: -webkit-linear-gradient(left, rgba(1,149,248,1) 0%, rgba(21,82,187,1) 23%, rgba(42,7,119,1) 37%, rgba(45,2,115,1) 63%, rgba(35,39,165,1) 83%, rgba(25,81,222,1) 100%);
+    background: -o-linear-gradient(left, rgba(1,149,248,1) 0%, rgba(21,82,187,1) 23%, rgba(42,7,119,1) 37%, rgba(45,2,115,1) 63%, rgba(35,39,165,1) 83%, rgba(25,81,222,1) 100%);
+    background: -ms-linear-gradient(left, rgba(1,149,248,1) 0%, rgba(21,82,187,1) 23%, rgba(42,7,119,1) 37%, rgba(45,2,115,1) 63%, rgba(35,39,165,1) 83%, rgba(25,81,222,1) 100%);
+    background: linear-gradient(to right, rgba(1,149,248,1) 0%, rgba(21,82,187,1) 23%, rgba(42,7,119,1) 37%, rgba(45,2,115,1) 63%, rgba(35,39,165,1) 83%, rgba(25,81,222,1) 100%);
+    padding: 3% 0 2%;
+    h1 {
+        font-size: 34px;
+    }
+    h4 {
+        width: 500px;
+        font-size: 38px;
+        font-weight: bolder;
+        padding-top: 14%;
+    }
+    img {
+        width: 450px;
+    }
+    small {
+        font-size: 14px;
+    }
+    .map-sec {
+        h2 {
+            font-size: 12px;
+            font-family: "Barlow-SemiBold";
+            color: #484258;
+        }
+        
+    }
+    .map-sec h2:after {
+        border-bottom: 2px solid #2AB7F6;
+        display: block;
+        width: 100px;
+        content: "";
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    .map-sec h3 {
+        font-size: 40px;
+        font-family: "Barlow-Bold";
+        color: #000;
+    }
+}
