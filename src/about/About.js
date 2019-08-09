@@ -45,10 +45,11 @@ class About extends Component {
                 </div>
               </div>
             </div>
-            <Container className="about-us mt-5 pt-2">
+            <Container className="about-us mt-5 pt-2 mb-5 pb-5">
               {/* <h2>About Us</h2> */}
               <div className="row">
-                <Col xs={6}>
+                <Col xs={6} className="d-flex align-items-center">
+                  <div>
                   <h3>Get to know us</h3>
                   <h4>
                     We are promising service provider in the field of Graphics
@@ -56,23 +57,27 @@ class About extends Component {
                     animation services and are acknowledged/recognized accuracy
                     and timely execution of work.
                   </h4>
+                  </div>
                 </Col>
-                <Col xs={6}>
+                <Col xs={6} className="d-flex align-items-center pl-5">
                   <img src={imgfirst} />
                 </Col>
-                <Col xs={6} className="mt-5">
+                <Col xs={6} className="mt-5 d-flex align-items-center">
                   <img src={imgsec} />
                 </Col>
-                <Col xs={6} className="mt-5">
+                <Col xs={6} className="mt-5 d-flex align-items-center">
+                  <div className="ml-5">
                   <h3>Our Vision</h3>
-                  <h4>
+                  <h4 >
                     We are promising service provider in the field of Graphics
                     and animations. We deal with all graphics, VFX, 2D, 3D
                     animation services and are acknowledged/recognized accuracy
                     and timely execution of work.
                   </h4>
+                  </div>
                 </Col>
-                <Col xs={6} className="mt-5">
+                <Col xs={6} className="mt-5 d-flex align-items-center">
+                  <div>
                   <h3>Our Mision</h3>
                   <h4>
                     We are promising service provider in the field of Graphics
@@ -80,30 +85,15 @@ class About extends Component {
                     animation services and are acknowledged/recognized accuracy
                     and timely execution of work.
                   </h4>
+                  </div>
                 </Col>
-                <Col xs={6} className="mt-5">
+                <Col xs={6} className="mt-5 d-flex align-items-center pl-5">
                   <img src={imgthird} />
                 </Col>
               </div>
             </Container>
           </Col>
         </Row>
-        {/* <div className="container-li">
-          <Slider {...settings}>
-            <div>
-            <img src={banner}></img>
-            </div>
-            <div>
-            <img src={banner}></img><p>hi</p>
-            </div>
-            <div>
-            <img src={banner}></img><p>hello</p>
-            </div>
-            <div>
-            <img src={banner}></img><p>muthu</p>
-            </div>
-          </Slider>
-        </div> */}
       </>
     );
   }

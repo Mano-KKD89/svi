@@ -50,18 +50,17 @@ class About extends Component {
                     <li>Press Enquiries</li>
                   </ul>
                 </Col>
-                <Col xs={3}>
+                <Col xs={3} className="p-0">
                   <h2 className="last">Subscribe via Email</h2>
                   <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
                   <Form>
-                    <InputGroup className="mb-3">
+                    <InputGroup className="mb-3 email-sub">
                       <FormControl
-                        placeholder="Email Address"
                         aria-label="Email Address"
                         aria-describedby="Email Address"
                       />
                       <InputGroup.Append>
-                        <Button variant="outline-secondary">Subscribe</Button>
+                        <Button variant="outline-secondary" className="subcri">Subscribe</Button>
                       </InputGroup.Append>
                     </InputGroup>
                   </Form>
@@ -72,7 +71,7 @@ class About extends Component {
               <Container>
                 <Row>
                   <Col xs={6}>Copyright © 2019. Sreenevasa Infotech, India.</Col>
-                  <Col xs={6}>
+                  <Col xs={6} className="text-right">
                     <ul>
                       <li><NavLink to="#"> <img src={instagramf} alt="instagram" /></NavLink></li>
                       <li><NavLink to="#"> <img src={twitterf} alt="twitter" /></NavLink></li>
