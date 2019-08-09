@@ -802,7 +802,6 @@ class Home extends Component {
           <Col className="request-section">
             <Container>
               <Col xs={12}>
-
                 <div className="request-inner">
                   <Col xs={12} className="text-center title-sec">
                     <h2>Request Custom Design</h2>
@@ -849,7 +848,5 @@ class Home extends Component {
       </>
     );
   }
-
 }
-
 export default Home;

@@ -121,7 +121,6 @@
         }
     }
 }
-
 .sevice-sec{
     background: #0c1047;
     h2{
@@ -150,10 +149,8 @@
             width: 18px;
             margin-right: 10px
         }
-    }
-   
+    }   
 }
-
 .latest-work-sec{
     .title-sec{
         margin-top: 150px;
@@ -210,8 +207,7 @@
                 font-family: "Barlow-SemiBold";
                 margin-bottom: 0px;
             }
-        }
-      
+        }      
     }
     .view-project{
         display: inline-block;
@@ -223,31 +219,16 @@
         border-radius: 25px;
         margin-top: 40px;
         margin-bottom: 150px;
+        cursor: pointer;
      }
 }
 .create-sec{
     .img-create{
-       
         margin: 0;
         img{
-            width: 100%;
-            
+            width: 100%;            
         }
-    }
-  
-    // .create-inner{
-       
-    //     overflow: auto;
-    //     white-space: nowrap;
-    //     .img-create{
-    //         display: inline-block;
-    //         margin-bottom: 0;
-    //         img{
-    //             width: 100%;
-    //         }
-    //     }
-    // }
-   
+    }  
 }
 .subscribe-sec{
   background-image: url(../images/subscribe-bg.svg);
@@ -485,9 +466,11 @@
                     border-radius: 5px;
                     font-size: 18px;
                     font-family: "Barlow-Medium";
-                    padding: 1.75rem 1.75rem;
-                    border: 2px solid #f1f1f1;
-                }           
+                    border: 2px solid #f1f1f1;                   
+                }  
+                input{
+                    height: 56px;
+                }         
             }
             .btn-span{
                 background-image: linear-gradient(to right, #2eccfc, #1951de);

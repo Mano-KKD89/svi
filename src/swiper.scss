@@ -438,7 +438,7 @@
   .swiper-scrollbar {
     border-radius: 10px;
     position: relative;
-    -ms-touch-action: none;
+    touch-action: none;
     background: rgba(0, 0, 0, 0.1);
   }
   
@@ -669,5 +669,5 @@
   
   .swiper-container-coverflow .swiper-wrapper {
     /* Windows 8 IE 10 fix */
-    -ms-perspective: 1200px;
+    perspective: 1200px;
   }
