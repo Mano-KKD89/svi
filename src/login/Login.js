@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
+import axios from "axios";
+import jwt_decode from "jwt-decode";
 import { Redirect } from "react-router-dom";
 class Login extends Component {
   constructor(props) {
@@ -14,6 +16,19 @@ class Login extends Component {
     console.log(this.state.userName, this.state.password);
     localStorage.setItem("authToken", "true");
     this.props.history.push("/admin");
+    // axios
+    //   .post("http://38354b1c.ngrok.io/api/v1/auth/login", {
+    //     email: this.state.userName,
+    //     password: this.state.password
+    //   })
+    //   .then(res => {
+    //     console.log(jwt_decode(res.data.token), "response");
+    //     localStorage.setItem("authToken", res.data.token);
+    //     this.props.history.push("/admin");
+    //   })
+    //   .catch(error => {
+    //     console.error(Error(error));
+    //   });
   }
 
   onChangeHandle = e => {
