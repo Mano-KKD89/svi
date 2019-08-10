@@ -11,7 +11,8 @@ import Request from "./request/Request";
 import Admin from "./admin/Admin";
 import { PrivateRoutes } from "./_helpers/PrivateRoutes";
 import Notfound from "./Notfound";
-import jwt_decode from "jwt-decode";
+// import jwt_decode from "jwt-decode";
+// import fire from './firebase';
 
 // if (localStorage.getItem("authToken")) {
 //   const tokenData = jwt_decode(localStorage.getItem("authToken"));

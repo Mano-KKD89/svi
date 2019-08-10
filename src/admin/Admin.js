@@ -5,12 +5,14 @@ import Aboutdata from "./Aboutdata";
 import Servicedata from "./Servicedata";
 import Blogdata from "./Blogdata";
 import Contactdata from "./Contactdata";
+import fire from '../firebase';
 class Admin extends Component {
   constructor(props) {
     super(props);
     this.logout = this.logout.bind(this);
   }
   logout() {
+    fire.auth().signOut();
     localStorage.removeItem("authToken");
     this.props.history.push("/login");
   }

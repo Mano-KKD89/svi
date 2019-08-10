@@ -1,21 +1,32 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Button, Form } from "react-bootstrap";
+import { Container, Row, Col, Button, Form, Toast } from "react-bootstrap";
 import axios from "axios";
 import jwt_decode from "jwt-decode";
 import { Redirect } from "react-router-dom";
+import fire from '../firebase';
 class Login extends Component {
   constructor(props) {
     super(props);
     this.login = this.login.bind(this);
     this.state = {
       userName: "",
-      password: ""
+      password: "",
+      loginError: null
     };
   }
   login() {
     console.log(this.state.userName, this.state.password);
-    localStorage.setItem("authToken", "true");
-    this.props.history.push("/admin");
+    
+fire.auth().signInWithEmailAndPassword(this.state.userName, this.state.password ).then( u => {
+console.log(u, 'logged in');
+localStorage.setItem("authToken", u.user.uid);
+this.props.history.push("/admin");
+}).catch( error => {
+  console.log(error.message, 'login error')
+  this.setState({
+    loginError: error.message
+  })
+})
     // axios
     //   .post("http://38354b1c.ngrok.io/api/v1/auth/login", {
     //     email: this.state.userName,
@@ -38,7 +49,7 @@ class Login extends Component {
       [e.target.name]: e.target.value
     });
   };
-
+ 
   render() {
     let { from } = this.props.location.state || { from: { pathname: "/" } };
     if (localStorage.getItem("authToken")) return <Redirect to={from} />;
@@ -72,6 +83,16 @@ class Login extends Component {
                   Login
                 </Button>
               </Form>
+              
+                {this.state.loginError != null ? (
+                 <Toast  onClose={() => this.setState({loginError: null})}>
+                  <Toast.Header>
+                    <small>Login error</small>
+                </Toast.Header>
+                <Toast.Body>Hello, world! This is a toast message.</Toast.Body>
+              </Toast>
+                ) : null }
+  
             </Col>
           </Row>
         </Container>

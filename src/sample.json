@@ -1,0 +1,14 @@
+ [
+  {
+      "id": 1,
+      "name": "sugu",
+      "username": "Sugu",
+      "email": "sugu@svi.com",
+    },
+  {
+      "id": 2,
+      "name": "mano",
+      "username": "manobalan",
+      "email": "mano@svi.com",
+    }
+  ]
