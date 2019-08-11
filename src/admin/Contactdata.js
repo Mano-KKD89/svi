@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Button, Table } from "react-bootstrap";
+import { Container, Row, Col, Button, Table, Badge } from "react-bootstrap";
 import fire from '../firebase';
 class Contactdata extends Component {
   constructor(props) {
@@ -88,7 +88,7 @@ class Contactdata extends Component {
                         <td>{data.address}</td>
 
                         <td>{data.message}</td>
-                        <td>{data.admin_read === false ? 'not read' : 'read'}</td>
+                        <td>{data.admin_read === false ? (<Badge variant="danger"> Unread</Badge>) : (<Badge variant="success">Readed</Badge>)}</td>
                         <td> <Button variant="outline-success" onClick={this.markAsRead.bind(this, (data))} >{data.admin_read === false ? 'Mark as read' : 'Mark as unread'}</Button> </td>
                       </tr>
                     )

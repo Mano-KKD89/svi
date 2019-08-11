@@ -11,6 +11,7 @@ class Blogdata extends Component {
       blogTitle: '',
       blogDescription: '',
       blogLink: '',
+      blogEditId: '',
       blogData: []
     }
     this.onFilechange = this.onFilechange.bind(this);
@@ -65,6 +66,10 @@ componentDidMount = () =>{
 
   }
   onUpload = () => {
+   
+   
+    if(this.state.uploadImg != '' && this.state.uploadImg != null) {
+      console.log(this.state.uploadImg, 'lskfjdslkfjksdlf')
     const uid = fire.database().ref().child('bolg').push().key;
     const { uploadImg } = this.state;
     const fileUploaded = storage.ref(`blog/${uploadImg.name}`).put(uploadImg);
@@ -76,8 +81,10 @@ componentDidMount = () =>{
     }, () => {
       storage.ref('blog').child(uploadImg.name).getDownloadURL().then(imgUrl => {
         this.setState({ imgUrl });
+        let newId = this.state.blogEditId != '' ? this.state.blogEditId : uid;
+        console.log(newId, 'newid')
         let data = {
-          blog_id: uid,
+          blog_id: newId,
           blog_title: this.state.blogTitle,
           blog_description: this.state.blogDescription,
           blog_link: this.state.blogLink,
@@ -85,10 +92,39 @@ componentDidMount = () =>{
         }
 
         let updates = {};
-        updates[`/blog/${uid}`] = data;
+        updates[`/blog/${newId}`] = data;
         fire.database().ref().update(updates);
         this.fetchBlogData();
       })
+    })
+  } else if(this.state.blogEditId) {
+    console.log(this.state, 'edited')
+    let data = {
+      blog_id: this.state.blogEditId,
+      blog_title: this.state.blogTitle,
+      blog_description: this.state.blogDescription,
+      blog_link: this.state.blogLink,
+      blog_img:this.state.imgUrl
+    }
+
+    let updates = {};
+    updates[`/blog/${this.state.blogEditId}`] = data;
+    fire.database().ref().update(updates);
+    this.fetchBlogData();
+  }
+  }
+  onDelete = id => {
+    fire.database().ref().child(`/blog/${id}`).remove();
+    // this.fetchBlogData();
+    window.location.reload();
+  }
+  onEdit = val => {
+    this.setState({
+      blogEditId: val.id,
+      imgUrl: val.imgpath,
+      blogTitle:  val.title,
+      blogDescription:  val.description,
+      blogLink:  val.link,
     })
   }
   render() {
@@ -106,6 +142,7 @@ componentDidMount = () =>{
                     type="text"
                     name="blogTitle"
                     placeholder="Blog title"
+                    value={this.state.blogTitle}
                     onChange={this.onChangeHandle}
                   />
                 </Form.Group>
@@ -116,6 +153,7 @@ componentDidMount = () =>{
                     type="text"
                     name="blogDescription"
                     placeholder="blog Description"
+                    value={this.state.blogDescription}
                     onChange={this.onChangeHandle}
                   />
                 </Form.Group>
@@ -125,15 +163,15 @@ componentDidMount = () =>{
                     type="text"
                     name="blogLink"
                     placeholder="blog Link"
+                    value={this.state.blogLink}
                     onChange={this.onChangeHandle}
                   />
                 </Form.Group>
                 <Form.Group controlId="formBasicPassword">
-                  <Form.Label>Password</Form.Label>
+                  <Form.Label>upload image</Form.Label>
                   <Form.Control
                     type="file"
                     name="uploadImg"
-
                     onChange={this.onFilechange}
                   />
                 </Form.Group>
@@ -156,6 +194,8 @@ componentDidMount = () =>{
                        description</th>
                     <th>link</th>
                     <th>image</th>
+                    <th></th>
+                    <th></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -173,6 +213,12 @@ componentDidMount = () =>{
                       <td>
                       <img style={{ height: '35px' }} src={data.imgpath} />
                       </td>
+                      <td><Button variant="outline-danger" onClick={this.onDelete.bind(this, data.id)}>
+                 Delete
+                </Button></td>
+                <td><Button variant="outline-warning" onClick={this.onEdit.bind(this, data)}>
+                 Edit
+                </Button></td>
                     </tr>
                     )
                   })}
