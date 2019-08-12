@@ -188,8 +188,8 @@ componentDidMount = () =>{
               <Table striped bordered hover>
                 <thead>
                   <tr>
-                    <th>#</th>
-                    <th>Blog Tiele</th>
+                    <th>#id</th>
+                    <th>Blog  Title</th>
                     <th>
                        description</th>
                     <th>link</th>
