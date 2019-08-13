@@ -11,6 +11,7 @@ class Blogdata extends Component {
       blogTitle: '',
       blogDescription: '',
       blogLink: '',
+      blogCategory:'',
       blogEditId: '',
       blogData: []
     }
@@ -24,23 +25,27 @@ componentDidMount = () =>{
     console.log('called');
     const databaseRef = fire.database().ref('blog');
     databaseRef.on('value', (snapshot) => {
-     
+      if(snapshot.val()) {
      const dd = Object.values(snapshot.val()); //for change objects to array of object
       console.log(dd, 'dd')
-      let newData = [];
-      for (let d of dd) {
-        newData.push({
-          id: d.blog_id,
-          title: d.blog_title,
-          description: d.blog_description,
-          link: d.blog_link,
-          imgpath: d.blog_img,
+      
+        let newData = [];
+        for (let d of dd) {
+          newData.push({
+            id: d.blog_id,
+            title: d.blog_title,
+            description: d.blog_description,
+            link: d.blog_link,
+            category: d.blog_category,
+            imgpath: d.blog_img,
+          })
+        }
+  
+        this.setState({
+          blogData: newData
         })
       }
-
-      this.setState({
-        blogData: newData
-      })
+     
     })
   }
   onChangeHandle = e => {
@@ -88,6 +93,7 @@ componentDidMount = () =>{
           blog_title: this.state.blogTitle,
           blog_description: this.state.blogDescription,
           blog_link: this.state.blogLink,
+          blog_category: this.state.blogCategory,
           blog_img: imgUrl
         }
 
@@ -104,6 +110,7 @@ componentDidMount = () =>{
       blog_title: this.state.blogTitle,
       blog_description: this.state.blogDescription,
       blog_link: this.state.blogLink,
+      blog_category: this.state.blogCategory,
       blog_img:this.state.imgUrl
     }
 
@@ -124,6 +131,7 @@ componentDidMount = () =>{
       imgUrl: val.imgpath,
       blogTitle:  val.title,
       blogDescription:  val.description,
+      blogCategory: val.category,
       blogLink:  val.link,
     })
   }
@@ -146,6 +154,25 @@ componentDidMount = () =>{
                     onChange={this.onChangeHandle}
                   />
                 </Form.Group>
+                {/* <Form.Group controlId="formBasicEmail">
+                  <Form.Label>Blog category</Form.Label>
+                  <Form.Control
+                    type="text"
+                    name="blogCategory"
+                    placeholder="Blog category"
+                    value={this.state.blogCategory}
+                    onChange={this.onChangeHandle}
+                  />
+                </Form.Group> */}
+                <Form.Group controlId="formGridState">
+      <Form.Label>State</Form.Label>
+      <Form.Control name="blogCategory" value={this.state.blogCategory}  onChange={this.onChangeHandle} as="select">
+        <option >Choose...</option>
+        <option value="2d">2D</option>
+        <option value="3d">3D</option>
+        <option value="vfx">VFX</option>
+      </Form.Control>
+    </Form.Group>
 
                 <Form.Group controlId="formBasicPassword">
                   <Form.Label>Blog Description</Form.Label>
@@ -190,6 +217,7 @@ componentDidMount = () =>{
                   <tr>
                     <th>#id</th>
                     <th>Blog  Title</th>
+                    <th>Category</th>
                     <th>
                        description</th>
                     <th>link</th>
@@ -207,6 +235,9 @@ componentDidMount = () =>{
                       </td>
                       <td>
                         {data.title}
+                      </td>
+                      <td>
+                        {data.category}
                       </td>
                       <td>{data.description}</td>
                       <td>{data.link}</td>
