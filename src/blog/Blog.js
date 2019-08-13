@@ -54,7 +54,7 @@ class Blog extends Component {
                       {this.state.blogData.map(data => {
                         return (
                           <Col xs={4}>
-                            <div key={data.id} className="works-div mt-3 mb-3">
+                            <div onClick={() => window.open(data.link, '_blank')} key={data.id} className="works-div mt-3 mb-3">
                               <figure className="img-grap">
                                 <img src={data.imgpath} alt={data.category} title={data.category} />
                               </figure>
@@ -62,7 +62,7 @@ class Blog extends Component {
                                 <h5>{data.category}</h5>
                                 <h3>{data.title}</h3>
                                 <p>{data.description.slice(0, 100)}{data.description.length > 100 && <span> ...</span>}</p>
-                                <a href={data.link} >Read More</a>
+                                <a target="_blank" href={data.link} >Read More</a>
                               </div>
                             </div>
                           </Col>
