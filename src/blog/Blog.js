@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Button} from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import fire from '../firebase';
 import "./blog.scss";
-class Blog extends Component {   
-  
+class Blog extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -28,7 +28,7 @@ class Blog extends Component {
         }
         this.setState({
           blogData: newData,
-         
+
         })
       }
     })
@@ -37,7 +37,7 @@ class Blog extends Component {
     return (
       <>
         <Row>
-            <Col className="latest-post-section">
+          <Col className="latest-post-section">
             <Container>
               <Col xs={12}>
                 <Row>
@@ -61,7 +61,8 @@ class Blog extends Component {
                               <div className="works-info">
                                 <h5>{data.category}</h5>
                                 <h3>{data.title}</h3>
-                                <p>{data.description.slice(0, 120)}</p>                               
+                                <p>{data.description.slice(0, 100)}{data.description.length > 100 && <span> ...</span>}</p>
+                                <a href={data.link} >Read More</a>
                               </div>
                             </div>
                           </Col>
