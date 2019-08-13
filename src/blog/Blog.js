@@ -12,10 +12,10 @@ class Blog extends Component {
   componentDidMount = () => {
     const databaseRef = fire.database().ref('blog');
     databaseRef.on('value', (snapshot) => {
-      if(snapshot.val()) {
+      if (snapshot.val()) {
         const details = Object.values(snapshot.val());
         let newData = [];
-        for(let d of details) {
+        for (let d of details) {
           newData.push({
             id: d.blog_id,
             title: d.blog_title,
@@ -35,37 +35,49 @@ class Blog extends Component {
     return (
       <>
         <Row>
-          <Col xs={12}>
-            <h3>Blog</h3>
-          </Col>
-          <Col xs={12} className="inner-sec">
-                    <Row>
-                      {this.state.blogData.length ? (
-                        <>
-                        {this.state.blogData.map(data => {
+        
+          <Col className="latest-post-section">
+            <Container>
+              <Col xs={12}>
+                <Row>
+                  <Col xs={12} className="text-center title-sec">
+                    <p>We're offering these popular Services</p>
+                    <h2>Blog</h2>
+                  </Col>
+                </Row>
+              </Col>
+              <Col xs={12} className="inner-sec">
+                <Row>
+                  {this.state.blogData.length ? (
+                    <>
+                      {this.state.blogData.map(data => {
                         return (
-                          <Col xs={3}>
-                          <div key={data.id} className="works-div mt-3 mb-3">
-                            <figure className="img-grap">
-                              <img src={data.imgpath} alt={data.category} title={data.category} />
-                            </figure>
-                            <div className="works-info">
-                              <h5>{data.category}</h5>
-                              <h3>{data.title}</h3>
-                              <p>{data.description}</p>
+                          <Col xs={4}>
+                            <div key={data.id} className="works-div mt-3 mb-3">
+                              <figure className="img-grap">
+                                <img src={data.imgpath} alt={data.category} title={data.category} />
+                              </figure>
+                              <div className="works-info">
+                                <h5>{data.category}</h5>
+                                <h3>{data.title}</h3>
+                                <p>{data.description}</p>
+                              </div>
                             </div>
-                          </div>
-                        </Col>
+                          </Col>
                         )
-                        })}
-                       
-                      </>
-                      ) : null }
-                      
+                      })}
 
-                      </Row>
-                      </Col>
+                    </>
+                  ) : null}
+
+
+                </Row>
+              </Col>
+
+            </Container>
+          </Col>
         </Row>
+
       </>
     );
   }
