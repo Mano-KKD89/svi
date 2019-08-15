@@ -261,7 +261,7 @@ class Blogdata extends Component {
               />
             </Col>
 
-            <Col xs={12}>
+            <Col xs={12} style={{ marginTop: "50px" }}>
               <Table striped bordered hover>
                 <thead>
                   <tr>
