@@ -10,13 +10,23 @@ import User from "../images/user.jpg";
 import php from "../images/php.png";
 import atp from "../images/atp.png";
 import teamviewer from "../images/teamviewer.png";
-import { Container, Row, Col, Button, Link, InputGroup, FormControl, Form } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Button,
+  Link,
+  InputGroup,
+  FormControl,
+  Form
+} from "react-bootstrap";
 import "./home.scss";
 import CreativeWork1 from "../images/Creative-work1.svg";
-import { Swiper, Navigation, Pagination } from 'swiper/dist/js/swiper.esm.js';
-import ReactIdSwiperCustom from 'react-id-swiper/lib/ReactIdSwiper.custom';
+import { Swiper, Navigation, Pagination } from "swiper/dist/js/swiper.esm.js";
+import ReactIdSwiperCustom from "react-id-swiper/lib/ReactIdSwiper.custom";
 import Slider from "react-slick";
-import StarRatings from 'react-star-ratings';
+import StarRatings from "react-star-ratings";
+import fire from "../firebase";
 
 class Home extends Component {
   constructor(props) {
@@ -72,7 +82,7 @@ class Home extends Component {
           title: "3D Graphics",
           url: LatestWork,
           type: "VFX",
-          year: "2019",
+          year: "2019"
         },
         {
           name: "act",
@@ -195,7 +205,8 @@ class Home extends Component {
           type: "Interaction",
           year: "2019"
         }
-      ]
+      ],
+      reviewData: []
     };
     this.onChoose = this.onChoose.bind(this);
   }
@@ -203,6 +214,29 @@ class Home extends Component {
     this.setState({
       nav1: this.slider1,
       nav2: this.slider2
+    });
+    const databaseRef = fire.database().ref("reviews");
+    databaseRef.on("value", snapshot => {
+      if (snapshot.val()) {
+        const dd = Object.values(snapshot.val()); //for change objects to array of object
+        console.log(dd, "review");
+
+        let newData = [];
+        for (let d of dd) {
+          newData.push({
+            customer_id: d.customer_id,
+            customer_name: d.customer_name,
+            description: d.description,
+            customer_role: d.customer_role,
+            rating: d.rating,
+            imgUrl: d.imgUrl
+          });
+        }
+
+        this.setState({
+          reviewData: newData
+        });
+      }
     });
   }
   onChoose = type => {
@@ -271,10 +305,10 @@ class Home extends Component {
     const params = {
       // Provide Swiper class as props
       Swiper,
-      effect: 'coverflow',
+      effect: "coverflow",
       grabCursor: true,
       centeredSlides: true,
-      slidesPerView: 'auto',
+      slidesPerView: "auto",
       coverflowEffect: {
         rotate: 50,
         stretch: 5,
@@ -285,28 +319,38 @@ class Home extends Component {
       // Add modules you need
       modules: [Navigation, Pagination],
       pagination: {
-        el: '.swiper-pagination',
+        el: ".swiper-pagination"
         // type: 'bullets',
         // clickable: true
-      },
+      }
       // navigation: {
       //   nextEl: '.swiper-button-next',
       //   prevEl: '.swiper-button-prev'
       // },
       // spaceBetween: 30
-    }
+    };
     return (
       <>
         <Row>
-          <Col className="landing d-flex align-items-center" style={{ backgroundImage: `url(${LandingBg})` }}>
-            <div className="landing-ill"><img src={LandingIllustration} /></div>
+          <Col
+            className="landing d-flex align-items-center"
+            style={{ backgroundImage: `url(${LandingBg})` }}
+          >
+            <div className="landing-ill">
+              <img src={LandingIllustration} />
+            </div>
             <Container>
               <Col xs={12}>
                 <Row>
                   <Col xs={6} className="pl-0">
-                    <h1>We Provide<span>Top Quality</span>&ensp;Services</h1>
+                    <h1>
+                      We Provide<span>Top Quality</span>&ensp;Services
+                    </h1>
                     <p>Perfect place for your perfect business.</p>
-                    <a href=""><img src={PlayIcon} />Watch video</a>
+                    <a href="">
+                      <img src={PlayIcon} />
+                      Watch video
+                    </a>
                   </Col>
                 </Row>
               </Col>
@@ -327,50 +371,82 @@ class Home extends Component {
                       <Col xs={4}>
                         <div className="grap-sec">
                           <h3>2D Graphics</h3>
-                          <p>We offer premium quality graphic design and 2D all services to our clients at affordable/reasonable cost.</p>
+                          <p>
+                            We offer premium quality graphic design and 2D all
+                            services to our clients at affordable/reasonable
+                            cost.
+                          </p>
                           <a href="">Read More</a>
                           <figure className="img-grap">
-                            <img src={Landing2DGraphics} alt="{Landing2DGraphics}" />
+                            <img
+                              src={Landing2DGraphics}
+                              alt="{Landing2DGraphics}"
+                            />
                           </figure>
                         </div>
                       </Col>
                       <Col xs={4}>
                         <div className="grap-sec">
                           <h3>2D Graphics</h3>
-                          <p>We offer premium quality graphic design and 2D all services to our clients at affordable/reasonable cost.</p>
+                          <p>
+                            We offer premium quality graphic design and 2D all
+                            services to our clients at affordable/reasonable
+                            cost.
+                          </p>
                           <a href="">Read More</a>
                           <figure className="img-grap">
-                            <img src={Landing2DGraphics} alt="{Landing2DGraphics}" />
+                            <img
+                              src={Landing2DGraphics}
+                              alt="{Landing2DGraphics}"
+                            />
                           </figure>
                         </div>
                       </Col>
                       <Col xs={4}>
                         <div className="grap-sec">
                           <h3>2D Graphics</h3>
-                          <p>We offer premium quality graphic design and 2D all services to our clients at affordable/reasonable cost.</p>
+                          <p>
+                            We offer premium quality graphic design and 2D all
+                            services to our clients at affordable/reasonable
+                            cost.
+                          </p>
                           <a href="">Read More</a>
                           <figure className="img-grap">
-                            <img src={Landing2DGraphics} alt="{Landing2DGraphics}" />
+                            <img
+                              src={Landing2DGraphics}
+                              alt="{Landing2DGraphics}"
+                            />
                           </figure>
                         </div>
                       </Col>
                       <Col xs={4}>
                         <div className="grap-sec">
                           <h3>2D Graphics</h3>
-                          <p>We offer premium quality graphic design and 2D all services to our clients at affordable/reasonable cost.</p>
+                          <p>
+                            We offer premium quality graphic design and 2D all
+                            services to our clients at affordable/reasonable
+                            cost.
+                          </p>
                           <a href="">Read More</a>
                           <figure className="img-grap">
-                            <img src={Landing2DGraphics} alt="{Landing2DGraphics}" />
+                            <img
+                              src={Landing2DGraphics}
+                              alt="{Landing2DGraphics}"
+                            />
                           </figure>
                         </div>
                       </Col>
                     </Row>
                   </Col>
                   <Col xs={12} className="p-sec">
-                    <p>We offer high quality output with the correct/perfect combination of design,
-                      sound and effects that instantly capture your attention. Our exclusive range of
-                      service includes Graphic designs, 2D and 3D animations, visual services and much more.
-                      The service are delivered as per the clients need at economy cost.</p>
+                    <p>
+                      We offer high quality output with the correct/perfect
+                      combination of design, sound and effects that instantly
+                      capture your attention. Our exclusive range of service
+                      includes Graphic designs, 2D and 3D animations, visual
+                      services and much more. The service are delivered as per
+                      the clients need at economy cost.
+                    </p>
                   </Col>
                 </Row>
               </Col>
@@ -378,7 +454,7 @@ class Home extends Component {
           </Col>
         </Row>
         <Row>
-          <Col className="sevice-sec " >
+          <Col className="sevice-sec ">
             <Container>
               <Col xs={12}>
                 <Row>
@@ -391,7 +467,10 @@ class Home extends Component {
                   </Col>
                   <Col xs={6} className="pr-0">
                     <figure className="img-grap">
-                      <img src={LandingIllustration2} alt="{LandingIllustration2}" />
+                      <img
+                        src={LandingIllustration2}
+                        alt="{LandingIllustration2}"
+                      />
                     </figure>
                   </Col>
                 </Row>
@@ -400,15 +479,20 @@ class Home extends Component {
           </Col>
         </Row>
         <Row>
-          <Col className="latest-work-sec " >
+          <Col className="latest-work-sec ">
             <Container>
               <Col xs={12}>
                 <Row>
                   <Col xs={12} className=" title-sec p-0">
-                    <h2>Latest <span>Work</span></h2>
-                    <p>We "XYZ" are specialized in understanding your needs and get the desired output/result
-                      with great elegance. We developed creative designs for different business requirement within the
-                      stipulated time period. We reply on quality work and excellent customer service.
+                    <h2>
+                      Latest <span>Work</span>
+                    </h2>
+                    <p>
+                      We "XYZ" are specialized in understanding your needs and
+                      get the desired output/result with great elegance. We
+                      developed creative designs for different business
+                      requirement within the stipulated time period. We reply on
+                      quality work and excellent customer service.
                     </p>
                   </Col>
                   <Col xs={12} className="span-tap ">
@@ -418,7 +502,7 @@ class Home extends Component {
                       }}
                     >
                       All
-              </span>
+                    </span>
                     <span
                       variant="outline-success"
                       onClick={() => {
@@ -426,7 +510,7 @@ class Home extends Component {
                       }}
                     >
                       2D
-              </span>
+                    </span>
                     <span
                       variant="outline-success"
                       onClick={() => {
@@ -434,7 +518,7 @@ class Home extends Component {
                       }}
                     >
                       3D
-              </span>
+                    </span>
                     <span
                       variant="outline-success"
                       onClick={() => {
@@ -442,7 +526,7 @@ class Home extends Component {
                       }}
                     >
                       VFX
-              </span>
+                    </span>
                     <span
                       variant="outline-success"
                       onClick={() => {
@@ -450,7 +534,7 @@ class Home extends Component {
                       }}
                     >
                       App
-              </span>
+                    </span>
                     <span
                       variant="outline-success"
                       onClick={() => {
@@ -458,35 +542,41 @@ class Home extends Component {
                       }}
                     >
                       Website
-              </span>
+                    </span>
                     <span
                       variant="outline-success"
                       onClick={() => {
                         return this.onChoose("Interaction");
-
                       }}
                     >
                       Interaction
-              </span>
+                    </span>
                   </Col>
                   <Col xs={12} className="p-0 mt-3">
                     <Row>
                       {this.state.newData.map(d => {
-                        return <Col xs={4} >
-                          <div className="works-div mt-3 mb-3">
-                            <figure className="works-img"><img src={d.url} /></figure>
-                            <div className="works-info">
-                              <p>{d.title}</p>
-                              <h4>{d.name}<span className="float-right">{d.year}</span></h4>
+                        return (
+                          <Col xs={4}>
+                            <div className="works-div mt-3 mb-3">
+                              <figure className="works-img">
+                                <img src={d.url} />
+                              </figure>
+                              <div className="works-info">
+                                <p>{d.title}</p>
+                                <h4>
+                                  {d.name}
+                                  <span className="float-right">{d.year}</span>
+                                </h4>
+                              </div>
                             </div>
-                          </div>
-                        </Col>;
+                          </Col>
+                        );
                       })}
                     </Row>
                     <Row>
-                    <Col xs={12} className="text-center">
-                      <span className="view-project">View All Projects</span>
-                    </Col>
+                      <Col xs={12} className="text-center">
+                        <span className="view-project">View All Projects</span>
+                      </Col>
                     </Row>
                   </Col>
                 </Row>
@@ -495,7 +585,7 @@ class Home extends Component {
           </Col>
         </Row>
         <Row>
-          <Col className="create-sec " >
+          <Col className="create-sec ">
             <Col xs={12} className="">
               <Slider {...settings}>
                 <figure className="img-create">
@@ -526,8 +616,13 @@ class Home extends Component {
               <Col xs={12}>
                 <Row>
                   <Col xs={12} className="text-center title-sec">
-                    <h2>Our <span>customers review</span></h2>
-                    <p>Customer Review Sites for Collecting Business & Product Reviews</p>
+                    <h2>
+                      Our <span>customers review</span>
+                    </h2>
+                    <p>
+                      Customer Review Sites for Collecting Business & Product
+                      Reviews
+                    </p>
                   </Col>
                   <Col xs={12} className="inner-sec">
                     <Row>
@@ -540,137 +635,49 @@ class Home extends Component {
                           focusOnSelect={true}
                           centerMode={true}
                         >
-                          <div>
-                            <figure className="img-create">
-                              <img src={User} alt="{User}" />
-                            </figure>
-                          </div>
-                          <div>
-                            <figure className="img-create">
-                              <img src={User} alt="{User}" />
-                            </figure>
-                          </div>
-                          <div>
-                            <figure className="img-create">
-                              <img src={User} alt="{User}" />
-                            </figure>
-                          </div>
-                          <div>
-                            <figure className="img-create">
-                              <img src={User} alt="{User}" />
-                            </figure>
-                          </div>
-                          <div>
-                            <figure className="img-create">
-                              <img src={User} alt="{User}" />
-                            </figure>
-                          </div>
-                          <div>
-                            <figure className="img-create">
-                              <img src={User} alt="{User}" />
-                            </figure>
-                          </div>
+                          {this.state.reviewData.length ? (
+                            <>
+                              {this.state.reviewData.map(data => {
+                                return (
+                                  <div>
+                                    <figure className="img-create">
+                                      <img
+                                        src={data.imgUrl}
+                                        alt={data.customer_name}
+                                      />
+                                    </figure>
+                                  </div>
+                                );
+                              })}
+                            </>
+                          ) : null}
                         </Slider>
                         <Slider
                           asNavFor={this.state.nav2}
                           ref={slider => (this.slider1 = slider)}
                         >
-                          <div className="review-info">
-                            <h3>Ava.Isabella</h3>
-                            <h5>Ui Designer</h5>
-                            <StarRatings
-                              rating={4}
-                              starRatedColor="Blue"
-                              changeRating={this.changeRating}
-                              numberOfStars={5}
-                              name='rating'
-                              starDimension="20px"
-                              starSpacing="5px"
-                            />
-                            <p>We "XYZ" are specialized in understanding your needs and get the desired output/result
-                          with great elegance. We developed creative designs for different business requirement within the
-                      stipulated time period. We reply on quality work and excellent customer service.</p>
-                          </div>
-                          <div className="review-info">
-                            <h3>Ava.Isabella</h3>
-                            <h5>Ui Designer</h5>
-                            <StarRatings
-                              rating={4}
-                              starRatedColor="Blue"
-                              changeRating={this.changeRating}
-                              numberOfStars={5}
-                              name='rating'
-                              starDimension="20px"
-                              starSpacing="5px"
-                            />
-                            <p>We "XYZ" are specialized in understanding your needs and get the desired output/result
-                          with great elegance. We developed creative designs for different business requirement within the
-                      stipulated time period. We reply on quality work and excellent customer service.</p>
-                          </div>
-                          <div className="review-info">
-                            <h3>Ava.Isabella</h3>
-                            <h5>Ui Designer</h5>
-                            <StarRatings
-                              rating={4}
-                              starRatedColor="Blue"
-                              changeRating={this.changeRating}
-                              numberOfStars={5}
-                              name='rating'
-                              starDimension="20px"
-                              starSpacing="5px"
-                            />
-                            <p>We "XYZ" are specialized in understanding your needs and get the desired output/result
-                          with great elegance. We developed creative designs for different business requirement within the
-                      stipulated time period. We reply on quality work and excellent customer service.</p>
-                          </div>
-                          <div className="review-info">
-                            <h3>Ava.Isabella</h3>
-                            <h5>Ui Designer</h5>
-                            <StarRatings
-                              rating={4}
-                              starRatedColor="Blue"
-                              changeRating={this.changeRating}
-                              numberOfStars={5}
-                              name='rating'
-                              starDimension="20px"
-                              starSpacing="5px"
-                            />
-                            <p>We "XYZ" are specialized in understanding your needs and get the desired output/result
-                          with great elegance. We developed creative designs for different business requirement within the
-                      stipulated time period. We reply on quality work and excellent customer service.</p>
-                          </div>
-                          <div className="review-info">
-                            <h3>Ava.Isabella</h3>
-                            <h5>Ui Designer</h5>
-                            <StarRatings
-                              rating={4}
-                              starRatedColor="Blue"
-                              changeRating={this.changeRating}
-                              numberOfStars={5}
-                              name='rating'
-                              starDimension="20px"
-                              starSpacing="5px"
-                            />
-                            <p>We "XYZ" are specialized in understanding your needs and get the desired output/result
-                          with great elegance. We developed creative designs for different business requirement within the
-                      stipulated time period. We reply on quality work and excellent customer service.</p>
-                          </div>
-                          <div className="review-info">
-                            <h3>Ava.Isabella</h3>
-                            <h5>Ui Designer</h5>
-                            <StarRatings
-                              rating={4}
-                              starRatedColor="Blue"
-                              changeRating={this.changeRating}
-                              numberOfStars={5}
-                              name='rating'
-                              starDimension="20px"
-                              starSpacing="5px"
-                            />
-                            <p>We "XYZ" are specialized in understanding your needs and get the desired output/result
-                          with great elegance. We developed creative designs for different business requirement within the
-                      stipulated time period. We reply on quality work and excellent customer service.</p>
-                          </div>
+                          {this.state.reviewData.length ? (
+                            <>
+                              {this.state.reviewData.map(data => {
+                                return (
+                                  <div className="review-info">
+                                    <h3>{data.customer_name}</h3>
+                                    <h5>{data.customer_role}</h5>
+                                    {/* <StarRatings
+                                      rating={data.rating}
+                                      starRatedColor="Blue"
+                                      changeRating={this.changeRating}
+                                      numberOfStars={5}
+                                      name="rating"
+                                      starDimension="20px"
+                                      starSpacing="5px"
+                                    /> */}
+                                    <p>{data.description}</p>
+                                  </div>
+                                );
+                              })}
+                            </>
+                          ) : null}
                         </Slider>
                       </Col>
                     </Row>
@@ -678,7 +685,9 @@ class Home extends Component {
                 </Row>
                 <Row>
                   <Col xs={12} className="text-center title-sec">
-                    <h2>Our <span>Valuable Clients</span></h2>
+                    <h2>
+                      Our <span>Valuable Clients</span>
+                    </h2>
                   </Col>
                   <Col xs={12} className="inner-sec">
                     <Slider {...settings1}>
@@ -714,13 +723,16 @@ class Home extends Component {
           </Col>
         </Row>
         <Row>
-          <Col className="subscribe-sec " >
+          <Col className="subscribe-sec ">
             <Container>
               <Col xs={12}>
                 <Row>
                   <Col xs={6} className="d-flex align-items-center pl-0">
                     <figure className="img-grap">
-                      <img src={SubscribIllustration} alt="{SubscribIllustration}" />
+                      <img
+                        src={SubscribIllustration}
+                        alt="{SubscribIllustration}"
+                      />
                     </figure>
                   </Col>
                   <Col xs={6} className="d-flex align-items-center pr-0">
@@ -758,36 +770,66 @@ class Home extends Component {
                       <Col xs={4}>
                         <div className="works-div mt-3 mb-3">
                           <figure className="img-grap">
-                            <img src={Landing2DGraphics} alt="{Landing2DGraphics}" />
+                            <img
+                              src={Landing2DGraphics}
+                              alt="{Landing2DGraphics}"
+                            />
                           </figure>
                           <div className="works-info">
                             <h5>2D Graphics</h5>
-                            <h3>Celebrating the Art, Craft and Business of Animation</h3>
-                            <p>We offer premium quality graphic design and 2D all services to our clients at affordable/reasonable cost.</p>
+                            <h3>
+                              Celebrating the Art, Craft and Business of
+                              Animation
+                            </h3>
+                            <p>
+                              We offer premium quality graphic design and 2D all
+                              services to our clients at affordable/reasonable
+                              cost.
+                            </p>
                           </div>
                         </div>
                       </Col>
                       <Col xs={4}>
                         <div className="works-div mt-3 mb-3">
                           <figure className="img-grap">
-                            <img src={Landing2DGraphics} alt="{Landing2DGraphics}" />
+                            <img
+                              src={Landing2DGraphics}
+                              alt="{Landing2DGraphics}"
+                            />
                           </figure>
                           <div className="works-info">
                             <h5>2D Graphics</h5>
-                            <h3>Celebrating the Art, Craft and Business of Animation</h3>
-                            <p>We offer premium quality graphic design and 2D all services to our clients at affordable/reasonable cost.</p>
+                            <h3>
+                              Celebrating the Art, Craft and Business of
+                              Animation
+                            </h3>
+                            <p>
+                              We offer premium quality graphic design and 2D all
+                              services to our clients at affordable/reasonable
+                              cost.
+                            </p>
                           </div>
                         </div>
                       </Col>
                       <Col xs={4}>
                         <div className="works-div mt-3 mb-3">
                           <figure className="img-grap">
-                            <img src={Landing2DGraphics} alt="{Landing2DGraphics}" />
+                            <img
+                              src={Landing2DGraphics}
+                              alt="{Landing2DGraphics}"
+                            />
                           </figure>
                           <div className="works-info">
                             <h5>2D Graphics</h5>
-                            <h3>Celebrating the Art, Craft and Business of Animation</h3>
-                            <p>We offer premium quality graphic design and 2D all services to our clients at affordable/reasonable cost.</p>
+                            <h3>
+                              Celebrating the Art, Craft and Business of
+                              Animation
+                            </h3>
+                            <p>
+                              We offer premium quality graphic design and 2D all
+                              services to our clients at affordable/reasonable
+                              cost.
+                            </p>
                           </div>
                         </div>
                       </Col>
