@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { Container, Row, Col, Button, Breadcrumb } from "react-bootstrap";
 import ServiceBanner from "../images/service-banner.svg";
 import LatestWork from "../images/Latest-work.svg";
-import "./service.scss";
-class Service extends Component {
+import "./serviceInt.scss";
+class ServiceInt extends Component {
   constructor() {
     super();
   }
@@ -451,4 +451,4 @@ class Service extends Component {
   }
 }
 
-export default Service;
+export default ServiceInt;

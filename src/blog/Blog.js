@@ -62,7 +62,7 @@ class Blog extends Component {
                                 <h5>{data.category}</h5>
                                 <h3>{data.title}</h3>
                                 <p>{data.description.slice(0, 100)}{data.description.length > 100 && <span> ...</span>}</p>
-                                <a target="_blank" href={data.link} >Read More</a>
+                                <a target="_blank" href={data.id} >Read More</a>
                               </div>
                             </div>
                           </Col>

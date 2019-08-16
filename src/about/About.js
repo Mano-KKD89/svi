@@ -33,10 +33,10 @@ class About extends Component {
                       <h1 className="text-blue">About Us</h1>
                       <h4 className="text-white">
                         We are group of{" "}
-                        <span className="text-blue">Creative Developers</span>{" "}
+                        <span className="text-blue">Creative <br></br>Developers</span>{" "}
                         here to help you
                       </h4>
-                      <small className="text-white">Make something new.</small>
+                      <p className="text-white">Make something new.</p>
                     </nav>
                   </Col>
                   <Col xs={4}>

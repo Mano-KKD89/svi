@@ -484,9 +484,9 @@ class Home extends Component {
                       })}
                     </Row>
                     <Row>
-                    <Col xs={12} className="text-center">
-                      <span className="view-project">View All Projects</span>
-                    </Col>
+                      <Col xs={12} className="text-center">
+                        <span className="view-project">View All Projects</span>
+                      </Col>
                     </Row>
                   </Col>
                 </Row>
@@ -595,7 +595,7 @@ class Home extends Component {
                             <h3>Ava.Isabella</h3>
                             <h5>Ui Designer</h5>
                             <StarRatings
-                              rating={4}
+                              rating={3}
                               starRatedColor="Blue"
                               changeRating={this.changeRating}
                               numberOfStars={5}
@@ -627,7 +627,7 @@ class Home extends Component {
                             <h3>Ava.Isabella</h3>
                             <h5>Ui Designer</h5>
                             <StarRatings
-                              rating={4}
+                              rating={1}
                               starRatedColor="Blue"
                               changeRating={this.changeRating}
                               numberOfStars={5}
@@ -659,7 +659,7 @@ class Home extends Component {
                             <h3>Ava.Isabella</h3>
                             <h5>Ui Designer</h5>
                             <StarRatings
-                              rating={4}
+                              rating={2}
                               starRatedColor="Blue"
                               changeRating={this.changeRating}
                               numberOfStars={5}
