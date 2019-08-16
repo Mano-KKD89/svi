@@ -630,13 +630,12 @@ class Home extends Component {
                         <Slider
                           asNavFor={this.state.nav1}
                           ref={slider => (this.slider2 = slider)}
-                          slidesToShow={5}
+                          slidesToShow={3}
                           swipeToSlide={true}
                           focusOnSelect={true}
                           centerMode={true}
                         >
-                          {this.state.reviewData.length ? (
-                            <>
+                         
                               {this.state.reviewData.map(data => {
                                 return (
                                   <div>
@@ -649,15 +648,14 @@ class Home extends Component {
                                   </div>
                                 );
                               })}
-                            </>
-                          ) : null}
+                          
                         </Slider>
                         <Slider
                           asNavFor={this.state.nav2}
+                          
                           ref={slider => (this.slider1 = slider)}
                         >
-                          {this.state.reviewData.length ? (
-                            <>
+                        
                               {this.state.reviewData.map(data => {
                                 return (
                                   <div className="review-info">
@@ -676,8 +674,7 @@ class Home extends Component {
                                   </div>
                                 );
                               })}
-                            </>
-                          ) : null}
+                          
                         </Slider>
                       </Col>
                     </Row>
