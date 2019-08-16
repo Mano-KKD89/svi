@@ -5,7 +5,8 @@ import Aboutdata from "./Aboutdata";
 import Servicedata from "./Servicedata";
 import Blogdata from "./Blogdata";
 import Contactdata from "./Contactdata";
-import fire from '../firebase';
+import CustomerReview from "./Customer-review";
+import fire from "../firebase";
 class Admin extends Component {
   constructor(props) {
     super(props);
@@ -45,6 +46,9 @@ class Admin extends Component {
                       <Nav.Item>
                         <Nav.Link eventKey="Contact">Contact</Nav.Link>
                       </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="Customer-review">Review</Nav.Link>
+                      </Nav.Item>
                     </Nav>
                   </Col>
                   <Col sm={10}>
@@ -63,6 +67,9 @@ class Admin extends Component {
                       </Tab.Pane>
                       <Tab.Pane eventKey="Contact">
                         <Contactdata />
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="Customer-review">
+                        <CustomerReview />
                       </Tab.Pane>
                     </Tab.Content>
                   </Col>
