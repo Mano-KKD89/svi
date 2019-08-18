@@ -97,7 +97,7 @@ class CustomerReview extends Component {
             .then(imgUrl => {
               this.setState({ imgUrl });
               let newId =
-                this.state.reviewEditId != "" ? this.state.reviewEditId : uid;
+                this.state.reviewEditId !== "" ? this.state.reviewEditId : uid;
               let data = {
                 customer_id: newId,
                 customer_name: this.state.customer_name,

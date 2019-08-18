@@ -114,7 +114,11 @@ class Ourclients extends Component {
         <Row>
           <Col>Add Clients details</Col>
           <Col xs={12}>
-            <img style={{ height: "75px" }} src={this.state.imgUrl} />
+            <img
+              alt={this.state.imgUrl}
+              style={{ height: "75px" }}
+              src={this.state.imgUrl}
+            />
             <Form>
               <Form.Group controlId="formBasicEmail">
                 <Form.Label>Client Name</Form.Label>
