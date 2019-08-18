@@ -31,12 +31,10 @@ class Blogdata extends Component {
     this.fetchBlogData();
   };
   fetchBlogData = () => {
-    console.log("called");
     const databaseRef = fire.database().ref("blog");
     databaseRef.on("value", snapshot => {
       if (snapshot.val()) {
         const dd = Object.values(snapshot.val()); //for change objects to array of object
-        console.log(dd, "dd");
 
         let newData = [];
         for (let d of dd) {
@@ -67,7 +65,6 @@ class Blogdata extends Component {
   onFilechange = e => {
     const uploadImg = e.target.files[0];
     const imgChangeStatus = true;
-    console.log(uploadImg, "uploadImg");
     this.setState(() => ({ uploadImg, imgChangeStatus }));
     // const reader = new FileReader();
     // reader.onloadend( r => {
@@ -78,12 +75,8 @@ class Blogdata extends Component {
     // })
   };
   onUpload = () => {
-    console.log(this.state.imgChangeStatus, "img status");
     const imggg = this.state.uploadImg;
-    console.log(Object.values(imggg), "img status");
-    // if (this.state.uploadImg != "" && this.state.uploadImg != null) {
     if (this.state.imgChangeStatus) {
-      console.log(this.state.uploadImg, "lskfjdslkfjksdlf");
       const uid = fire
         .database()
         .ref()
@@ -111,7 +104,6 @@ class Blogdata extends Component {
               this.setState({ imgUrl });
               let newId =
                 this.state.blogEditId != "" ? this.state.blogEditId : uid;
-              console.log(newId, "newid");
               let data = {
                 blog_id: newId,
                 blog_title: this.state.blogTitle,
@@ -132,7 +124,6 @@ class Blogdata extends Component {
         }
       );
     } else if (this.state.blogEditId) {
-      console.log(this.state, "edited");
       let data = {
         blog_id: this.state.blogEditId,
         blog_title: this.state.blogTitle,
@@ -157,7 +148,6 @@ class Blogdata extends Component {
       .ref()
       .child(`/blog/${id}`)
       .remove();
-    // this.fetchBlogData();
     window.location.reload();
   };
   onEdit = val => {
@@ -190,18 +180,8 @@ class Blogdata extends Component {
                     onChange={this.onChangeHandle}
                   />
                 </Form.Group>
-                {/* <Form.Group controlId="formBasicEmail">
-                  <Form.Label>Blog category</Form.Label>
-                  <Form.Control
-                    type="text"
-                    name="blogCategory"
-                    placeholder="Blog category"
-                    value={this.state.blogCategory}
-                    onChange={this.onChangeHandle}
-                  />
-                </Form.Group> */}
                 <Form.Group controlId="formGridState">
-                  <Form.Label>State</Form.Label>
+                  <Form.Label>Blog category</Form.Label>
                   <Form.Control
                     name="blogCategory"
                     value={this.state.blogCategory}

@@ -56,7 +56,6 @@ class Ourclients extends Component {
     });
   };
   onUpload = () => {
-    console.log(this.state, "client");
     const uid = fire
       .database()
       .ref()

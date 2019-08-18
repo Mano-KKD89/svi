@@ -31,7 +31,6 @@ class Request extends Component {
       created_at: new Date(),
       ...this.state
     };
-    console.log(data);
     let updates = {};
     updates[`/contacts/${uid}`] = data;
     fire

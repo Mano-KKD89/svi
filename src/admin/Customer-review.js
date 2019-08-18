@@ -30,12 +30,10 @@ class CustomerReview extends Component {
     this.fetchReviewData();
   };
   fetchReviewData = () => {
-    console.log("called");
     const databaseRef = fire.database().ref("reviews");
     databaseRef.on("value", snapshot => {
       if (snapshot.val()) {
         const dd = Object.values(snapshot.val()); //for change objects to array of object
-        console.log(dd, "review");
 
         let newData = [];
         for (let d of dd) {
@@ -70,7 +68,6 @@ class CustomerReview extends Component {
   };
 
   onUpload = () => {
-    console.log(this.state, "review form");
     if (this.state.imgChangeStatus) {
       const uid = fire
         .database()
@@ -154,7 +151,6 @@ class CustomerReview extends Component {
       .ref()
       .child(`/reviews/${id}`)
       .remove();
-    // this.fetchBlogData();
     window.location.reload();
   };
   render() {

@@ -38,7 +38,6 @@ class Contactdata extends Component {
   };
 
   markAsRead = val => {
-    console.log(val);
     let currentStatus = val.admin_read ? false : true;
     const data = {
       id: val.id,
