@@ -6,6 +6,7 @@ import Servicedata from "./Servicedata";
 import Blogdata from "./Blogdata";
 import Contactdata from "./Contactdata";
 import CustomerReview from "./Customer-review";
+import Ourclients from "./Ourclients";
 import fire from "../firebase";
 class Admin extends Component {
   constructor(props) {
@@ -49,6 +50,9 @@ class Admin extends Component {
                       <Nav.Item>
                         <Nav.Link eventKey="Customer-review">Review</Nav.Link>
                       </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="clients">Our Clients</Nav.Link>
+                      </Nav.Item>
                     </Nav>
                   </Col>
                   <Col sm={10}>
@@ -70,6 +74,9 @@ class Admin extends Component {
                       </Tab.Pane>
                       <Tab.Pane eventKey="Customer-review">
                         <CustomerReview />
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="clients">
+                        <Ourclients />
                       </Tab.Pane>
                     </Tab.Content>
                   </Col>

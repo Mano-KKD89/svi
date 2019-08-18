@@ -234,7 +234,7 @@ class CustomerReview extends Component {
                   <tr>
                     <th>#id</th>
                     <th>name</th>
-                    <th>rolw</th>
+                    <th>role</th>
                     <th>description</th>
                     <th>rating</th>
                     <th>image</th>

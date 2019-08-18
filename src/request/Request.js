@@ -7,7 +7,7 @@ class Request extends Component {
     super(props);
     this.state = {
       name: "",
-      address: "",
+      email: "",
       subject: "",
       contactNo: "",
       message: ""
@@ -66,9 +66,9 @@ class Request extends Component {
                         <Form.Group controlId="exampleForm.ControlInput1">
                           <Form.Control
                             type="text"
-                            name="address"
+                            name="email"
                             onChange={this.onChange}
-                            placeholder="Your Address"
+                            placeholder="Your email"
                           />
                         </Form.Group>
                       </Col>
