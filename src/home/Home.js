@@ -614,22 +614,22 @@ class Home extends Component {
             <Col xs={12} className="">
               <Slider {...settings}>
                 <figure className="img-create">
-                  <img src={CreativeWork1} alt="{CreativeWork1}" />
+                  <img src={CreativeWork1} alt={CreativeWork1} />
                 </figure>
                 <figure className="img-create">
-                  <img src={CreativeWork1} alt="{CreativeWork1}" />
+                  <img src={CreativeWork1} alt={CreativeWork1} />
                 </figure>
                 <figure className="img-create">
-                  <img src={CreativeWork1} alt="{CreativeWork1}" />
+                  <img src={CreativeWork1} alt={CreativeWork1} />
                 </figure>
                 <figure className="img-create">
-                  <img src={CreativeWork1} alt="{CreativeWork1}" />
+                  <img src={CreativeWork1} alt={CreativeWork1} />
                 </figure>
                 <figure className="img-create">
-                  <img src={CreativeWork1} alt="{CreativeWork1}" />
+                  <img src={CreativeWork1} alt={CreativeWork1} />
                 </figure>
                 <figure className="img-create">
-                  <img src={CreativeWork1} alt="{CreativeWork1}" />
+                  <img src={CreativeWork1} alt={CreativeWork1} />
                 </figure>
               </Slider>
             </Col>
@@ -759,7 +759,7 @@ class Home extends Component {
                     <figure className="img-grap">
                       <img
                         src={SubscribIllustration}
-                        alt="{SubscribIllustration}"
+                        alt={SubscribIllustration}
                       />
                     </figure>
                   </Col>
@@ -800,7 +800,7 @@ class Home extends Component {
                           <figure className="img-grap">
                             <img
                               src={Landing2DGraphics}
-                              alt="{Landing2DGraphics}"
+                              alt={Landing2DGraphics}
                             />
                           </figure>
                           <div className="works-info">
@@ -822,7 +822,7 @@ class Home extends Component {
                           <figure className="img-grap">
                             <img
                               src={Landing2DGraphics}
-                              alt="{Landing2DGraphics}"
+                              alt={Landing2DGraphics}
                             />
                           </figure>
                           <div className="works-info">
@@ -844,7 +844,7 @@ class Home extends Component {
                           <figure className="img-grap">
                             <img
                               src={Landing2DGraphics}
-                              alt="{Landing2DGraphics}"
+                              alt={Landing2DGraphics}
                             />
                           </figure>
                           <div className="works-info">
