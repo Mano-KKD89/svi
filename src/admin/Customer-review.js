@@ -30,12 +30,10 @@ class CustomerReview extends Component {
     this.fetchReviewData();
   };
   fetchReviewData = () => {
-    console.log("called");
     const databaseRef = fire.database().ref("reviews");
     databaseRef.on("value", snapshot => {
       if (snapshot.val()) {
         const dd = Object.values(snapshot.val()); //for change objects to array of object
-        console.log(dd, "review");
 
         let newData = [];
         for (let d of dd) {
@@ -70,7 +68,6 @@ class CustomerReview extends Component {
   };
 
   onUpload = () => {
-    console.log(this.state, "review form");
     if (this.state.imgChangeStatus) {
       const uid = fire
         .database()
@@ -100,7 +97,7 @@ class CustomerReview extends Component {
             .then(imgUrl => {
               this.setState({ imgUrl });
               let newId =
-                this.state.reviewEditId != "" ? this.state.reviewEditId : uid;
+                this.state.reviewEditId !== "" ? this.state.reviewEditId : uid;
               let data = {
                 customer_id: newId,
                 customer_name: this.state.customer_name,
@@ -154,7 +151,6 @@ class CustomerReview extends Component {
       .ref()
       .child(`/reviews/${id}`)
       .remove();
-    // this.fetchBlogData();
     window.location.reload();
   };
   render() {
@@ -234,7 +230,7 @@ class CustomerReview extends Component {
                   <tr>
                     <th>#id</th>
                     <th>name</th>
-                    <th>rolw</th>
+                    <th>role</th>
                     <th>description</th>
                     <th>rating</th>
                     <th>image</th>

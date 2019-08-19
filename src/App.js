@@ -12,7 +12,23 @@ import Admin from "./admin/Admin";
 import { PrivateRoutes } from "./_helpers/PrivateRoutes";
 import Notfound from "./Notfound";
 // import jwt_decode from "jwt-decode";
-// import fire from './firebase';
+import fire from './firebase';
+import moment from 'moment';
+fire.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+    var loginTime = user.metadata.lastSignInTime;
+   const timeDiff = moment().diff(loginTime, 'minutes');
+   if(timeDiff > 60) {
+     fire.auth().signOut();
+     localStorage.removeItem("authToken");
+    this.props.history.push("/login");
+   }
+  } else {
+    console.log( 'user signout');
+  }
+});
+
 
 // if (localStorage.getItem("authToken")) {
 //   const tokenData = jwt_decode(localStorage.getItem("authToken"));

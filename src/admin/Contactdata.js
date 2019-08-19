@@ -22,7 +22,7 @@ class Contactdata extends Component {
           newData.push({
             id: n.id,
             name: n.name,
-            address: n.address,
+            email: n.email,
             subject: n.subject,
             message: n.message,
             contactNo: n.contactNo,
@@ -38,12 +38,11 @@ class Contactdata extends Component {
   };
 
   markAsRead = val => {
-    console.log(val);
     let currentStatus = val.admin_read ? false : true;
     const data = {
       id: val.id,
       name: val.name,
-      address: val.address,
+      email: val.email,
       subject: val.subject,
       message: val.message,
       contactNo: val.contactNo,
@@ -74,7 +73,7 @@ class Contactdata extends Component {
                       <th>name</th>
                       <th>subject</th>
                       <th>contactNo</th>
-                      <th>address</th>
+                      <th>email</th>
                       <th>message</th>
                       <th>Date</th>
                       <th>Time Ago</th>
@@ -90,7 +89,7 @@ class Contactdata extends Component {
                           <td>{data.name}</td>
                           <td>{data.subject}</td>
                           <td>{data.contactNo}</td>
-                          <td>{data.address}</td>
+                          <td>{data.email}</td>
                           <td>{data.message}</td>
                           <td>{moment(data.created_at).format("ll")}</td>
                           <td>{moment(data.created_at).fromNow()}</td>

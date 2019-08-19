@@ -206,7 +206,8 @@ class Home extends Component {
           year: "2019"
         }
       ],
-      reviewData: []
+      reviewData: [],
+      clientsData: []
     };
     this.onChoose = this.onChoose.bind(this);
     
@@ -217,6 +218,11 @@ class Home extends Component {
       nav1: this.slider1,
       nav2: this.slider2
     });
+    this.getReviewData();
+    this.getClientData();
+  }
+
+  getReviewData = () => {
     const databaseRef = fire.database().ref("reviews");
     databaseRef.on("value", snapshot => {
       if (snapshot.val()) {
@@ -240,7 +246,26 @@ class Home extends Component {
         });
       }
     });
-  }
+  };
+  getClientData = () => {
+    const databaseRef = fire.database().ref("clients");
+    databaseRef.on("value", snapshot => {
+      if (snapshot.val()) {
+        let dd = Object.values(snapshot.val());
+        let newData = [];
+        for (let d of dd) {
+          newData.push({
+            id: d.id,
+            clientName: d.clientName,
+            imgLink: d.imgUrl
+          });
+        }
+        this.setState({
+          clientsData: newData
+        });
+      }
+    });
+  };
   onChoose = type => {
     console.log(type, "type");
     if (type === "ALL") {
@@ -382,7 +407,7 @@ class Home extends Component {
                           <figure className="img-grap">
                             <img
                               src={Landing2DGraphics}
-                              alt="{Landing2DGraphics}"
+                              alt={Landing2DGraphics}
                             />
                           </figure>
                         </div>
@@ -399,7 +424,7 @@ class Home extends Component {
                           <figure className="img-grap">
                             <img
                               src={Landing2DGraphics}
-                              alt="{Landing2DGraphics}"
+                              alt={Landing2DGraphics}
                             />
                           </figure>
                         </div>
@@ -416,7 +441,7 @@ class Home extends Component {
                           <figure className="img-grap">
                             <img
                               src={Landing2DGraphics}
-                              alt="{Landing2DGraphics}"
+                              alt={Landing2DGraphics}
                             />
                           </figure>
                         </div>
@@ -433,7 +458,7 @@ class Home extends Component {
                           <figure className="img-grap">
                             <img
                               src={Landing2DGraphics}
-                              alt="{Landing2DGraphics}"
+                              alt={Landing2DGraphics}
                             />
                           </figure>
                         </div>
@@ -471,7 +496,7 @@ class Home extends Component {
                     <figure className="img-grap">
                       <img
                         src={LandingIllustration2}
-                        alt="{LandingIllustration2}"
+                        alt={LandingIllustration2}
                       />
                     </figure>
                   </Col>
@@ -591,22 +616,22 @@ class Home extends Component {
             <Col xs={12} className="">
               <Slider {...settings}>
                 <figure className="img-create">
-                  <img src={CreativeWork1} alt="{CreativeWork1}" />
+                  <img src={CreativeWork1} alt={CreativeWork1} />
                 </figure>
                 <figure className="img-create">
-                  <img src={CreativeWork1} alt="{CreativeWork1}" />
+                  <img src={CreativeWork1} alt={CreativeWork1} />
                 </figure>
                 <figure className="img-create">
-                  <img src={CreativeWork1} alt="{CreativeWork1}" />
+                  <img src={CreativeWork1} alt={CreativeWork1} />
                 </figure>
                 <figure className="img-create">
-                  <img src={CreativeWork1} alt="{CreativeWork1}" />
+                  <img src={CreativeWork1} alt={CreativeWork1} />
                 </figure>
                 <figure className="img-create">
-                  <img src={CreativeWork1} alt="{CreativeWork1}" />
+                  <img src={CreativeWork1} alt={CreativeWork1} />
                 </figure>
                 <figure className="img-create">
-                  <img src={CreativeWork1} alt="{CreativeWork1}" />
+                  <img src={CreativeWork1} alt={CreativeWork1} />
                 </figure>
               </Slider>
             </Col>
@@ -637,33 +662,29 @@ class Home extends Component {
                           focusOnSelect={true}
                           centerMode={true}
                         >
-                         
-                              {this.state.reviewData.map(data => {
-                                return (
-                                  <div>
-                                    <figure className="img-create">
-                                      <img
-                                        src={data.imgUrl}
-                                        alt={data.customer_name}
-                                      />
-                                    </figure>
-                                  </div>
-                                );
-                              })}
-                          
+                          {this.state.reviewData.map(data => {
+                            return (
+                              <div>
+                                <figure className="img-create">
+                                  <img
+                                    src={data.imgUrl}
+                                    alt={data.customer_name}
+                                  />
+                                </figure>
+                              </div>
+                            );
+                          })}
                         </Slider>
                         <Slider
                           asNavFor={this.state.nav2}
-                          
                           ref={slider => (this.slider1 = slider)}
                         >
-                        
-                              {this.state.reviewData.map(data => {
-                                return (
-                                  <div className="review-info">
-                                    <h3>{data.customer_name}</h3>
-                                    <h5>{data.customer_role}</h5>
-                                    {/* <StarRatings
+                          {this.state.reviewData.map(data => {
+                            return (
+                              <div className="review-info">
+                                <h3>{data.customer_name}</h3>
+                                <h5>{data.customer_role}</h5>
+                                {/* <StarRatings
                                       rating={data.rating}
                                       starRatedColor="Blue"
                                       changeRating={this.changeRating}
@@ -672,11 +693,10 @@ class Home extends Component {
                                       starDimension="20px"
                                       starSpacing="5px"
                                     /> */}
-                                    <p>{data.description}</p>
-                                  </div>
-                                );
-                              })}
-                          
+                                <p>{data.description}</p>
+                              </div>
+                            );
+                          })}
                         </Slider>
                       </Col>
                     </Row>
@@ -690,7 +710,18 @@ class Home extends Component {
                   </Col>
                   <Col xs={12} className="inner-sec">
                     <Slider {...settings1}>
-                      <figure className="img-client">
+                      {this.state.clientsData.map(data => {
+                        return (
+                          <figure key={data.id} className="img-client">
+                            <img
+                              src={data.imgLink}
+                              alt={data.clientName}
+                              title={data.clientName}
+                            />
+                          </figure>
+                        );
+                      })}
+                      {/* <figure className="img-client">
                         <img src={teamviewer} alt="{teamviewer}" />
                       </figure>
                       <figure className="img-client">
@@ -713,7 +744,7 @@ class Home extends Component {
                       </figure>
                       <figure className="img-client">
                         <img src={atp} alt="{atp}" />
-                      </figure>
+                      </figure> */}
                     </Slider>
                   </Col>
                 </Row>
@@ -730,7 +761,7 @@ class Home extends Component {
                     <figure className="img-grap">
                       <img
                         src={SubscribIllustration}
-                        alt="{SubscribIllustration}"
+                        alt={SubscribIllustration}
                       />
                     </figure>
                   </Col>
@@ -771,7 +802,7 @@ class Home extends Component {
                           <figure className="img-grap">
                             <img
                               src={Landing2DGraphics}
-                              alt="{Landing2DGraphics}"
+                              alt={Landing2DGraphics}
                             />
                           </figure>
                           <div className="works-info">
@@ -793,7 +824,7 @@ class Home extends Component {
                           <figure className="img-grap">
                             <img
                               src={Landing2DGraphics}
-                              alt="{Landing2DGraphics}"
+                              alt={Landing2DGraphics}
                             />
                           </figure>
                           <div className="works-info">
@@ -815,7 +846,7 @@ class Home extends Component {
                           <figure className="img-grap">
                             <img
                               src={Landing2DGraphics}
-                              alt="{Landing2DGraphics}"
+                              alt={Landing2DGraphics}
                             />
                           </figure>
                           <div className="works-info">
