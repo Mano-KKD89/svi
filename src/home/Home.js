@@ -389,11 +389,11 @@ class Home extends Component {
             <Container>
               <Col xs={12}>
                 <Row>
-                  <Col xs={12} className="text-center title-sec">
+                  <Col xs={12} className="text-center title-sec p-0">
                     <p>We're offering these popular Services</p>
                     <h2>We give life to your imagination!!!</h2>
                   </Col>
-                  <Col xs={12} className="inner-sec">
+                  <Col xs={12} className="inner-sec p-0">
                     <Row>
                       <Col xs={4}>
                         <div className="grap-sec">
@@ -465,7 +465,7 @@ class Home extends Component {
                       </Col>
                     </Row>
                   </Col>
-                  <Col xs={12} className="p-sec">
+                  <Col xs={12} className="p-sec p-0">
                     <p>
                       We offer high quality output with the correct/perfect
                       combination of design, sound and effects that instantly
@@ -684,15 +684,15 @@ class Home extends Component {
                               <div className="review-info">
                                 <h3>{data.customer_name}</h3>
                                 <h5>{data.customer_role}</h5>
-                                {/* <StarRatings
-                                      rating={data.rating}
+                                <StarRatings
+                                      rating={this.state.rating}
                                       starRatedColor="Blue"
                                       changeRating={this.changeRating}
-                                      numberOfStars={5}
+                                      numberOfStars={5}                                      
                                       name="rating"
                                       starDimension="20px"
-                                      starSpacing="5px"
-                                    /> */}
+                                      starSpacing="5px"                                     
+                                    />
                                 <p>{data.description}</p>
                               </div>
                             );
@@ -712,7 +712,7 @@ class Home extends Component {
                     <Slider {...settings1}>
                       {this.state.clientsData.map(data => {
                         return (
-                          <figure key={data.id} className="img-client">
+                          <figure key={data.id} className="img-client d-flex align-items-center">
                             <img
                               src={data.imgLink}
                               alt={data.clientName}
@@ -791,11 +791,11 @@ class Home extends Component {
             <Container>
               <Col xs={12}>
                 <Row>
-                  <Col xs={12} className="text-center title-sec">
+                  <Col xs={12} className="text-center title-sec p-0">
                     <p>We're offering these popular Services</p>
                     <h2>We give life to your imagination!!!</h2>
                   </Col>
-                  <Col xs={12} className="inner-sec">
+                  <Col xs={12} className="inner-sec p-0">
                     <Row>
                       <Col xs={4}>
                         <div className="works-div mt-3 mb-3">

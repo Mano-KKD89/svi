@@ -43,7 +43,7 @@ class Request extends Component {
       <>
         <Col className="request-section">
           <Container>
-            <Col xs={12}>
+            <Col xs={12} className="p-0">
               <div className="request-inner">
                 <Col xs={12} className="text-center title-sec">
                   <h2>Request Custom Design</h2>

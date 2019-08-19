@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "../logo.svg";
+import logo from "../images/php.png";
 import instagram from "../images/instagram.svg";
 import twitter from "../images/twitter.svg";
 import facebook from "../images/facebook.svg";
@@ -32,7 +32,7 @@ class Header extends Component {
             <Container className=" new">
               <Navbar variant="dark">
                 <Navbar.Brand>
-                  <Link to="/home">
+                  <Link to="/home" className="d-block">
                     <img src={logo} style={{ height: "40px" }} />
                   </Link>
                 </Navbar.Brand>
