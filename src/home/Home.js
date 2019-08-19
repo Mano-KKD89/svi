@@ -209,7 +209,9 @@ class Home extends Component {
       reviewData: []
     };
     this.onChoose = this.onChoose.bind(this);
+    
   }
+ 
   componentDidMount() {
     this.setState({
       nav1: this.slider1,
