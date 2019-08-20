@@ -166,7 +166,7 @@ class Ourworks extends Component {
     return (
       <Container>
         <Row>
-          <Col>Blogdata form</Col>
+          <Col>our works form</Col>
           <Col xs={12}>
             <img style={{ height: "75px" }} src={this.state.projectImg} />
             <Form>
@@ -175,7 +175,7 @@ class Ourworks extends Component {
                 <Form.Control
                   type="text"
                   name="projectName"
-                  placeholder="Blog title"
+                  placeholder="Project title"
                   value={this.state.projectName}
                   onChange={this.onChangeHandle}
                 />
@@ -214,7 +214,7 @@ class Ourworks extends Component {
                 />
               </Form.Group>
               <Button variant="outline-success" onClick={this.onUpload}>
-                Save Blog
+                Save work
               </Button>
             </Form>
           </Col>
