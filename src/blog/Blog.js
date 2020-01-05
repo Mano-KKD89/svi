@@ -12,7 +12,7 @@ class Blog extends Component {
   }
   componentDidMount = () => {
     const databaseRef = fire.database().ref('blog');
-    databaseRef.on('value', (snapshot) => {
+    databaseRef.orderByChild("blog_id").on('value', (snapshot) => {
       if (snapshot.val()) {
         const details = Object.values(snapshot.val());
         let newData = [];

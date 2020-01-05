@@ -22,6 +22,7 @@ class Blogdata extends Component {
       blogLink: "",
       blogCategory: "",
       blogEditId: "",
+      created_at: new Date(),
       blogData: []
     };
     this.onFilechange = this.onFilechange.bind(this);
@@ -75,7 +76,6 @@ class Blogdata extends Component {
     // })
   };
   onUpload = () => {
-    const imggg = this.state.uploadImg;
     if (this.state.imgChangeStatus) {
       const uid = fire
         .database()
@@ -110,7 +110,8 @@ class Blogdata extends Component {
                 blog_description: this.state.blogDescription,
                 blog_link: this.state.blogLink,
                 blog_category: this.state.blogCategory,
-                blog_img: imgUrl
+                blog_img: imgUrl,
+                created_at: this.state.created_at,
               };
 
               let updates = {};
@@ -130,7 +131,8 @@ class Blogdata extends Component {
         blog_description: this.state.blogDescription,
         blog_link: this.state.blogLink,
         blog_category: this.state.blogCategory,
-        blog_img: this.state.imgUrl
+        blog_img: this.state.imgUrl,
+        created_at: this.state.created_at,
       };
 
       let updates = {};
