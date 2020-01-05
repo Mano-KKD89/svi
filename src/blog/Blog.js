@@ -24,6 +24,7 @@ class Blog extends Component {
             link: d.blog_link,
             category: d.blog_category,
             imgpath: d.blog_img,
+            created_at: d.created_at
           })
         }
         this.setState({
@@ -34,6 +35,17 @@ class Blog extends Component {
     })
   }
   render() {
+    let sortedArray = [];
+    if(this.state.blogData.length != 0) { 
+   sortedArray = this.state.blogData.sort((a, b) => {
+if(a.created_at > b.created_at){
+  return -1;
+} else {
+  return 1;
+}
+  })
+}
+
     return (
       <>
         <Row>
@@ -49,7 +61,7 @@ class Blog extends Component {
               </Col>
               <Col xs={12} className="inner-sec">
                 <Row>
-                  {this.state.blogData.length ? (
+                  {this.state.blogData.length && sortedArray.length ? (
                     <>
                       {this.state.blogData.map(data => {
                         return (
