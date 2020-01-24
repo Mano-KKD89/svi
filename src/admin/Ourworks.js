@@ -161,6 +161,17 @@ class Ourworks extends Component {
       imgChangeStatus: false
     });
   };
+  clear = () => {
+    this.setState({
+      editId: '',
+      projectName: '',
+      projectType: '',
+      projectImg: '',
+      created_at: new Date(),
+      imgChangeStatus: false,
+      progress: 0,
+    });
+  }
   render() {
     console.log(this.state.worksData);
     return (
@@ -194,7 +205,8 @@ class Ourworks extends Component {
                   <option value="VFX">VFX</option>
                   <option value="APP">APP</option>
                   <option value="Website">Website</option>
-                  <option value="Interaction">Interaction</option>
+                  <option value="Digital">Digital Marketing</option>
+                  <option value="Photography">Photography</option>
                 </Form.Control>
               </Form.Group>
 
@@ -215,6 +227,9 @@ class Ourworks extends Component {
               </Form.Group>
               <Button variant="outline-success" onClick={this.onUpload}>
                 Save work
+              </Button>
+              <Button variant="outline-warning" onClick={this.clear}>
+                clear
               </Button>
             </Form>
           </Col>

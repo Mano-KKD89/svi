@@ -1,11 +1,29 @@
 import React, { Component } from "react";
-import LandingBg from "../images/Landing-page-Backround.svg";
+
+// image imports 
+import LandingBg from "../images/Landing-pageBG_1.svg";
+import LandingBg2 from "../images/Landing-page-BG_2.svg";
 import PlayIcon from "../images/play-icon.svg";
-import LandingIllustration from "../images/subscrib-illustration.svg";
-import Landing2DGraphics from "../images/Landing-2D-Graphics.svg";
+import LandingIllustration from "../images/home_illustration_1.svg";
+import Landing2DGraphics from "../images/Landing-page-illustration_1.svg";
+import Landing3DGraphics from "../images/Landing-page-illustration_2.svg";
+import LandingVFX from "../images/Landing-page-illustration_3.svg";
+import LandingWebdel from "../images/Landing-page-illustration_4.svg";
+import LandingDigital from "../images/Landing-page-illustration_5.svg";
+import LandingPhotography from "../images/Landing-page-illustration_6.svg";
 import LandingIllustration2 from "../images/Landing-illustration-2.svg";
 import LatestWork from "../images/Latest-work.svg";
+import manIcon from "../images/Man-icon.png";
 import SubscribIllustration from "../images/subscrib-illustration.svg";
+import CreativeWork1 from "../images/Landing-page-illustration_13.svg";
+import CreativeWork2 from "../images/Landing-page-illustration_14.svg";
+import CreativeWork3 from "../images/Landing-page-illustration_15.svg";
+import CreativeWork4 from "../images/Landing-page-illustration_16.svg";
+import CreativeWork5 from "../images/Landing-page-illustration_17.svg";
+import CreativeWork6 from "../images/Landing-page-illustration_18.svg";
+import CreativeWork7 from "../images/Landing-page-illustration_19.svg";
+import CreativeWork8 from "../images/Landing-page-illustration_20.svg";
+
 import User from "../images/user.jpg";
 import php from "../images/php.png";
 import atp from "../images/atp.png";
@@ -21,12 +39,15 @@ import {
   Form
 } from "react-bootstrap";
 import "./home.scss";
-import CreativeWork1 from "../images/Creative-work1.svg";
+
+
 import { Swiper, Navigation, Pagination } from "swiper/dist/js/swiper.esm.js";
 import ReactIdSwiperCustom from "react-id-swiper/lib/ReactIdSwiper.custom";
 import Slider from "react-slick";
 import StarRatings from "react-star-ratings";
 import fire from "../firebase";
+
+import LatestWorkComponent from '../shared-components/latestWorks'
 
 class Home extends Component {
   constructor(props) {
@@ -374,7 +395,7 @@ class Home extends Component {
                       We Provide<span>Top Quality</span>&ensp;Services
                     </h1>
                     <p>Perfect place for your perfect business.</p>
-                    <a href="">
+                    <a href="https://www.youtube.com/watch?v=LL1c48sVji8" target="_blank">
                       <img src={PlayIcon} />
                       Watch video
                     </a>
@@ -403,7 +424,7 @@ class Home extends Component {
                             services to our clients at affordable/reasonable
                             cost.
                           </p>
-                          <a href="">Read More</a>
+                          {/* <a href="">Read More</a> */}
                           <figure className="img-grap">
                             <img
                               src={Landing2DGraphics}
@@ -414,58 +435,87 @@ class Home extends Component {
                       </Col>
                       <Col xs={4}>
                         <div className="grap-sec">
-                          <h3>2D Graphics</h3>
+                          <h3>3D Graphics</h3>
                           <p>
-                            We offer premium quality graphic design and 2D all
-                            services to our clients at affordable/reasonable
-                            cost.
+                          We provide premier 3D animation services at very nominal prices. We use best 3D
+technologies to deliver outstanding service to our clients.
                           </p>
-                          <a href="">Read More</a>
+                          {/* <a href="">Read More</a> */}
                           <figure className="img-grap">
                             <img
-                              src={Landing2DGraphics}
-                              alt={Landing2DGraphics}
+                              src={Landing3DGraphics}
+                              alt={Landing3DGraphics}
                             />
                           </figure>
                         </div>
                       </Col>
                       <Col xs={4}>
                         <div className="grap-sec">
-                          <h3>2D Graphics</h3>
+                          <h3>Visual Effects (VFX)</h3>
                           <p>
-                            We offer premium quality graphic design and 2D all
-                            services to our clients at affordable/reasonable
-                            cost.
+                          We deliver the most attractive VFX services with all kind of effects using our well-groomed
+                          team with latest tools and technologies.
                           </p>
-                          <a href="">Read More</a>
+                          {/* <a href="">Read More</a> */}
                           <figure className="img-grap">
                             <img
-                              src={Landing2DGraphics}
-                              alt={Landing2DGraphics}
+                              src={LandingVFX}
+                              alt={LandingVFX}
                             />
                           </figure>
                         </div>
                       </Col>
                       <Col xs={4}>
-                        <div className="grap-sec">
-                          <h3>2D Graphics</h3>
+                        <div className="grap-sec mb-0">
+                          <h3>Web Development</h3>
                           <p>
-                            We offer premium quality graphic design and 2D all
-                            services to our clients at affordable/reasonable
-                            cost.
+                          We Provide complete web development solutions like website development, web content
+                          development, server-side scripting.
                           </p>
-                          <a href="">Read More</a>
+                          {/* <a href="">Read More</a> */}
                           <figure className="img-grap">
                             <img
-                              src={Landing2DGraphics}
-                              alt={Landing2DGraphics}
+                              src={LandingWebdel}
+                              alt={LandingWebdel}
+                            />
+                          </figure>
+                        </div>
+                      </Col>
+                      <Col xs={4}>
+                        <div className="grap-sec mb-0">
+                          <h3>Digital Marketing</h3>
+                          <p>
+                          We are offering digital marketing service along with web development solutions which
+                          takes your business to the doorstep of each and every people via online.
+                          </p>
+                          {/* <a href="">Read More</a> */}
+                          <figure className="img-grap">
+                            <img
+                              src={LandingDigital}
+                              alt={LandingDigital}
+                            />
+                          </figure>
+                        </div>
+                      </Col>
+                      <Col xs={4}>
+                        <div className="grap-sec mb-0">
+                          <h3>Photography</h3>
+                          <p>
+                          We have high-quality photographers and can make the experience to feel better and
+                          memorable.
+                          </p>
+                          {/* <a href="">Read More</a> */}
+                          <figure className="img-grap">
+                            <img
+                              src={LandingPhotography}
+                              alt={LandingPhotography}
                             />
                           </figure>
                         </div>
                       </Col>
                     </Row>
                   </Col>
-                  <Col xs={12} className="p-sec p-0">
+                  <Col xs={12} className="p-sec p-0 mb-5">
                     <p>
                       We offer high quality output with the correct/perfect
                       combination of design, sound and effects that instantly
@@ -481,7 +531,7 @@ class Home extends Component {
           </Col>
         </Row>
         <Row>
-          <Col className="sevice-sec ">
+          <Col className="sevice-sec " style={{ backgroundImage: `url(${LandingBg2})`, backgroundSize: 'cover'}}>
             <Container>
               <Col xs={12}>
                 <Row>
@@ -507,108 +557,9 @@ class Home extends Component {
         </Row>
         <Row>
           <Col className="latest-work-sec ">
-            <Container>
-              <Col xs={12}>
-                <Row>
-                  <Col xs={12} className=" title-sec p-0">
-                    <h2>
-                      Latest <span>Work</span>
-                    </h2>
-                    <p>
-                      We "XYZ" are specialized in understanding your needs and
-                      get the desired output/result with great elegance. We
-                      developed creative designs for different business
-                      requirement within the stipulated time period. We reply on
-                      quality work and excellent customer service.
-                    </p>
-                  </Col>
-                  <Col xs={12} className="span-tap ">
-                    <span
-                      onClick={() => {
-                        return this.onChoose("ALL");
-                      }}
-                    >
-                      All
-                    </span>
-                    <span
-                      variant="outline-success"
-                      onClick={() => {
-                        return this.onChoose("2D");
-                      }}
-                    >
-                      2D
-                    </span>
-                    <span
-                      variant="outline-success"
-                      onClick={() => {
-                        return this.onChoose("3D");
-                      }}
-                    >
-                      3D
-                    </span>
-                    <span
-                      variant="outline-success"
-                      onClick={() => {
-                        return this.onChoose("VFX");
-                      }}
-                    >
-                      VFX
-                    </span>
-                    <span
-                      variant="outline-success"
-                      onClick={() => {
-                        return this.onChoose("App");
-                      }}
-                    >
-                      App
-                    </span>
-                    <span
-                      variant="outline-success"
-                      onClick={() => {
-                        return this.onChoose("Website");
-                      }}
-                    >
-                      Website
-                    </span>
-                    <span
-                      variant="outline-success"
-                      onClick={() => {
-                        return this.onChoose("Interaction");
-                      }}
-                    >
-                      Interaction
-                    </span>
-                  </Col>
-                  <Col xs={12} className="p-0 mt-3">
-                    <Row>
-                      {this.state.newData.map(d => {
-                        return (
-                          <Col xs={4}>
-                            <div className="works-div mt-3 mb-3">
-                              <figure className="works-img">
-                                <img src={d.url} />
-                              </figure>
-                              <div className="works-info">
-                                <p>{d.title}</p>
-                                <h4>
-                                  {d.name}
-                                  <span className="float-right">{d.year}</span>
-                                </h4>
-                              </div>
-                            </div>
-                          </Col>
-                        );
-                      })}
-                    </Row>
-                    <Row>
-                      <Col xs={12} className="text-center">
-                        <span className="view-project">View All Projects</span>
-                      </Col>
-                    </Row>
-                  </Col>
-                </Row>
-              </Col>
-            </Container>
+
+            <LatestWorkComponent />
+            
           </Col>
         </Row>
         <Row>
@@ -619,19 +570,25 @@ class Home extends Component {
                   <img src={CreativeWork1} alt={CreativeWork1} />
                 </figure>
                 <figure className="img-create">
-                  <img src={CreativeWork1} alt={CreativeWork1} />
+                  <img src={CreativeWork2} alt={CreativeWork2} />
                 </figure>
                 <figure className="img-create">
-                  <img src={CreativeWork1} alt={CreativeWork1} />
+                  <img src={CreativeWork3} alt={CreativeWork3} />
                 </figure>
                 <figure className="img-create">
-                  <img src={CreativeWork1} alt={CreativeWork1} />
+                  <img src={CreativeWork4} alt={CreativeWork4} />
                 </figure>
                 <figure className="img-create">
-                  <img src={CreativeWork1} alt={CreativeWork1} />
+                  <img src={CreativeWork5} alt={CreativeWork5} />
                 </figure>
                 <figure className="img-create">
-                  <img src={CreativeWork1} alt={CreativeWork1} />
+                  <img src={CreativeWork6} alt={CreativeWork6} />
+                </figure>
+                <figure className="img-create">
+                  <img src={CreativeWork7} alt={CreativeWork7} />
+                </figure>
+                <figure className="img-create">
+                  <img src={CreativeWork8} alt={CreativeWork8} />
                 </figure>
               </Slider>
             </Col>
@@ -662,7 +619,7 @@ class Home extends Component {
                           focusOnSelect={true}
                           centerMode={true}
                         >
-                          {this.state.reviewData.map(data => {
+                          {/* {this.state.reviewData.map(data => {
                             return (
                               <div>
                                 <figure className="img-create">
@@ -673,7 +630,31 @@ class Home extends Component {
                                 </figure>
                               </div>
                             );
-                          })}
+                          })} */}
+                          <div>
+                                <figure className="img-create">
+                                  <img
+                                    src={manIcon}
+                                    alt='review'
+                                  />
+                                </figure>
+                              </div>
+                              <div>
+                                <figure className="img-create">
+                                  <img
+                                    src={manIcon}
+                                    alt='review'
+                                  />
+                                </figure>
+                              </div>
+                              <div>
+                                <figure className="img-create">
+                                  <img
+                                    src={manIcon}
+                                    alt='review'
+                                  />
+                                </figure>
+                              </div>
                         </Slider>
                         <Slider
                           asNavFor={this.state.nav2}
@@ -703,7 +684,7 @@ class Home extends Component {
                   </Col>
                 </Row>
                 <Row>
-                  <Col xs={12} className="text-center title-sec">
+                  <Col xs={12} className="text-center title-sec mb-5">
                     <h2>
                       Our <span>Valuable Clients</span>
                     </h2>

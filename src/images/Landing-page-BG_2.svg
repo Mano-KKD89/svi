@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="459" viewBox="0 0 1920 459">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.331" cy="0.834" r="2.158" gradientTransform="translate(0.252 0.207) scale(0.239 0.751)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1a1e50"/>
+      <stop offset="1" stop-color="#000540"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_15782" data-name="Group 15782" transform="translate(0 -2960)">
+    <rect id="Rectangle_590" data-name="Rectangle 590" width="1920" height="459" transform="translate(0 2960)" fill="url(#radial-gradient)"/>
+    <g id="Group_2342" data-name="Group 2342" transform="translate(-1007.356 3926.123)">
+      <circle id="Ellipse_269" data-name="Ellipse 269" cx="23.351" cy="23.351" r="23.351" transform="translate(1202.561 -759.919)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" fill="none"/>
+      <circle id="Ellipse_270" data-name="Ellipse 270" cx="42.595" cy="42.595" r="42.595" transform="translate(1183.316 -779.164)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.75" fill="none"/>
+      <circle id="Ellipse_271" data-name="Ellipse 271" cx="61.84" cy="61.84" r="61.84" transform="translate(1164.071 -798.409)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" fill="none"/>
+      <circle id="Ellipse_272" data-name="Ellipse 272" cx="81.085" cy="81.085" r="81.085" transform="translate(1144.826 -817.654)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.25" fill="none"/>
+      <circle id="Ellipse_273" data-name="Ellipse 273" cx="100.33" cy="100.33" r="100.33" transform="translate(1125.581 -836.898)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none"/>
+      <circle id="Ellipse_274" data-name="Ellipse 274" cx="119.575" cy="119.575" r="119.575" transform="translate(1106.336 -856.143)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" fill="none"/>
+      <circle id="Ellipse_275" data-name="Ellipse 275" cx="138.82" cy="138.82" r="138.82" transform="translate(1087.091 -875.388)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" fill="none"/>
+      <circle id="Ellipse_276" data-name="Ellipse 276" cx="158.065" cy="158.065" r="158.065" transform="translate(1067.847 -894.633)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" fill="none"/>
+      <circle id="Ellipse_277" data-name="Ellipse 277" cx="177.31" cy="177.31" r="177.31" transform="translate(1048.602 -913.878)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" fill="none"/>
+      <circle id="Ellipse_278" data-name="Ellipse 278" cx="196.555" cy="196.555" r="196.555" transform="translate(1029.357 -933.123)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.75" fill="none"/>
+    </g>
+    <g id="Group_2343" data-name="Group 2343" transform="translate(590.48 3910.155)">
+      <circle id="Ellipse_269-2" data-name="Ellipse 269" cx="15.102" cy="15.102" r="15.102" transform="translate(1141.375 -821.104)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" fill="none"/>
+      <circle id="Ellipse_270-2" data-name="Ellipse 270" cx="27.548" cy="27.548" r="27.548" transform="translate(1128.929 -833.551)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.75" fill="none"/>
+      <circle id="Ellipse_271-2" data-name="Ellipse 271" cx="39.995" cy="39.995" r="39.995" transform="translate(1116.482 -845.997)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" fill="none"/>
+      <circle id="Ellipse_272-2" data-name="Ellipse 272" cx="52.441" cy="52.441" r="52.441" transform="translate(1104.036 -858.444)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.25" fill="none"/>
+      <circle id="Ellipse_273-2" data-name="Ellipse 273" cx="64.888" cy="64.888" r="64.888" transform="translate(1091.589 -870.89)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none"/>
+      <circle id="Ellipse_274-2" data-name="Ellipse 274" cx="77.334" cy="77.334" r="77.334" transform="translate(1079.143 -883.337)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" fill="none"/>
+      <circle id="Ellipse_275-2" data-name="Ellipse 275" cx="89.781" cy="89.781" r="89.781" transform="translate(1066.696 -895.784)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" fill="none"/>
+      <circle id="Ellipse_276-2" data-name="Ellipse 276" cx="102.227" cy="102.227" r="102.227" transform="translate(1054.25 -908.23)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" fill="none"/>
+      <circle id="Ellipse_277-2" data-name="Ellipse 277" cx="114.674" cy="114.674" r="114.674" transform="translate(1041.803 -920.676)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" fill="none"/>
+      <circle id="Ellipse_278-2" data-name="Ellipse 278" cx="127.12" cy="127.12" r="127.12" transform="translate(1029.357 -933.123)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.75" fill="none"/>
+    </g>
+    <g id="Group_2344" data-name="Group 2344" transform="translate(-270.658 4082.821)">
+      <circle id="Ellipse_269-3" data-name="Ellipse 269" cx="14.516" cy="14.516" r="14.516" transform="translate(1137.03 -825.449)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" fill="none"/>
+      <circle id="Ellipse_270-3" data-name="Ellipse 270" cx="26.48" cy="26.48" r="26.48" transform="translate(1125.067 -837.413)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.75" fill="none"/>
+      <circle id="Ellipse_271-3" data-name="Ellipse 271" cx="38.443" cy="38.443" r="38.443" transform="translate(1113.103 -849.377)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" fill="none"/>
+      <circle id="Ellipse_272-3" data-name="Ellipse 272" cx="50.407" cy="50.407" r="50.407" transform="translate(1101.139 -861.341)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.25" fill="none"/>
+      <circle id="Ellipse_273-3" data-name="Ellipse 273" cx="62.371" cy="62.371" r="62.371" transform="translate(1089.175 -873.304)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none"/>
+      <circle id="Ellipse_274-3" data-name="Ellipse 274" cx="74.335" cy="74.335" r="74.335" transform="translate(1077.212 -885.268)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" fill="none"/>
+      <circle id="Ellipse_275-3" data-name="Ellipse 275" cx="86.298" cy="86.298" r="86.298" transform="translate(1065.248 -897.232)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" fill="none"/>
+      <circle id="Ellipse_276-3" data-name="Ellipse 276" cx="98.262" cy="98.262" r="98.262" transform="translate(1053.284 -909.195)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" fill="none"/>
+      <circle id="Ellipse_277-3" data-name="Ellipse 277" cx="110.226" cy="110.226" r="110.226" transform="translate(1041.321 -921.159)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" fill="none"/>
+      <circle id="Ellipse_278-3" data-name="Ellipse 278" cx="122.19" cy="122.19" r="122.19" transform="translate(1029.357 -933.123)" stroke-dasharray="0 6" stroke="#253fde" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.75" fill="none"/>
+    </g>
+  </g>
+</svg>

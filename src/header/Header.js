@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "../images/php.png";
+import logo from "../images/SNVS-Logo.svg";
 import instagram from "../images/instagram.svg";
 import twitter from "../images/twitter.svg";
 import facebook from "../images/facebook.svg";
@@ -33,27 +33,28 @@ class Header extends Component {
               <Navbar variant="dark">
                 <Navbar.Brand>
                   <Link to="/home" className="d-block">
-                    <img src={logo} style={{ height: "40px" }} />
+                    <img src={logo} style={{ height: "50px" }} />
                   </Link>
                 </Navbar.Brand>
                 <Nav className="mx-auto header-link">
                   <NavLink to="/home" activeClassName="active">
                     Home
                 </NavLink>
-                  <NavLink to="/about" activeClassName="active">
-                    About
-                </NavLink>
+                
                   {/* <NavLink to="/service" activeClassName="active">
                     Service
                 </NavLink> */}
                   <NavDropdown title="Service" id="basic-nav-dropdown">
-                    <NavLink to="/service2d">2D</NavLink>
-                    <NavLink to="/service3d">3D</NavLink>
-                    <NavLink to="/serviceVfx">VFX</NavLink>                 
-                    <NavLink to="/serviceApp">App</NavLink>
-                    <NavLink to="/serviceWeb">Website</NavLink>                    
-                    <NavLink to="/serviceInt">Interaction</NavLink>
+                    <NavLink to="/service2d">2D Graphics</NavLink>
+                    <NavLink to="/service3d">3D Graphics</NavLink>
+                    <NavLink to="/serviceVfx">Visual Effects</NavLink> 
+                    <NavLink to="/serviceWeb">Web Development</NavLink>    
+                    <NavLink to="/serviceApp">Digital Marketing</NavLink>                
+                    <NavLink to="/serviceInt">Photography</NavLink>
                   </NavDropdown>
+                  <NavLink to="/about" activeClassName="active">
+                    About
+                </NavLink>
                   <NavLink to="/blog" activeClassName="active">
                     Blog
                 </NavLink>
