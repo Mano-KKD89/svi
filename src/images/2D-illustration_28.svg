@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="370" height="300" viewBox="0 0 370 300">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0094d6"/>
+      <stop offset="1" stop-color="#002c9a"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient" x1="0.532" y1="1" x2="0.528" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2eccfc"/>
+      <stop offset="0.237" stop-color="#26afea"/>
+      <stop offset="1" stop-color="#1b8ad3"/>
+      <stop offset="1" stop-color="#002a98"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1951de"/>
+      <stop offset="1" stop-color="#2eccfc"/>
+    </linearGradient>
+    <filter id="Rectangle_1338" x="306.658" y="120.086" width="12.214" height="76.377" filterUnits="userSpaceOnUse">
+      <feOffset dx="-2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.149"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_1339" x="234.248" y="17.009" width="113.112" height="159.94" filterUnits="userSpaceOnUse">
+      <feOffset dx="-4" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-2"/>
+      <feFlood flood-opacity="0.451"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_20696" x="126.27" y="146.59" width="69.455" height="55.735" filterUnits="userSpaceOnUse">
+      <feOffset dx="-2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-3"/>
+      <feFlood flood-opacity="0.149"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-3" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#002a98"/>
+      <stop offset="1" stop-color="#2eccfc"/>
+    </linearGradient>
+    <filter id="Path_20698" x="297.9" y="243.616" width="55.803" height="42.732" filterUnits="userSpaceOnUse">
+      <feOffset dx="-4" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-4"/>
+      <feFlood flood-opacity="0.451"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_7212" data-name="Group 7212" transform="translate(-375 -6751)">
+    <path id="Rectangle_645" data-name="Rectangle 645" d="M10,0H360a10,10,0,0,1,10,10V300a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V10A10,10,0,0,1,10,0Z" transform="translate(375 6751)" fill="url(#radial-gradient)"/>
+    <g id="Group_7211" data-name="Group 7211" transform="translate(-1)">
+      <rect id="Rectangle_1335" data-name="Rectangle 1335" width="168.862" height="270" transform="translate(559.665 6765.562)" fill="url(#linear-gradient)"/>
+      <rect id="Rectangle_1427" data-name="Rectangle 1427" width="168.862" height="270" transform="translate(393.665 6765.562)" fill="#fff"/>
+      <rect id="Rectangle_1336" data-name="Rectangle 1336" width="292.273" height="112.632" transform="translate(413.528 6780.836)" fill="#333"/>
+      <text id="New_Arrival" data-name="New
+Arrival" transform="translate(443.95 6820.255)" fill="#fff" font-size="33" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">New</tspan><tspan x="0" y="40">Arrival</tspan></text>
+      <rect id="Rectangle_1337" data-name="Rectangle 1337" width="70.377" height="6.214" transform="translate(413.528 6930.47)" fill="#333"/>
+      <g transform="matrix(1, 0, 0, 1, 376, 6751)" filter="url(#Rectangle_1338)">
+        <rect id="Rectangle_1338-2" data-name="Rectangle 1338" width="6.214" height="70.377" transform="translate(311.66 121.09)" fill="url(#linear-gradient-2)"/>
+      </g>
+      <g id="Group_6617" data-name="Group 6617" transform="translate(403.195 6948.929)">
+        <text id="_30_" data-name=" 30%" transform="translate(0 41.889)" fill="#333" font-size="36" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0" xml:space="preserve"> 30%</tspan></text>
+        <g id="Group_6616" data-name="Group 6616" transform="translate(93.815 28.748)">
+          <text id="OFF" transform="translate(9 21.02) rotate(-90)" fill="#333" font-size="9" font-family="Poppins-Regular, Poppins" letter-spacing="0.2em"><tspan x="0" y="0">OFF</tspan></text>
+        </g>
+        <text id="UP_TO" data-name="UP TO" transform="translate(11.723 4)" fill="#333" font-size="4" font-family="Poppins-Regular, Poppins" letter-spacing="0.2em"><tspan x="0" y="0">UP TO</tspan></text>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 376, 6751)" filter="url(#Rectangle_1339)">
+        <rect id="Rectangle_1339-2" data-name="Rectangle 1339" width="99.112" height="145.941" transform="translate(245.25 22.01)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+      <path id="Path_20695" data-name="Path 20695" d="M335.9,406.033H432.68l-48.39-75.855Z" transform="translate(188.569 6580.519)" fill="#e6e6e6"/>
+      <g transform="matrix(1, 0, 0, 1, 376, 6751)" filter="url(#Path_20696)">
+        <path id="Path_20696-2" data-name="Path 20696" d="M327.858,371.694h59.807l-29.9-46.876Z" transform="translate(-194.76 -175.37)" fill="none" stroke="#707070" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+      <path id="Path_20697" data-name="Path 20697" d="M431.009,438.564l75.328-63.989V325.1L372.769,438.564Z" transform="translate(222.189 6596.997)" fill="url(#linear-gradient-3)"/>
+      <g transform="matrix(1, 0, 0, 1, 376, 6751)" filter="url(#Path_20698)">
+        <path id="Path_20698-2" data-name="Path 20698" d="M460.226,380.625H420.3l19.961,28.009Z" transform="translate(-110.46 -132.01)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+      <text id="ONLY_TODAY" data-name="ONLY TODAY" transform="translate(632.195 6792.552)" fill="#fff" font-size="3" font-family="Poppins-Regular, Poppins" letter-spacing="0.2em"><tspan x="0" y="0">ONLY TODAY</tspan></text>
+      <text id="SHOP_NOW_" data-name="SHOP NOW &gt;" transform="translate(413.528 7018.107)" fill="#333" font-size="4" font-family="Poppins-Regular, Poppins" letter-spacing="0.2em"><tspan x="0" y="0">SHOP NOW &gt;</tspan></text>
+    </g>
+  </g>
+</svg>
