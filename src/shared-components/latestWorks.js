@@ -236,6 +236,7 @@ async componentDidMount() {
       }
 
     onChoose = type => {
+      
         console.log(type, "type");
         if (type === "ALL") {
           this.setState({
@@ -250,7 +251,93 @@ async componentDidMount() {
           });
         }
       };
-
+      handleClick = type => {
+        var all = document.getElementById('ALL');
+        // var twoD = document.getElementById('2D');
+        var threeD = document.getElementById('3D');
+        var vfx = document.getElementById('VFX');
+        var app = document.getElementById('APP');
+        var website = document.getElementById('Website');
+        var Digital = document.getElementById('Digital');
+        // var Photography = document.getElementById('Photography');
+       
+        if(type == 'ALL'){
+          all.classList.add('activeWork');
+        // if(twoD.classList.contains('activeWork')){
+        //   twoD.classList.remove('activeWork');
+        // }
+          threeD.classList.remove('activeWork');
+          vfx.classList.remove('activeWork');
+          app.classList.remove('activeWork');
+          website.classList.remove('activeWork');
+          Digital.classList.remove('activeWork');
+          // Photography.classList.remove('activeWork');
+        } else if(type == '2D') {
+          all.classList.remove('activeWork');
+          // twoD.classList.add('activeWork');
+          threeD.classList.remove('activeWork');
+          vfx.classList.remove('activeWork');
+          app.classList.remove('activeWork');
+          website.classList.remove('activeWork');
+          Digital.classList.remove('activeWork');
+          // Photography.classList.remove('activeWork');
+        }else if(type == '3D') {
+          threeD.classList.add('activeWork');
+          all.classList.remove('activeWork');
+          // twoD.classList.remove('activeWork');
+          vfx.classList.remove('activeWork');
+          app.classList.remove('activeWork');
+          website.classList.remove('activeWork');
+          Digital.classList.remove('activeWork');
+          // Photography.classList.remove('activeWork');
+        }else if(type == 'VFX') {
+          vfx.classList.add('activeWork');
+          all.classList.remove('activeWork');
+          // twoD.classList.remove('activeWork');
+          threeD.classList.remove('activeWork');
+          app.classList.remove('activeWork');
+          website.classList.remove('activeWork');
+          Digital.classList.remove('activeWork');
+          // Photography.classList.remove('activeWork');
+        }else if(type == 'APP') {
+          app.classList.add('activeWork');
+          all.classList.remove('activeWork');
+          // twoD.classList.remove('activeWork');
+          threeD.classList.remove('activeWork');
+          vfx.classList.remove('activeWork');
+          website.classList.remove('activeWork');
+          Digital.classList.remove('activeWork');
+          // Photography.classList.remove('activeWork');
+        }else if(type == 'Website') {
+          website.classList.add('activeWork');
+          all.classList.remove('activeWork');
+          // twoD.classList.remove('activeWork');
+          threeD.classList.remove('activeWork');
+          vfx.classList.remove('activeWork');
+          app.classList.remove('activeWork');
+          Digital.classList.remove('activeWork');
+          // Photography.classList.remove('activeWork');
+        }else if(type == 'Digital') {
+          Digital.classList.add('activeWork');
+          all.classList.remove('activeWork');
+          // twoD.classList.remove('activeWork');
+          threeD.classList.remove('activeWork');
+          vfx.classList.remove('activeWork');
+          app.classList.remove('activeWork');
+          website.classList.remove('activeWork');
+          // Photography.classList.remove('activeWork');
+        } else{
+          // Photography.classList.add('activeWork');
+          all.classList.remove('activeWork');
+          // twoD.classList.remove('activeWork');
+          threeD.classList.remove('activeWork');
+          vfx.classList.remove('activeWork');
+          app.classList.remove('activeWork');
+          website.classList.remove('activeWork');
+          Digital.classList.remove('activeWork');
+          
+        }
+      }
       getName = type => {
 
         switch(type) {
@@ -292,9 +379,11 @@ async componentDidMount() {
                     </p>
                   </Col>
                   <Col xs={12} className="span-tap ">
-                  <span
+                  <span id='ALL'
                       onClick={() => {
+                        this.handleClick("ALL")
                         return this.onChoose("ALL");
+                        
                       }}
                     >
                       All
@@ -302,7 +391,9 @@ async componentDidMount() {
 {this.state.typeArry.map(type => {
               return (
                     <span
+                    id={type}
                       onClick={() => {
+                        this.handleClick(type)
                         return this.onChoose(type);
                       }}
                     >

@@ -316,13 +316,26 @@ class Home extends Component {
       slidesToShow: 4,
       speed: 500
     };
+    const settings2 = {
+      className: "multiple-items",
+      dots: false,
+      infinite: true,
+      centerPadding: "60px",
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      speed: 1000,
+      autoplay: true,
+      autoplaySpeed: 2000
+    };
     const settings = {
       className: "multiple-items",
       dots: false,
       infinite: true,
       speed: 500,
       slidesToShow: 4,
-      slidesToScroll: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
       responsive: [
         {
           breakpoint: 1024,
@@ -611,7 +624,7 @@ technologies to deliver outstanding service to our clients.
                   <Col xs={12} className="inner-sec">
                     <Row>
                       <Col xs={12} sm={11} className="review-inner mx-auto">
-                        <Slider
+                        <Slider 
                           asNavFor={this.state.nav1}
                           ref={slider => (this.slider2 = slider)}
                           slidesToShow={3}
@@ -690,7 +703,7 @@ technologies to deliver outstanding service to our clients.
                     </h2>
                   </Col>
                   <Col xs={12} className="inner-sec">
-                    <Slider {...settings1}>
+                    <Slider {...settings2}>
                       {this.state.clientsData.map(data => {
                         return (
                           <figure key={data.id} className="img-client d-flex align-items-center">
