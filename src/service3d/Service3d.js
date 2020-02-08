@@ -44,9 +44,9 @@ class Service3d extends Component {
                       <h1 className="text-blue">3D Graphics</h1>
                       <h4 className="text-white">
                         Good design is
-                        <span className="text-blue">Obvious</span><br></br>
+                        <span className="text-blue"> Obvious</span><br></br>
                         Great design is
-                        <span className="text-blue">Transparent</span>
+                        <span className="text-blue"> Transparent</span>
                       </h4>
                       <p className="text-white">Fresh ideas. Thoughtful design. Measurable results.</p>
                     </nav>

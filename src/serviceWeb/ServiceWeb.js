@@ -1,7 +1,18 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Button, Breadcrumb } from "react-bootstrap";
-import ServiceBanner from "../images/service-banner.svg";
-import LatestWork from "../images/Latest-work.svg";
+import ServiceBanner from "../images/Main-illustration_9.svg";
+import WebDevelopmentillustration_1 from "../images/WebDevelopmentillustration_1.svg";
+import WebDevelopmentillustration_2 from "../images/WebDevelopmentillustration_2.svg";
+import WebDevelopmentillustration_3 from "../images/WebDevelopmentillustration_3.svg";
+import WebDevelopmentillustration_4 from "../images/WebDevelopmentillustration_4.svg";
+import WebDevelopmentillustration_5 from "../images/WebDevelopmentillustration_5.svg";
+import WebDevelopmentillustration_6 from "../images/WebDevelopmentillustration_6.svg";
+import WebDevelopmentillustration_7 from "../images/WebDevelopmentillustration_7.svg";
+import WebDevelopmentillustration_8 from "../images/WebDevelopmentillustration_8.svg";
+import WebDevelopmentillustration_9 from "../images/WebDevelopmentillustration_9.svg";
+import WebDevelopmentillustration_10 from "../images/WebDevelopmentillustration_10.svg";
+import WebDevelopmentillustration_11 from "../images/WebDevelopmentillustration_11.svg";
+import WebDevelopmentillustration_12 from "../images/WebDevelopmentillustration_12.svg";
 import "./serviceWeb.scss";
 class ServiceWeb extends Component {
   constructor() {
@@ -23,14 +34,14 @@ class ServiceWeb extends Component {
                         </Breadcrumb.Item>
                         <Breadcrumb.Item active>Services</Breadcrumb.Item>
                       </Breadcrumb>
-                      <h1 className="text-blue">2D Graphics</h1>
+                      <h1 className="text-blue">Web Development</h1>
                       <h4 className="text-white">
-                        Creative{" "}
-                        <span className="text-blue">Thinking</span>{" "}<br></br>
-                        Creatives at your{" "}
-                        <span className="text-blue">Service</span>
+                      We create websites that 
+                        <span className="text-blue"> have it all</span><br></br>
+                        Beauty and 
+                        <span className="text-blue">Brains</span>
                       </h4>
-                      <p className="text-white">Affordable solutions for all your creativity needs.</p>
+                      <p className="text-white">Turning imagination into reality.</p>
                     </nav>
                   </Col>
                   <Col xs={4} className="d-flex align-items-center service-img">
@@ -47,400 +58,153 @@ class ServiceWeb extends Component {
               <Col xs={12}>
                 <Row>
                   <Col xs={12} className="text-center title-sec">
-                    <p>you provide the vision, we provide the solution</p>
-                    <h2>Bringing great design ideas to completion</h2>
-                    <p className="para-p">We offer premium quality graphic design and 2D all services to our clients at affordable/reasonable cost. Our team of qualified professionals renders the service in adherence to requirement.   We create such unique concepts that touch your senses and induces to approach us. You can find wide array of creative services in,</p>
+                    <p>We create websites that have it all, Beauty and Brains</p>
+                    <h2>Turning imagination into reality</h2>
+                    <p className="para-p">We Provide complete web development solutions like website development, web content development, client/server side scripting, network security configuration of your site and related services for your business requirement which enhances your digital space to run business online to compete and conquer in this modern world. </p>
                   </Col>
                   <Col xs={12} className=" title-sec1 p-0">
                     <h2>2D <span>Web</span> Infographics, Elements <span>and</span> Icon <span>Creation</span></h2>
                   </Col>
-                  <Col xs={12} className="p-0 mt-3">
+                  <Col xs={12} className="p-0 mt-3 mb-5">
                     <Row>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
+                          <figure className="works-img"><img src={WebDevelopmentillustration_1} /></figure>
                           <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
+                            <p>Web Development</p>
+                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
+                          <figure className="works-img"><img src={WebDevelopmentillustration_2} /></figure>
                           <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
+                            <p>Web Development</p>
+                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
+                          <figure className="works-img"><img src={WebDevelopmentillustration_3} /></figure>
                           <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
+                            <p>Web Development</p>
+                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
                     </Row>
-                    <Row>
-                      <Col xs={12} className="text-center">
-                        <span className="view-project">View All Projects</span>
-                      </Col>
-                    </Row>
+                    
                   </Col>
                   <Col xs={12} className=" title-sec1 p-0">
                     <h2>Desktop <span>and</span> Mobile <span>Website Planning Creation</span></h2>
                   </Col>
-                  <Col xs={12} className="p-0 mt-3">
+                  <Col xs={12} className="p-0 mt-3 mb-5">
                     <Row>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
+                          <figure className="works-img"><img src={WebDevelopmentillustration_4} /></figure>
                           <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
+                            <p>Web Development</p>
+                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
+                          <figure className="works-img"><img src={WebDevelopmentillustration_5} /></figure>
                           <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
+                            <p>Web Development</p>
+                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
+                          <figure className="works-img"><img src={WebDevelopmentillustration_6} /></figure>
                           <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
+                            <p>Web Development</p>
+                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
                     </Row>
-                    <Row>
-                      <Col xs={12} className="text-center">
-                        <span className="view-project">View All Projects</span>
-                      </Col>
-                    </Row>
+                    
                   </Col>
                   <Col xs={12} className=" title-sec1 p-0">
                     <h2>Architecture <span>Plan and</span> Blueprint <span>Design</span></h2>
                   </Col>
-                  <Col xs={12} className="p-0 mt-3">
+                  <Col xs={12} className="p-0 mt-3 mb-5">
                     <Row>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
+                          <figure className="works-img"><img src={WebDevelopmentillustration_7} /></figure>
                           <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
+                            <p>Web Development</p>
+                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
+                          <figure className="works-img"><img src={WebDevelopmentillustration_8} /></figure>
                           <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
+                            <p>Web Development</p>
+                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
+                          <figure className="works-img"><img src={WebDevelopmentillustration_9} /></figure>
                           <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
+                            <p>Web Development</p>
+                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
                     </Row>
-                    <Row>
-                      <Col xs={12} className="text-center">
-                        <span className="view-project">View All Projects</span>
-                      </Col>
-                    </Row>
+                    
                   </Col>
                   <Col xs={12} className=" title-sec1 p-0">
                     <h2>Business <span>Card and</span> Invitation <span>Card Design</span></h2>
                   </Col>
-                  <Col xs={12} className="p-0 mt-3">
+                  <Col xs={12} className="p-0 mt-3 mb-5">
                     <Row>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
+                          <figure className="works-img"><img src={WebDevelopmentillustration_10} /></figure>
                           <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
+                            <p>Web Development</p>
+                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
+                          <figure className="works-img"><img src={WebDevelopmentillustration_11} /></figure>
                           <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
+                            <p>Web Development</p>
+                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
+                          <figure className="works-img"><img src={WebDevelopmentillustration_12} /></figure>
                           <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
+                            <p>Web Development</p>
+                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
                     </Row>
-                    <Row>
-                      <Col xs={12} className="text-center">
-                        <span className="view-project">View All Projects</span>
-                      </Col>
-                    </Row>
-                  </Col>
-                  <Col xs={12} className=" title-sec1 p-0">
-                    <h2>Banner <span>Design and</span> Creative <span>Graphic Design</span></h2>
-                  </Col>
-                  <Col xs={12} className="p-0 mt-3">
-                    <Row>
-                      <Col xs={4} >
-                        <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
-                          <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
-                          </div>
-                        </div>
-                      </Col>
-                      <Col xs={4} >
-                        <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
-                          <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
-                          </div>
-                        </div>
-                      </Col>
-                      <Col xs={4} >
-                        <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
-                          <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
-                          </div>
-                        </div>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col xs={12} className="text-center">
-                        <span className="view-project">View All Projects</span>
-                      </Col>
-                    </Row>
-                  </Col>
-                  <Col xs={12} className=" title-sec1 p-0">
-                    <h2>Brochure <span>and</span> Pamphlet <span>Design</span></h2>
-                  </Col>
-                  <Col xs={12} className="p-0 mt-3">
-                    <Row>
-                      <Col xs={4} >
-                        <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
-                          <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
-                          </div>
-                        </div>
-                      </Col>
-                      <Col xs={4} >
-                        <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
-                          <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
-                          </div>
-                        </div>
-                      </Col>
-                      <Col xs={4} >
-                        <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
-                          <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
-                          </div>
-                        </div>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col xs={12} className="text-center">
-                        <span className="view-project">View All Projects</span>
-                      </Col>
-                    </Row>
-                  </Col>
-                  <Col xs={12} className=" title-sec1 p-0">
-                    <h2>2d logo <span>Creation and</span> logo <span>Animation</span></h2>
-                  </Col>
-                  <Col xs={12} className="p-0 mt-3">
-                    <Row>
-                      <Col xs={4} >
-                        <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
-                          <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
-                          </div>
-                        </div>
-                      </Col>
-                      <Col xs={4} >
-                        <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
-                          <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
-                          </div>
-                        </div>
-                      </Col>
-                      <Col xs={4} >
-                        <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
-                          <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
-                          </div>
-                        </div>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col xs={12} className="text-center">
-                        <span className="view-project">View All Projects</span>
-                      </Col>
-                    </Row>
-                  </Col>
-                  <Col xs={12} className=" title-sec1 p-0">
-                    <h2>2d Motion <span>Graphics Animation</span></h2>
-                  </Col>
-                  <Col xs={12} className="p-0 mt-3">
-                    <Row>
-                      <Col xs={4} >
-                        <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
-                          <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
-                          </div>
-                        </div>
-                      </Col>
-                      <Col xs={4} >
-                        <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
-                          <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
-                          </div>
-                        </div>
-                      </Col>
-                      <Col xs={4} >
-                        <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
-                          <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
-                          </div>
-                        </div>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col xs={12} className="text-center">
-                        <span className="view-project">View All Projects</span>
-                      </Col>
-                    </Row>
-                  </Col>
-                  <Col xs={12} className=" title-sec1 p-0">
-                    <h2>2d <span>Advertisement</span></h2>
-                  </Col>
-                  <Col xs={12} className="p-0 mt-3">
-                    <Row>
-                      <Col xs={4} >
-                        <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
-                          <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
-                          </div>
-                        </div>
-                      </Col>
-                      <Col xs={4} >
-                        <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
-                          <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
-                          </div>
-                        </div>
-                      </Col>
-                      <Col xs={4} >
-                        <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
-                          <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
-                          </div>
-                        </div>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col xs={12} className="text-center">
-                        <span className="view-project">View All Projects</span>
-                      </Col>
-                    </Row>
-                  </Col>
-                  <Col xs={12} className=" title-sec1 p-0">
-                    <h2>All <span>Types of</span> Web Banner <span>Creations</span></h2>
-                  </Col>
-                  <Col xs={12} className="p-0 mt-3">
-                    <Row>
-                      <Col xs={4} >
-                        <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
-                          <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
-                          </div>
-                        </div>
-                      </Col>
-                      <Col xs={4} >
-                        <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
-                          <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
-                          </div>
-                        </div>
-                      </Col>
-                      <Col xs={4} >
-                        <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
-                          <div className="works-info">
-                            <p>2D Graphics</p>
-                            <h4>Desktop Website Planning<span className="float-right">2019</span></h4>
-                          </div>
-                        </div>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col xs={12} className="text-center">
-                        <span className="view-project">View All Projects</span>
-                      </Col>
-                    </Row>
-                  </Col>
+                                    </Col>
+                  
+                  
+                   
+                  
                 </Row>
               </Col>
             </Container>

@@ -12,6 +12,7 @@ import LandingWebdel from "../images/Landing-page-illustration_4.svg";
 import LandingDigital from "../images/Landing-page-illustration_5.svg";
 import LandingPhotography from "../images/Landing-page-illustration_6.svg";
 import LandingIllustration2 from "../images/Landing-illustration-2.svg";
+import Landingillustration212 from "../images/Landing-illustration-212.svg";
 import LatestWork from "../images/Latest-work.svg";
 import manIcon from "../images/Man-icon.png";
 import SubscribIllustration from "../images/subscrib-illustration.svg";
@@ -558,8 +559,8 @@ technologies to deliver outstanding service to our clients.
                   <Col xs={6} className="pr-0">
                     <figure className="img-grap">
                       <img
-                        src={LandingIllustration2}
-                        alt={LandingIllustration2}
+                        src={Landingillustration212}
+                        alt={Landingillustration212}
                       />
                     </figure>
                   </Col>
