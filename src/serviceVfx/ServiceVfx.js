@@ -8,14 +8,19 @@ import vfx_3 from "../images/vfx_3.svg";
 import vfx_4 from "../images/vfx_4.svg";
 import vfx_5 from "../images/vfx_5.svg";
 import vfx_6 from "../images/vfx_6.svg";
+import vfx_13 from "../images/vfx_13.svg";
 import vfx_14 from "../images/vfx_14.svg";
+import vfx_15 from "../images/vfx_15.svg";
 import vfx_16 from "../images/vfx_16.svg";
 import vfx_17 from "../images/vfx_17.svg";
 import vfx_18 from "../images/vfx_18.svg";
+import vfx_19 from "../images/vfx_19.svg";
+import vfx_20 from "../images/vfx_20.svg";
 import vfx_21 from "../images/vfx_21.svg";
 import vfx_22 from "../images/vfx_22.svg";
 import vfx_23 from "../images/vfx_23.svg";
 import vfx_24 from "../images/vfx_24.svg";
+import VideoIcon from '../images/Video-icon.svg'
 import "./serviceVfx.scss";
 class ServiceVfx extends Component {
   constructor() {
@@ -39,12 +44,11 @@ class ServiceVfx extends Component {
                       </Breadcrumb>
                       <h1 className="text-blue">Visual Effects (VFX)</h1>
                       <h4 className="text-white">
-                        If you can
-                        <span className="text-blue">Imagine</span> it<br></br>
-                        We can
-                        <span className="text-blue">Create</span> it
-                      </h4>
-                      <p className="text-white">Believe in the power of ideas.</p>
+                      We can make your 
+                        <span className="text-blue">creative mind </span> <br />
+                        thoughts
+                                              </h4>
+                      <p className="text-white">Trust in the intensity of thoughts.</p>
                     </nav>
                   </Col>
                   <Col xs={4} className="d-flex align-items-center service-img">
@@ -61,9 +65,9 @@ class ServiceVfx extends Component {
               <Col xs={12}>
                 <Row>
                   <Col xs={12} className="text-center title-sec">
-                    <p>Smart, intuitive design for brilliant brands</p>
-                    <h2>We share your dreams with the world!!!</h2>
-                    <p className="para-p">We deliver the most attractive VFX services with all kind of effects using our well-groomed team with latest tools and technologies. We provide this service using superior quality instruments and fulfil client’s requirement as per their specification.</p>
+                    <p>Keen, natural structure for splendid brands</p>
+                    <h2>We share your fantasies with the world!!!</h2>
+                    <p className="para-p">We convey the most appealing VFX services with all sort of impacts utilizing our well-prepped group with most recent instruments and advances. We give this administration utilizing predominant quality instruments and satisfy customer's necessity according to their detail. The administrations incorporate,</p>
                   </Col>
                   <Col xs={12} className=" title-sec1 p-0">
                     <h2>Video <span>Editing</span> </h2>
@@ -142,7 +146,7 @@ class ServiceVfx extends Component {
                     <Row>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={vfx_1} /></figure>
+                          <figure className="works-img"><img src={VideoIcon} /></figure>
                           <div className="works-info">
                             <p>Visual Effects</p>
                             <h4>Social Media Advertisement<span className="float-right">2020</span></h4>
@@ -151,7 +155,7 @@ class ServiceVfx extends Component {
                       </Col>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={vfx_1} /></figure>
+                          <figure className="works-img"><img src={VideoIcon} /></figure>
                           <div className="works-info">
                             <p>Visual Effects</p>
                             <h4>Social Media Advertisement<span className="float-right">2020</span></h4>
@@ -160,7 +164,7 @@ class ServiceVfx extends Component {
                       </Col>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={vfx_1} /></figure>
+                          <figure className="works-img"><img src={VideoIcon} /></figure>
                           <div className="works-info">
                             <p>Visual Effects</p>
                             <h4>Social Media Advertisement<span className="float-right">2020</span></h4>
@@ -177,7 +181,7 @@ class ServiceVfx extends Component {
                     <Row>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={vfx_1} /></figure>
+                          <figure className="works-img"><img src={VideoIcon} /></figure>
                           <div className="works-info">
                             <p>Visual Effects</p>
                             <h4>TV Advertisement<span className="float-right">2020</span></h4>
@@ -186,7 +190,7 @@ class ServiceVfx extends Component {
                       </Col>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={vfx_1} /></figure>
+                          <figure className="works-img"><img src={VideoIcon} /></figure>
                           <div className="works-info">
                             <p>Visual Effects</p>
                             <h4>TV Advertisement<span className="float-right">2020</span></h4>
@@ -195,7 +199,7 @@ class ServiceVfx extends Component {
                       </Col>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={vfx_1} /></figure>
+                          <figure className="works-img"><img src={VideoIcon} /></figure>
                           <div className="works-info">
                             <p>Visual Effects</p>
                             <h4>TV Advertisement<span className="float-right">2020</span></h4>
@@ -212,7 +216,7 @@ class ServiceVfx extends Component {
                     <Row>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={vfx_14} /></figure>
+                          <figure className="works-img"><img src={vfx_13} /></figure>
                           <div className="works-info">
                             <p>Visual Effects</p>
                             <h4>Compositing<span className="float-right">2020</span></h4>
@@ -230,7 +234,7 @@ class ServiceVfx extends Component {
                       </Col>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={vfx_16} /></figure>
+                          <figure className="works-img"><img src={vfx_15} /></figure>
                           <div className="works-info">
                             <p>Visual Effects</p>
                             <h4>Particle Effects <span className="float-right">2020</span></h4>
@@ -282,7 +286,7 @@ class ServiceVfx extends Component {
                     <Row>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={vfx_1} /></figure>
+                          <figure className="works-img"><img src={vfx_19} /></figure>
                           <div className="works-info">
                             <p>Visual Effects</p>
                             <h4>Sound Recording <span className="float-right">2020</span></h4>
@@ -291,7 +295,7 @@ class ServiceVfx extends Component {
                       </Col>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={vfx_1} /></figure>
+                          <figure className="works-img"><img src={vfx_20} /></figure>
                           <div className="works-info">
                             <p>Visual Effects</p>
                             <h4> Sound Editing<span className="float-right">2020</span></h4>

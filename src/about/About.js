@@ -32,9 +32,9 @@ class About extends Component {
                       </Breadcrumb>
                       <h1 className="text-blue">About Us</h1>
                       <h4 className="text-white">
-                        We are group of{" "}
-                        <span className="text-blue">Creative <br></br>Developers</span>{" "}
-                        here to help you
+                      We are gathering of 
+                        <span className="text-blue"> Creative <br></br>Developers</span>{" "}
+                        here to support you
                       </h4>
                       <p className="text-white">Make something new.</p>
                     </nav>
@@ -52,10 +52,7 @@ class About extends Component {
                   <div>
                   <h3>Get to know us</h3>
                   <h4>
-                    We are promising service provider in the field of Graphics
-                    and animations. We deal with all graphics, VFX, 2D, 3D
-                    animation services and are acknowledged/recognized accuracy
-                    and timely execution of work.
+                  We are promising specialist organization in the field of Graphics and animations. We manage all designs, VFX, 2D, 3D animation services and are perceived exactness and convenient execution of work. We are here to give better assistance at ostensible and benefitable expense for little scale specialists who are flourishing hard to prevail right now.
                   </h4>
                   </div>
                 </Col>
@@ -69,10 +66,7 @@ class About extends Component {
                   <div className="ml-5">
                   <h3>Our Vision</h3>
                   <h4 >
-                    We are promising service provider in the field of Graphics
-                    and animations. We deal with all graphics, VFX, 2D, 3D
-                    animation services and are acknowledged/recognized accuracy
-                    and timely execution of work.
+                  Sreenevasa is an UAE Based organization with 7 years' involvement with the field of 2d, 3d, VFX, Photography, Digital marketing and Web Development benefits in the pace of web development solution across the the country. Our vision is to elevate the customer's necessity in a creative and appealing technique to progress. Our fantasy is to set up cutting edge methods and ensure we convey the more noteworthy experience and powerful assistance to customer.
                   </h4>
                   </div>
                 </Col>
@@ -80,10 +74,7 @@ class About extends Component {
                   <div>
                   <h3>Our Mision</h3>
                   <h4>
-                    We are promising service provider in the field of Graphics
-                    and animations. We deal with all graphics, VFX, 2D, 3D
-                    animation services and are acknowledged/recognized accuracy
-                    and timely execution of work.
+                  Our Mission is to make a trademark in the field of designs, animation overall the nation and give total web improvement bundle to go into business at low cost. We make a workmanship that will represent your items and services alongside advanced showcasing administrations. We might want to make a stage which will fill in as one-stop answer for all your business necessities.
                   </h4>
                   </div>
                 </Col>

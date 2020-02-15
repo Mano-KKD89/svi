@@ -5,9 +5,9 @@ import LatestWork from "../images/Latest-work.svg";
 import threeDillustration_1 from "../images/3D-illustration_1.svg";
 import threeDillustration_2 from "../images/3D-illustration_2.svg";
 import threeDillustration_4 from "../images/3D-illustration_4.svg";
-import threeDillustration_5 from "../images/3D-illustration_4.svg";
-import threeDillustration_6 from "../images/3D-illustration_4.svg";
-import threeDillustration_7 from "../images/3D-illustration_4.svg";
+import threeDillustration_5 from "../images/3D-illustration_5.svg";
+import threeDillustration_6 from "../images/3D-illustration_6.svg";
+import threeDillustration_7 from "../images/3D-illustration_7.svg";
 import threeDillustration_8 from "../images/3D-illustration_8.svg";
 import threeDillustration_9 from "../images/3D-illustration_9.svg";
 import threeDillustration_10 from "../images/3D-illustration_10.svg";
@@ -20,6 +20,7 @@ import threeDillustration_25 from "../images/3D-illustration_25.svg";
 import threeDillustration_26 from "../images/3D-illustration_26.svg";
 import threeDillustration_27 from "../images/3D-illustration_27.svg";
 import Mainillustration from '../images/Main-illustration_7.svg';
+import VideoIcon from '../images/Video-icon.svg'
 import "./service3d.scss";
 class Service3d extends Component {
   constructor() {
@@ -43,12 +44,12 @@ class Service3d extends Component {
                       </Breadcrumb>
                       <h1 className="text-blue">3D Graphics</h1>
                       <h4 className="text-white">
-                        Good design is
+                        Good structure is
                         <span className="text-blue"> Obvious</span><br></br>
-                        Great design is
+                        Great plan is
                         <span className="text-blue"> Transparent</span>
                       </h4>
-                      <p className="text-white">Fresh ideas. Thoughtful design. Measurable results.</p>
+                      <p className="text-white">New thoughts. Insightful design. Quantifiable outcomes.</p>
                     </nav>
                   </Col>
                   <Col xs={4} className="d-flex align-items-center service-img">
@@ -65,9 +66,9 @@ class Service3d extends Component {
               <Col xs={12}>
                 <Row>
                   <Col xs={12} className="text-center title-sec">
-                    <p>Where innovation, imagination and ingenuity meet</p>
-                    <h2>Making ideas come to life</h2>
-                    <p className="para-p">We provide premier 3D animation services at very nominal prices. We use best 3D technologies to deliver outstanding service to our clients. We mainly focus on customer satisfaction and reliability. We offer wide variety of experimental and inventive models which include.</p>
+                    <p>Where advancement, creative mind and inventiveness meet</p>
+                    <h2>Making thoughts become animated</h2>
+                    <p className="para-p">We give chief 3D animation services at ostensible costs. We utilize best 3D innovations to convey exceptional support of our customers. We principally center around consumer loyalty and unwavering quality. We offer wide assortment of test and innovative models which incorporate.</p>
                   </Col>
                   <Col xs={12} className=" title-sec1 p-0">
                     <h2>3D Logo <span>Creation and</span> Logo <span>Animation</span></h2>
@@ -94,7 +95,7 @@ class Service3d extends Component {
                       </Col>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
+                          <figure className="works-img"><img src={VideoIcon} /></figure>
                           <div className="works-info">
                             <p>3D Graphics</p>
                             <h4>3D Logo Animation<span className="float-right">2020</span></h4>
@@ -216,7 +217,7 @@ class Service3d extends Component {
                     <Row>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
+                          <figure className="works-img"><img src={VideoIcon} /></figure>
                           <div className="works-info">
                             <p>3D Graphics</p>
                             <h4>3D Engine Animation<span className="float-right">2020</span></h4>
@@ -225,7 +226,7 @@ class Service3d extends Component {
                       </Col>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
+                          <figure className="works-img"><img src={VideoIcon} /></figure>
                           <div className="works-info">
                             <p>3D Graphics</p>
                             <h4>3D Kiosk Machine Animation<span className="float-right">2020</span></h4>
@@ -234,7 +235,7 @@ class Service3d extends Component {
                       </Col>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
+                          <figure className="works-img"><img src={VideoIcon} /></figure>
                           <div className="works-info">
                             <p>3D Graphics</p>
                             <h4>3D Logo Animation<span className="float-right">2020</span></h4>
@@ -251,7 +252,7 @@ class Service3d extends Component {
                     <Row>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
+                          <figure className="works-img"><img src={VideoIcon} /></figure>
                           <div className="works-info">
                             <p>3D Graphics</p>
                             <h4>Architectural Walkthrough Animation<span className="float-right">2020</span></h4>
@@ -260,7 +261,7 @@ class Service3d extends Component {
                       </Col>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
+                          <figure className="works-img"><img src={VideoIcon} /></figure>
                           <div className="works-info">
                             <p>3D Graphics</p>
                             <h4>Home Decor Animation<span className="float-right">2020</span></h4>
@@ -269,7 +270,7 @@ class Service3d extends Component {
                       </Col>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
+                          <figure className="works-img"><img src={VideoIcon} /></figure>
                           <div className="works-info">
                             <p>3D Graphics</p>
                             <h4>3D Car Animation<span className="float-right">2020</span></h4>
@@ -321,7 +322,7 @@ class Service3d extends Component {
                     <Row>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
+                          <figure className="works-img"><img src={VideoIcon} /></figure>
                           <div className="works-info">
                             <p>3D Graphics</p>
                             <h4>3D Advertisement<span className="float-right">2020</span></h4>
@@ -330,7 +331,7 @@ class Service3d extends Component {
                       </Col>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
+                          <figure className="works-img"><img src={VideoIcon} /></figure>
                           <div className="works-info">
                             <p>3D Graphics</p>
                             <h4>3D Advertisement<span className="float-right">2020</span></h4>
@@ -339,7 +340,7 @@ class Service3d extends Component {
                       </Col>
                       <Col xs={4} >
                         <div className="works-div mt-3 mb-3">
-                          <figure className="works-img"><img src={LatestWork} /></figure>
+                          <figure className="works-img"><img src={VideoIcon} /></figure>
                           <div className="works-info">
                             <p>3D Graphics</p>
                             <h4>3D Short Films<span className="float-right">2020</span></h4>

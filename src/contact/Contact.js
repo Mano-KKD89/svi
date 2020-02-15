@@ -34,11 +34,11 @@ class Contact extends Component {
                       </Breadcrumb>
                       <h1 className="text-blue">Contact</h1>
                       <h4 className="text-white">
-                        We are group of{" "}
-                        <span className="text-blue">Creative Developers</span>{" "}
-                        here to help you
+                      We are constantly <br />
+                        <span className="text-blue"> Happy to Help</span>
+                       
                       </h4>
-                      <small className="text-white">Make something new.</small>
+                      <small className="text-white">Connect with us today!</small>
                     </nav>
                   </Col>
                   <Col xs={4}>
@@ -50,7 +50,7 @@ class Contact extends Component {
 
             <Container className="mt-5 pt-3 map-sec">
               <h2>Contact Us</h2>
-              <h3>Get in Touch</h3>
+              {/* <h3>Get in Touch</h3> */}
               <div style={{ height: "400px", width: "100%" }}>
                 <GoogleMapReact
                   bootstrapURLKeys={{

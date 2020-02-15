@@ -55,12 +55,12 @@ class Service2d extends Component {
                       </Breadcrumb>
                       <h1 className="text-blue">2D Graphics</h1>
                       <h4 className="text-white">
-                        Creative{" "}
+                      Inventive {" "}
                         <span className="text-blue">Thinking</span>{" "}<br></br>
                         Creatives at your{" "}
                         <span className="text-blue">Service</span>
                       </h4>
-                      <p className="text-white">Affordable solutions for all your creativity needs.</p>
+                      <p className="text-white">Solutions for all your inventiveness needs.</p>
                     </nav>
                   </Col>
                   <Col xs={4} className="d-flex align-items-center service-img">
@@ -78,8 +78,8 @@ class Service2d extends Component {
                 <Row>
                   <Col xs={12} className="text-center title-sec">
                     <p>You provide the vision, we provide the solution</p>
-                    <h2>Bringing great design ideas to completion</h2>
-                    <p className="para-p">We offer premium quality graphic design and 2D all services to our clients at affordable/reasonable cost. Our team of qualified professionals renders the service in adherence to requirement.   We create such unique concepts that touch your senses and induces to approach us. You can find wide array of creative services in.</p>
+                    <h2>Carrying extraordinary design thoughts to consummation</h2>
+                    <p className="para-p">We offer premium quality visual design and 2D all services to our customers at sensible expense. Our group of qualified experts renders the service in adherence to prerequisite. We make such one of a kind ideas that touch your senses and initiates to move toward us. You can discover wide exhibit of inventive services in,</p>
                   </Col>
                   <Col xs={12} className=" title-sec1 p-0">
                     <h2>2D <span>Web</span> Infographics, Elements <span>and</span> Icon <span>Creation</span></h2>

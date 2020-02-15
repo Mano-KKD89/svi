@@ -9,6 +9,7 @@ import {
     FormControl,
     Form
   } from "react-bootstrap";
+  import {NavLink} from 'react-router-dom';
   import LatestWork from "../images/Latest-work.svg";
   import fire from "../firebase";
 import { async } from 'q';
@@ -371,11 +372,7 @@ async componentDidMount() {
                       Latest <span>Work</span>
                     </h2>
                     <p>
-                      We are specialized in understanding your needs and
-                      get the desired output with great elegance. We
-                      developed creative designs for different business
-                      requirement within the stipulated time period. We reply on
-                      quality work and excellent customer service.
+                    We are spent significant time in understanding your needs and get the ideal yield with extraordinary elegance. We created innovative plans for various business prerequisite inside the stipulated timeframe. We depend on quality work and incredible client care.
                     </p>
                   </Col>
                   <Col xs={12} className="span-tap ">

@@ -36,12 +36,10 @@ class ServiceWeb extends Component {
                       </Breadcrumb>
                       <h1 className="text-blue">Web Development</h1>
                       <h4 className="text-white">
-                      We create websites that 
-                        <span className="text-blue"> have it all</span><br></br>
-                        Beauty and 
-                        <span className="text-blue">Brains</span>
+                      We fabricate a <span className="text-blue"> Website </span>
+                        that will build your <span className="text-blue"> Business</span>
                       </h4>
-                      <p className="text-white">Turning imagination into reality.</p>
+                      <p className="text-white">We can make your business sparkle!</p>
                     </nav>
                   </Col>
                   <Col xs={4} className="d-flex align-items-center service-img">
@@ -58,12 +56,12 @@ class ServiceWeb extends Component {
               <Col xs={12}>
                 <Row>
                   <Col xs={12} className="text-center title-sec">
-                    <p>We create websites that have it all, Beauty and Brains</p>
-                    <h2>Turning imagination into reality</h2>
-                    <p className="para-p">We Provide complete web development solutions like website development, web content development, client/server side scripting, network security configuration of your site and related services for your business requirement which enhances your digital space to run business online to compete and conquer in this modern world. </p>
+                    <p>We make sites that have everything: Beauty and Brains</p>
+                    <h2>Transforming creative mind into the real world</h2>
+                    <p className="para-p">We Provide total web development solutions like site advancement, web content development, customer/server side scripting, organize security design of your webpage and related services for your business necessity which upgrades your computerized space to run business online to contend and vanquish right now. </p>
                   </Col>
                   <Col xs={12} className=" title-sec1 p-0">
-                    <h2>2D <span>Web</span> Infographics, Elements <span>and</span> Icon <span>Creation</span></h2>
+                    <h2>Front-end <span>Development</span> </h2>
                   </Col>
                   <Col xs={12} className="p-0 mt-3 mb-5">
                     <Row>
@@ -72,7 +70,7 @@ class ServiceWeb extends Component {
                           <figure className="works-img"><img src={WebDevelopmentillustration_1} /></figure>
                           <div className="works-info">
                             <p>Web Development</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Front-end Development<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -81,7 +79,7 @@ class ServiceWeb extends Component {
                           <figure className="works-img"><img src={WebDevelopmentillustration_2} /></figure>
                           <div className="works-info">
                             <p>Web Development</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Front-end Development<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -90,7 +88,7 @@ class ServiceWeb extends Component {
                           <figure className="works-img"><img src={WebDevelopmentillustration_3} /></figure>
                           <div className="works-info">
                             <p>Web Development</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Front-end Development<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -98,7 +96,7 @@ class ServiceWeb extends Component {
                     
                   </Col>
                   <Col xs={12} className=" title-sec1 p-0">
-                    <h2>Desktop <span>and</span> Mobile <span>Website Planning Creation</span></h2>
+                    <h2>Backend <span>Development</span> </h2>
                   </Col>
                   <Col xs={12} className="p-0 mt-3 mb-5">
                     <Row>
@@ -107,7 +105,7 @@ class ServiceWeb extends Component {
                           <figure className="works-img"><img src={WebDevelopmentillustration_4} /></figure>
                           <div className="works-info">
                             <p>Web Development</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Backend Development<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -116,7 +114,7 @@ class ServiceWeb extends Component {
                           <figure className="works-img"><img src={WebDevelopmentillustration_5} /></figure>
                           <div className="works-info">
                             <p>Web Development</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Backend Development<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -125,7 +123,7 @@ class ServiceWeb extends Component {
                           <figure className="works-img"><img src={WebDevelopmentillustration_6} /></figure>
                           <div className="works-info">
                             <p>Web Development</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Backend Development<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -133,7 +131,7 @@ class ServiceWeb extends Component {
                     
                   </Col>
                   <Col xs={12} className=" title-sec1 p-0">
-                    <h2>Architecture <span>Plan and</span> Blueprint <span>Design</span></h2>
+                    <h2>Full-Stack <span> Development</span></h2>
                   </Col>
                   <Col xs={12} className="p-0 mt-3 mb-5">
                     <Row>
@@ -142,7 +140,7 @@ class ServiceWeb extends Component {
                           <figure className="works-img"><img src={WebDevelopmentillustration_7} /></figure>
                           <div className="works-info">
                             <p>Web Development</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Full-Stack Development<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -151,7 +149,7 @@ class ServiceWeb extends Component {
                           <figure className="works-img"><img src={WebDevelopmentillustration_8} /></figure>
                           <div className="works-info">
                             <p>Web Development</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Full-Stack Development<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -160,7 +158,7 @@ class ServiceWeb extends Component {
                           <figure className="works-img"><img src={WebDevelopmentillustration_9} /></figure>
                           <div className="works-info">
                             <p>Web Development</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Full-Stack Developmentg<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -168,7 +166,7 @@ class ServiceWeb extends Component {
                     
                   </Col>
                   <Col xs={12} className=" title-sec1 p-0">
-                    <h2>Business <span>Card and</span> Invitation <span>Card Design</span></h2>
+                    <h2>Backend <span>Connected with</span> Database </h2>
                   </Col>
                   <Col xs={12} className="p-0 mt-3 mb-5">
                     <Row>
@@ -177,7 +175,7 @@ class ServiceWeb extends Component {
                           <figure className="works-img"><img src={WebDevelopmentillustration_10} /></figure>
                           <div className="works-info">
                             <p>Web Development</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Backend Connected with Database<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -186,7 +184,7 @@ class ServiceWeb extends Component {
                           <figure className="works-img"><img src={WebDevelopmentillustration_11} /></figure>
                           <div className="works-info">
                             <p>Web Development</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Backend Connected with Database<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -195,7 +193,7 @@ class ServiceWeb extends Component {
                           <figure className="works-img"><img src={WebDevelopmentillustration_12} /></figure>
                           <div className="works-info">
                             <p>Web Development</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Backend Connected with Database<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>

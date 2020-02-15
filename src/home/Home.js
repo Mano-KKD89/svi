@@ -406,9 +406,9 @@ class Home extends Component {
                 <Row>
                   <Col xs={6} className="pl-0">
                     <h1>
-                      We Provide<span>Top Quality</span>&ensp;Services
+                      We Give<span> Top-notch </span> <br/>Services
                     </h1>
-                    <p>Perfect place for your perfect business.</p>
+                    <p>Ideal spot for your perfect business.</p>
                     <a href="https://www.youtube.com/watch?v=LL1c48sVji8" target="_blank">
                       <img src={PlayIcon} />
                       Watch video
@@ -426,7 +426,7 @@ class Home extends Component {
                 <Row>
                   <Col xs={12} className="text-center title-sec p-0">
                     <p>We're offering these popular Services</p>
-                    <h2>We give life to your imagination!!!</h2>
+                    <h2>We offer life to your creative mind!!!</h2>
                   </Col>
                   <Col xs={12} className="inner-sec p-0">
                     <Row>
@@ -531,12 +531,7 @@ technologies to deliver outstanding service to our clients.
                   </Col>
                   <Col xs={12} className="p-sec p-0 mb-5">
                     <p>
-                      We offer high quality output with the correct/perfect
-                      combination of design, sound and effects that instantly
-                      capture your attention. Our exclusive range of service
-                      includes Graphic designs, 2D and 3D animations, visual
-                      services and much more. The service are delivered as per
-                      the clients need at economy cost.
+                    We offer excellent yield with the ideal mix of configuration, sound and impacts that in a split second catch your consideration. Our restrictive scope of administration incorporates Graphic designs, 2D and 3D animations, visual administrations and considerably more. The services are conveyed according to the customers need at economy cost.
                     </p>
                   </Col>
                 </Row>

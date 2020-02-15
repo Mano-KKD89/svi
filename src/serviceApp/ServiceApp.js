@@ -48,12 +48,12 @@ class ServiceApp extends Component {
                       </Breadcrumb>
                       <h1 className="text-blue">Digital Marketing</h1>
                       <h4 className="text-white">
-                        Creative{" "}
-                        <span className="text-blue">Thinking</span>{" "}<br></br>
-                        Creatives at your{" "}
-                        <span className="text-blue">Service</span>
+                      Interfacing your 
+                        <span className="text-blue"> Brand</span>{" "}<br></br>
+                        with your {" "}
+                        <span className="text-blue">Essence</span>
                       </h4>
-                      <p className="text-white">Affordable solutions for all your creativity needs.</p>
+                      <p className="text-white">A little organization with huge capacities.</p>
                     </nav>
                   </Col>
                   <Col xs={4} className="d-flex align-items-center service-img">
@@ -70,12 +70,12 @@ class ServiceApp extends Component {
               <Col xs={12}>
                 <Row>
                   <Col xs={12} className="text-center title-sec">
-                    <p>Design & marketing for maximum impact</p>
+                    <p>Structure and advertising for greatest effect</p>
                     <h2>Design solutions for any media</h2>
-                    <p className="para-p">We are offering digital marketing service along with web development solutions which takes your business to the doorstep of each and every people via online. We can take your business to the notice of spectators worldwide in short span of duration.</p>
+                    <p className="para-p">We are offering advanced promoting service alongside web improvement arrangements which takes your business to the doorstep of every single individuals by means of on the web. We can take your business to the notification of onlookers worldwide in limited ability to focus span.</p>
                   </Col>
                   <Col xs={12} className=" title-sec1 p-0">
-                    <h2>2D <span>Web</span> Infographics, Elements <span>and</span> Icon <span>Creation</span></h2>
+                    <h2>Search Engine <span>Marketing</span></h2>
                   </Col>
                   <Col xs={12} className="p-0 mt-3 mb-5">
                     <Row>
@@ -84,7 +84,7 @@ class ServiceApp extends Component {
                           <figure className="works-img"><img src={DigitalMarketingillustration_1} /></figure>
                           <div className="works-info">
                             <p>Digital Marketing</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Search Engine Marketing<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -93,7 +93,7 @@ class ServiceApp extends Component {
                           <figure className="works-img"><img src={DigitalMarketingillustration_2} /></figure>
                           <div className="works-info">
                             <p>Digital Marketing</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Search Engine Marketing<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -102,7 +102,7 @@ class ServiceApp extends Component {
                           <figure className="works-img"><img src={DigitalMarketingillustration_3} /></figure>
                           <div className="works-info">
                             <p>Digital Marketing</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Search Engine Marketing<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -110,7 +110,7 @@ class ServiceApp extends Component {
                     
                   </Col>
                   <Col xs={12} className=" title-sec1 p-0">
-                    <h2>Desktop <span>and</span> Mobile <span>Website Planning Creation</span></h2>
+                    <h2>Content <span>Marketing and</span> Content <span>Automation</span></h2>
                   </Col>
                   <Col xs={12} className="p-0 mt-3 mb-5">
                     <Row>
@@ -119,7 +119,7 @@ class ServiceApp extends Component {
                           <figure className="works-img"><img src={DigitalMarketingillustration_4} /></figure>
                           <div className="works-info">
                             <p>Digital Marketing</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Content Marketing <span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -128,7 +128,7 @@ class ServiceApp extends Component {
                           <figure className="works-img"><img src={DigitalMarketingillustration_5} /></figure>
                           <div className="works-info">
                             <p>Digital Marketing</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Content Automation<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -137,7 +137,7 @@ class ServiceApp extends Component {
                           <figure className="works-img"><img src={DigitalMarketingillustration_6} /></figure>
                           <div className="works-info">
                             <p>Digital Marketing</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Content Automation<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -145,7 +145,7 @@ class ServiceApp extends Component {
                     
                   </Col>
                   <Col xs={12} className=" title-sec1 p-0">
-                    <h2>Architecture <span>Plan and</span> Blueprint <span>Design</span></h2>
+                    <h2>Influencer <span>Marketing</span></h2>
                   </Col>
                   <Col xs={12} className="p-0 mt-3 mb-5">
                     <Row>
@@ -154,7 +154,7 @@ class ServiceApp extends Component {
                           <figure className="works-img"><img src={DigitalMarketingillustration_7} /></figure>
                           <div className="works-info">
                             <p>Digital Marketing</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Influencer Marketing <span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -163,7 +163,7 @@ class ServiceApp extends Component {
                           <figure className="works-img"><img src={DigitalMarketingillustration_8} /></figure>
                           <div className="works-info">
                             <p>Digital Marketing</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Influencer Marketing<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -172,7 +172,7 @@ class ServiceApp extends Component {
                           <figure className="works-img"><img src={DigitalMarketingillustration_9} /></figure>
                           <div className="works-info">
                             <p>Digital Marketing</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Influencer Marketing<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -180,7 +180,7 @@ class ServiceApp extends Component {
                     
                   </Col>
                   <Col xs={12} className=" title-sec1 p-0">
-                    <h2>Business <span>Card and</span> Invitation <span>Card Design</span></h2>
+                    <h2>E-Commerce <span>Marketing</span></h2>
                   </Col>
                   <Col xs={12} className="p-0 mt-3 mb-5">
                     <Row>
@@ -189,7 +189,7 @@ class ServiceApp extends Component {
                           <figure className="works-img"><img src={DigitalMarketingillustration_10} /></figure>
                           <div className="works-info">
                             <p>Digital Marketing</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>E-Commerce Marketing <span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -198,7 +198,7 @@ class ServiceApp extends Component {
                           <figure className="works-img"><img src={DigitalMarketingillustration_11} /></figure>
                           <div className="works-info">
                             <p>Digital Marketing</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>E-Commerce Marketing<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -207,7 +207,7 @@ class ServiceApp extends Component {
                           <figure className="works-img"><img src={DigitalMarketingillustration_12} /></figure>
                           <div className="works-info">
                             <p>Digital Marketing</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>E-Commerce Marketing<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -215,7 +215,7 @@ class ServiceApp extends Component {
                     
                   </Col>
                   <Col xs={12} className=" title-sec1 p-0">
-                    <h2>Banner <span>Design and</span> Creative <span>Graphic Design</span></h2>
+                    <h2>Email Direct <span>Marketing</span></h2>
                   </Col>
                   <Col xs={12} className="p-0 mt-3 mb-5">
                     <Row>
@@ -224,7 +224,7 @@ class ServiceApp extends Component {
                           <figure className="works-img"><img src={DigitalMarketingillustration_13} /></figure>
                           <div className="works-info">
                             <p>Digital Marketing</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Email Direct Marketing<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -233,7 +233,7 @@ class ServiceApp extends Component {
                           <figure className="works-img"><img src={DigitalMarketingillustration_14} /></figure>
                           <div className="works-info">
                             <p>Digital Marketing</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Email Direct Marketing<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -242,7 +242,7 @@ class ServiceApp extends Component {
                           <figure className="works-img"><img src={DigitalMarketingillustration_15} /></figure>
                           <div className="works-info">
                             <p>Digital Marketing</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Email Direct Marketingg<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -250,7 +250,7 @@ class ServiceApp extends Component {
                     
                   </Col>
                   <Col xs={12} className=" title-sec1 p-0">
-                    <h2>Brochure <span>and</span> Pamphlet <span>Design</span></h2>
+                    <h2>Social Media <span>Marketing</span> </h2>
                   </Col>
                   <Col xs={12} className="p-0 mt-3 mb-5">
                     <Row>
@@ -259,7 +259,7 @@ class ServiceApp extends Component {
                           <figure className="works-img"><img src={DigitalMarketingillustration_16} /></figure>
                           <div className="works-info">
                             <p>Digital Marketing</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Social Media Marketing<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -268,7 +268,7 @@ class ServiceApp extends Component {
                           <figure className="works-img"><img src={DigitalMarketingillustration_17} /></figure>
                           <div className="works-info">
                             <p>Digital Marketing</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Social Media Marketing<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -277,7 +277,7 @@ class ServiceApp extends Component {
                           <figure className="works-img"><img src={DigitalMarketingillustration_18} /></figure>
                           <div className="works-info">
                             <p>Digital Marketing</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Social Media Marketing<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -285,7 +285,7 @@ class ServiceApp extends Component {
                     
                   </Col>
                   <Col xs={12} className=" title-sec1 p-0">
-                    <h2>2d logo <span>Creation and</span> logo <span>Animation</span></h2>
+                    <h2>Pay-per <span>Click Advertising</span></h2>
                   </Col>
                   <Col xs={12} className="p-0 mt-3 mb-5">
                     <Row>
@@ -294,7 +294,7 @@ class ServiceApp extends Component {
                           <figure className="works-img"><img src={DigitalMarketingillustration_19} /></figure>
                           <div className="works-info">
                             <p>Digital Marketing</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Pay-per Click Advertising<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -303,7 +303,7 @@ class ServiceApp extends Component {
                           <figure className="works-img"><img src={DigitalMarketingillustration_20} /></figure>
                           <div className="works-info">
                             <p>Digital Marketing</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Pay-per Click Advertising<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -312,7 +312,7 @@ class ServiceApp extends Component {
                           <figure className="works-img"><img src={DigitalMarketingillustration_21} /></figure>
                           <div className="works-info">
                             <p>Digital Marketing</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Pay-per Click Advertising<span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -320,7 +320,7 @@ class ServiceApp extends Component {
                     
                   </Col>
                   <Col xs={12} className=" title-sec1 p-0">
-                    <h2>2d Motion <span>Graphics Animation</span></h2>
+                    <h2>Affiliate <span>and</span> Campaign <span>Marketing</span></h2>
                   </Col>
                   <Col xs={12} className="p-0 mt-3 mb-5">
                     <Row>
@@ -329,7 +329,7 @@ class ServiceApp extends Component {
                           <figure className="works-img"><img src={DigitalMarketingillustration_22} /></figure>
                           <div className="works-info">
                             <p>Digital Marketing</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Campaign Marketing <span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -338,7 +338,7 @@ class ServiceApp extends Component {
                           <figure className="works-img"><img src={DigitalMarketingillustration_23} /></figure>
                           <div className="works-info">
                             <p>Digital Marketing</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Affiliate Marketing <span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
@@ -347,7 +347,7 @@ class ServiceApp extends Component {
                           <figure className="works-img"><img src={DigitalMarketingillustration_24} /></figure>
                           <div className="works-info">
                             <p>Digital Marketing</p>
-                            <h4>Desktop Website Planning<span className="float-right">2020</span></h4>
+                            <h4>Campaign Marketing <span className="float-right">2020</span></h4>
                           </div>
                         </div>
                       </Col>
